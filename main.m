@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-#import "MaAppDelegate.h"
+#import "MoreMusicAppDelegate.h"
 
 int main(int argc, char *argv[])
 {
     @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([MaAppDelegate class]));
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([MoreMusicAppDelegate class]));
     }
 }
