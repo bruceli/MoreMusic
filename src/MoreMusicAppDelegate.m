@@ -24,9 +24,11 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 //    self.window.rootViewController = [[MaRootViewController alloc] init];      
-
+//    UIStatusBarStyle
     
     MoreMusicAppDelegate* app = (MoreMusicAppDelegate *)[[UIApplication sharedApplication] delegate];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleBlackOpaque animated:YES];
+    
     tabBarController = [[UITabBarController alloc] init]; 
     UITabBar *tabBar = [tabBarController tabBar]; 
     [tabBar setBackgroundImage:[UIImage imageNamed:@"tabBarBackground"]];
