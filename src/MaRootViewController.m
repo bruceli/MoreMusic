@@ -26,21 +26,6 @@
 {
     [super viewDidLoad];
 
-    MoreMusicAppDelegate* app = (MoreMusicAppDelegate *)[[UIApplication sharedApplication] delegate];
-    tabBarController = [[UITabBarController alloc] init]; 
-    
-    app.scheduleViewController = [[MaScheduleViewController alloc] init]; 
-	UINavigationController* schViewController = [[UINavigationController alloc] initWithRootViewController:app.scheduleViewController];
-
-    app.bandViewController = [[MaBandViewController alloc] init]; 
-	UINavigationController* banViewController = [[UINavigationController alloc] initWithRootViewController:app.bandViewController];
-    
-    app.reviewViewController = [[MaReviewViewController alloc] init]; 
-	UINavigationController* revViewController = [[UINavigationController alloc] initWithRootViewController:app.reviewViewController];
-    
-    tabBarController.viewControllers = [NSArray arrayWithObjects:schViewController, banViewController, revViewController, nil];
-
-    [self.view addSubview:tabBarController.view];
 }
 
 - (void)viewDidUnload

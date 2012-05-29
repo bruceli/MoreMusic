@@ -6,8 +6,10 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "MaTableViewController.h"
+//#import "MaTableViewController.h"
+#import "MaRootViewController.h"
+#import "MHTabBarController.h"
 
-@interface MaScheduleViewController : MaTableViewController
+@interface MaScheduleViewController : MaRootViewController <MHTabBarControllerDelegate>
 
 @end

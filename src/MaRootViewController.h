@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MoreMusicAppDelegate.h"
+#import "Three20/Three20.h"
 
-@interface MaRootViewController : TTViewController
+@interface MaRootViewController : TTTableViewController
 {
-    UITabBarController *tabBarController;
+
 }
 @end

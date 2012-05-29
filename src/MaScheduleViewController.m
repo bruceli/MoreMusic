@@ -7,6 +7,7 @@
 //
 
 #import "MaScheduleViewController.h"
+#import "MaTableViewController.h"
 
 @interface MaScheduleViewController ()
 
@@ -38,9 +39,27 @@
 	// Do any additional setup after loading the view.
     self.tableView.backgroundColor = [UIColor darkGrayColor];
     self.navigationItem.title = @"MaScheduleViewController";
-    [[UINavigationBar appearance] setTintColor:[UIColor brownColor]];    
-    [[UINavigationBar appearanceWhenContainedIn:[MaScheduleViewController class], nil] setTintColor:[UIColor blackColor]];    
+
+    UITableViewController *listViewController1 = [[UITableViewController alloc] initWithStyle:UITableViewStylePlain];
+	UITableViewController *listViewController2 = [[UITableViewController alloc] initWithStyle:UITableViewStylePlain];
+	UITableViewController *listViewController3 = [[UITableViewController alloc] initWithStyle:UITableViewStylePlain];
+	
+	listViewController1.title = @"Day 1";
+	listViewController2.title = @"Day 2";
+	listViewController3.title = @"Day 3";
     
+	NSArray *viewControllers = [NSArray arrayWithObjects:listViewController1, listViewController2, listViewController3, nil];
+	MHTabBarController *tabBarController = [[MHTabBarController alloc] init];
+    
+	tabBarController.delegate = self;
+	tabBarController.viewControllers = viewControllers;
+    
+    [self.view addSubview:tabBarController.view ];
+    [self addChildViewController:tabBarController];
+    [tabBarController didMoveToParentViewController:self];
+
+//    [self.view insertSubview:tabBarController.view  aboveSubview:self.tableView];
+
 }
 
 - (void)viewDidUnload
@@ -60,8 +79,24 @@
     return [[TTTableViewDragRefreshDelegate alloc] initWithController:self];
 }
 */
+
+
 -(void)createModel
 { 
+}
+- (BOOL)mh_tabBarController:(MHTabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController atIndex:(NSUInteger)index
+{
+	NSLog(@"mh_tabBarController %@ shouldSelectViewController %@ at index %u", tabBarController, viewController, index);
+    
+	// Uncomment this to prevent "Tab 3" from being selected.
+	//return (index != 2);
+    
+	return YES;
+}
+
+- (void)mh_tabBarController:(MHTabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController atIndex:(NSUInteger)index
+{
+	NSLog(@"mh_tabBarController %@ didSelectViewController %@ at index %u", tabBarController, viewController, index);
 }
 
 
