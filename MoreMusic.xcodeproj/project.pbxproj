@@ -237,14 +237,14 @@
 		594DD179157502DE00037861 /* MHTabBarActiveTab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MHTabBarActiveTab.png; path = src/3rd/MHTabBarController/Images/MHTabBarActiveTab.png; sourceTree = "<group>"; };
 		594DD17A157502DE00037861 /* MHTabBarInactiveTab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MHTabBarInactiveTab.png; path = src/3rd/MHTabBarController/Images/MHTabBarInactiveTab.png; sourceTree = "<group>"; };
 		594DD17B157502DE00037861 /* MHTabBarIndicator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MHTabBarIndicator.png; path = src/3rd/MHTabBarController/Images/MHTabBarIndicator.png; sourceTree = "<group>"; };
-		596156CB1573517100792739 /* extThree20JSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = extThree20JSON.xcodeproj; path = "../facebook-three20-b253114/src/extThree20JSON/extThree20JSON.xcodeproj"; sourceTree = "<group>"; };
-		5961570D157351AA00792739 /* Three20.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20.xcodeproj; path = "../facebook-three20-b253114/src/Three20/Three20.xcodeproj"; sourceTree = "<group>"; };
-		59615736157351C700792739 /* Three20Style.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20Style.xcodeproj; path = "../facebook-three20-b253114/src/Three20Style/Three20Style.xcodeproj"; sourceTree = "<group>"; };
-		5961573F157351D000792739 /* Three20UICommon.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20UICommon.xcodeproj; path = "../facebook-three20-b253114/src/Three20UICommon/Three20UICommon.xcodeproj"; sourceTree = "<group>"; };
-		59615748157351DB00792739 /* Three20UINavigator.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20UINavigator.xcodeproj; path = "../facebook-three20-b253114/src/Three20UINavigator/Three20UINavigator.xcodeproj"; sourceTree = "<group>"; };
-		59615751157351E300792739 /* Three20Network.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20Network.xcodeproj; path = "../facebook-three20-b253114/src/Three20Network/Three20Network.xcodeproj"; sourceTree = "<group>"; };
-		5961575A157351E800792739 /* Three20Core.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20Core.xcodeproj; path = "../facebook-three20-b253114/src/Three20Core/Three20Core.xcodeproj"; sourceTree = "<group>"; };
-		596157641573523F00792739 /* Three20UI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20UI.xcodeproj; path = "../facebook-three20-b253114/src/Three20UI/Three20UI.xcodeproj"; sourceTree = "<group>"; };
+		596156CB1573517100792739 /* extThree20JSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = extThree20JSON.xcodeproj; path = ../three20/src/extThree20JSON/extThree20JSON.xcodeproj; sourceTree = "<group>"; };
+		5961570D157351AA00792739 /* Three20.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20.xcodeproj; path = ../three20/src/Three20/Three20.xcodeproj; sourceTree = "<group>"; };
+		59615736157351C700792739 /* Three20Style.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20Style.xcodeproj; path = ../three20/src/Three20Style/Three20Style.xcodeproj; sourceTree = "<group>"; };
+		5961573F157351D000792739 /* Three20UICommon.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20UICommon.xcodeproj; path = ../three20/src/Three20UICommon/Three20UICommon.xcodeproj; sourceTree = "<group>"; };
+		59615748157351DB00792739 /* Three20UINavigator.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20UINavigator.xcodeproj; path = ../three20/src/Three20UINavigator/Three20UINavigator.xcodeproj; sourceTree = "<group>"; };
+		59615751157351E300792739 /* Three20Network.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20Network.xcodeproj; path = ../three20/src/Three20Network/Three20Network.xcodeproj; sourceTree = "<group>"; };
+		5961575A157351E800792739 /* Three20Core.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20Core.xcodeproj; path = ../three20/src/Three20Core/Three20Core.xcodeproj; sourceTree = "<group>"; };
+		596157641573523F00792739 /* Three20UI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20UI.xcodeproj; path = ../three20/src/Three20UI/Three20UI.xcodeproj; sourceTree = "<group>"; };
 		596157C2157362D400792739 /* MaRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MaRootViewController.h; path = src/MaRootViewController.h; sourceTree = "<group>"; };
 		596157C3157362D400792739 /* MaRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MaRootViewController.m; path = src/MaRootViewController.m; sourceTree = "<group>"; };
 		5982818B1571EE260056E1A5 /* MoreMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoreMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -915,7 +915,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
-					"\"$(SRCROOT)/../three20/Build/Products/Release-iphoneos\"",
+					"\"$(SRCROOT)/../three20/Build/Products/Release-iphoneos\"/**",
 					"\"$(SRCROOT)/../three20/Build/Products/Debug-iphonesimulator\"/**",
 				);
 				OTHER_LDFLAGS = "-ObjC";
@@ -934,7 +934,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
-					"\"$(SRCROOT)/../three20/Build/Products/Release-iphoneos\"",
+					"\"$(SRCROOT)/../three20/Build/Products/Release-iphoneos\"/**",
 					"\"$(SRCROOT)/../three20/Build/Products/Debug-iphonesimulator\"/**",
 				);
 				OTHER_LDFLAGS = "-ObjC";
