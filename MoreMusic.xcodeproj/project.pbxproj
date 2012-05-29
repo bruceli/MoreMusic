@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		320AF8492C47A4D819F7C451 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 320AF8492C47A4D819F7C450 /* QuartzCore.framework */; };
+		320B6C86F11D9990244A9731 /* Three20.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 320B6C86F11D9990244A9730 /* Three20.bundle */; };
 		594DD0E91574D7E500037861 /* BarBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 594DD0E71574D7E500037861 /* BarBackground.png */; };
 		594DD0EA1574D7E500037861 /* BarBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 594DD0E81574D7E500037861 /* BarBackground@2x.png */; };
 		594DD0ED1574E94200037861 /* tabBarBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 594DD0EB1574E94100037861 /* tabBarBackground.png */; };
@@ -228,6 +230,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		320AF8492C47A4D819F7C450 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.frameworks; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		320B6C86F11D9990244A9730 /* Three20.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Three20.bundle; path = ../three20/src/Three20.bundle; sourceTree = SOURCE_ROOT; };
 		594DD0E71574D7E500037861 /* BarBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BarBackground.png; path = MoreMusic/Resources/BarBackground.png; sourceTree = "<group>"; };
 		594DD0E81574D7E500037861 /* BarBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "BarBackground@2x.png"; path = "MoreMusic/Resources/BarBackground@2x.png"; sourceTree = "<group>"; };
 		594DD0EB1574E94100037861 /* tabBarBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tabBarBackground.png; path = MoreMusic/Resources/tabBarBackground.png; sourceTree = "<group>"; };
@@ -287,6 +291,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				320AF8492C47A4D819F7C451 /* QuartzCore.framework in Frameworks */,
 				59EBF46F1573C3CA0073325A /* libThree20.a in Frameworks */,
 				59EBF4701573C3CA0073325A /* libThree20Core.a in Frameworks */,
 				59EBF4711573C3CA0073325A /* libThree20Network.a in Frameworks */,
@@ -407,6 +412,14 @@
 		5982818E1571EE260056E1A5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5961573F157351D000792739 /* Three20UICommon.xcodeproj */,
+				5961570D157351AA00792739 /* Three20.xcodeproj */,
+				59615748157351DB00792739 /* Three20UINavigator.xcodeproj */,
+				5961575A157351E800792739 /* Three20Core.xcodeproj */,
+				596157641573523F00792739 /* Three20UI.xcodeproj */,
+				320AF8492C47A4D819F7C450 /* QuartzCore.framework */,
+				59615751157351E300792739 /* Three20Network.xcodeproj */,
+				59615736157351C700792739 /* Three20Style.xcodeproj */,
 				59EBF4B91573D5400073325A /* QuartzCore.framework */,
 				5982818F1571EE260056E1A5 /* UIKit.framework */,
 				598281911571EE260056E1A5 /* Foundation.framework */,
@@ -521,6 +534,7 @@
 		59EBF4DA1573EFCF0073325A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				320B6C86F11D9990244A9730 /* Three20.bundle */,
 				594DD0EB1574E94100037861 /* tabBarBackground.png */,
 				594DD0EC1574E94200037861 /* tabBarBackground@2x.png */,
 				594DD0E71574D7E500037861 /* BarBackground.png */,
@@ -763,6 +777,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				320B6C86F11D9990244A9731 /* Three20.bundle in Resources */,
 				5982819A1571EE260056E1A5 /* InfoPlist.strings in Resources */,
 				59EBF4E31573EFE00073325A /* clock.png in Resources */,
 				59EBF4E41573EFE00073325A /* clock@2x.png in Resources */,
@@ -881,7 +896,13 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(BUILT_PRODUCTS_DIR)/../three20",
+					"$(BUILT_PRODUCTS_DIR)/../../three20",
+					../three20/Build/Products/three20,
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -899,8 +920,14 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(BUILT_PRODUCTS_DIR)/../three20",
+					"$(BUILT_PRODUCTS_DIR)/../../three20",
+					../three20/Build/Products/three20,
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
