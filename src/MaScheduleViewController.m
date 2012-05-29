@@ -18,10 +18,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.variableHeightRows = YES;
-        self.view.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleHeight;  
-        self.tableViewStyle = UITableViewStylePlain;
-        
+        self.view.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleHeight;          
         self.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Schedule" image:[UIImage imageNamed:@"clock"] tag:0];
         return self;
 
@@ -39,9 +36,11 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    self.tableView.backgroundColor = [UIColor brownColor];
+    self.tableView.backgroundColor = [UIColor darkGrayColor];
     self.navigationItem.title = @"MaScheduleViewController";
-
+    [[UINavigationBar appearance] setTintColor:[UIColor brownColor]];    
+    [[UINavigationBar appearanceWhenContainedIn:[MaScheduleViewController class], nil] setTintColor:[UIColor blackColor]];    
+    
 }
 
 - (void)viewDidUnload
@@ -56,11 +55,11 @@
 }
 
 
-
+/*
 - (id<UITableViewDelegate>)createDelegate {
     return [[TTTableViewDragRefreshDelegate alloc] initWithController:self];
 }
-
+*/
 -(void)createModel
 { 
 }

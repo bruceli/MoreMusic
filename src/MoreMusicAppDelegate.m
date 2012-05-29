@@ -8,6 +8,7 @@
 
 #import "MoreMusicAppDelegate.h"
 #import "MaRootViewController.h"
+
 @implementation MoreMusicAppDelegate
 
 @synthesize window = _window;
@@ -23,29 +24,43 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 //    self.window.rootViewController = [[MaRootViewController alloc] init];      
-    
+
     
     MoreMusicAppDelegate* app = (MoreMusicAppDelegate *)[[UIApplication sharedApplication] delegate];
     tabBarController = [[UITabBarController alloc] init]; 
+    UITabBar *tabBar = [tabBarController tabBar]; 
+    [tabBar setBackgroundImage:[UIImage imageNamed:@"tabBarBackground"]];
+    
+    self.window.rootViewController = tabBarController;
     
     app.scheduleViewController = [[MaScheduleViewController alloc] init]; 
 	UINavigationController* schViewController = [[UINavigationController alloc] initWithRootViewController:app.scheduleViewController];
-    
+    UINavigationBar* navBar = schViewController.navigationBar;
+    [navBar setBackgroundImage:[UIImage imageNamed: @"BarBackground"] forBarMetrics:UIBarMetricsDefault];
+
     app.bandViewController = [[MaBandViewController alloc] init]; 
 	UINavigationController* banViewController = [[UINavigationController alloc] initWithRootViewController:app.bandViewController];
+    navBar = banViewController.navigationBar;
+    [navBar setBackgroundImage:[UIImage imageNamed: @"BarBackground"] forBarMetrics:UIBarMetricsDefault];
     
+
     app.reviewViewController = [[MaReviewViewController alloc] init]; 
 	UINavigationController* revViewController = [[UINavigationController alloc] initWithRootViewController:app.reviewViewController];
-    
+    navBar = revViewController.navigationBar;
+    [navBar setBackgroundImage:[UIImage imageNamed: @"BarBackground"] forBarMetrics:UIBarMetricsDefault];
+
     
     app.weiboStreamViewController = [[MaWeiboStreamViewController alloc] init]; 
 	UINavigationController* weiViewController = [[UINavigationController alloc] initWithRootViewController:app.weiboStreamViewController];
+    navBar = weiViewController.navigationBar;
+    [navBar setBackgroundImage:[UIImage imageNamed: @"BarBackground"] forBarMetrics:UIBarMetricsDefault];
+
     
     app.moreViewController = [[MaMoreViewController alloc] init]; 
 	UINavigationController* morViewController = [[UINavigationController alloc] initWithRootViewController:app.moreViewController];
-    
-    
-    
+    navBar = morViewController.navigationBar;
+    [navBar setBackgroundImage:[UIImage imageNamed: @"BarBackground"] forBarMetrics:UIBarMetricsDefault];
+
     tabBarController.viewControllers = [NSArray arrayWithObjects:schViewController, banViewController, revViewController, weiViewController, morViewController, nil];
     
     [self.window addSubview:tabBarController.view];
