@@ -13,7 +13,7 @@
 #import "MaWeiboStreamViewController.h"
 #import "MaMoreViewController.h"
 
-@interface MoreMusicAppDelegate : UIResponder <UIApplicationDelegate, UITabBarControllerDelegate>
+@interface MoreMusicAppDelegate : UIResponder <UIApplicationDelegate, UITabBarControllerDelegate, MHTabBarControllerDelegate>
 {
     MaScheduleViewController* _scheduleViewController;
     MaBandViewController*   _bandViewController;

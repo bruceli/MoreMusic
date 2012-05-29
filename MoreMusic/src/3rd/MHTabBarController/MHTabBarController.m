@@ -153,6 +153,8 @@ static const NSInteger TAG_OFFSET = 1000;
 	[self.view addSubview:indicatorImageView];
 
 	[self reloadTabButtons];
+    self.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Schedule" image:[UIImage imageNamed:@"clock"] tag:0];
+
 }
 
 - (void)viewDidUnload

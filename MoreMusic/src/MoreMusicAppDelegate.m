@@ -34,15 +34,35 @@
     [tabBar setBackgroundImage:[UIImage imageNamed:@"tabBarBackground"]];
     
     self.window.rootViewController = tabBarController;
+    //-------------
     
+    UITableViewController *listViewController1 = [[UITableViewController alloc] initWithStyle:UITableViewStylePlain];
+	UITableViewController *listViewController2 = [[UITableViewController alloc] initWithStyle:UITableViewStylePlain];
+	UITableViewController *listViewController3 = [[UITableViewController alloc] initWithStyle:UITableViewStylePlain];
+	
+	listViewController1.title = @"Day 1";
+	listViewController2.title = @"Day 2";
+	listViewController3.title = @"Day 3";
+    
+	NSArray *viewControllers = [NSArray arrayWithObjects:listViewController1, listViewController2, listViewController3, nil];
+	MHTabBarController *titleTabController = [[MHTabBarController alloc] init];
+    
+	titleTabController.delegate = self;
+	titleTabController.viewControllers = viewControllers;
+
+    
+    //-------------
+    /*
     app.scheduleViewController = [[MaScheduleViewController alloc] init]; 
 	UINavigationController* schViewController = [[UINavigationController alloc] initWithRootViewController:app.scheduleViewController];
     UINavigationBar* navBar = schViewController.navigationBar;
     [navBar setBackgroundImage:[UIImage imageNamed: @"BarBackground"] forBarMetrics:UIBarMetricsDefault];
-
+     */
+    //-------------
+    
     app.bandViewController = [[MaBandViewController alloc] init]; 
 	UINavigationController* banViewController = [[UINavigationController alloc] initWithRootViewController:app.bandViewController];
-    navBar = banViewController.navigationBar;
+    UINavigationBar* navBar = banViewController.navigationBar;
     [navBar setBackgroundImage:[UIImage imageNamed: @"BarBackground"] forBarMetrics:UIBarMetricsDefault];
     
 
@@ -63,7 +83,7 @@
     navBar = morViewController.navigationBar;
     [navBar setBackgroundImage:[UIImage imageNamed: @"BarBackground"] forBarMetrics:UIBarMetricsDefault];
 
-    tabBarController.viewControllers = [NSArray arrayWithObjects:schViewController, banViewController, revViewController, weiViewController, morViewController, nil];
+    tabBarController.viewControllers = [NSArray arrayWithObjects:titleTabController, banViewController, revViewController, weiViewController, morViewController, nil];
     
     [self.window addSubview:tabBarController.view];
     [self.window makeKeyAndVisible];

@@ -39,7 +39,7 @@
 	// Do any additional setup after loading the view.
 //    self.tableView.backgroundColor = [UIColor darkGrayColor];
     self.navigationItem.title = @"MaScheduleViewController";
-
+/*
     UITableViewController *listViewController1 = [[UITableViewController alloc] initWithStyle:UITableViewStylePlain];
 	UITableViewController *listViewController2 = [[UITableViewController alloc] initWithStyle:UITableViewStylePlain];
 	UITableViewController *listViewController3 = [[UITableViewController alloc] initWithStyle:UITableViewStylePlain];
@@ -57,7 +57,7 @@
     [self.view addSubview:tabBarController.view ];
     [self addChildViewController:tabBarController];
     [tabBarController didMoveToParentViewController:self];
-
+*/
 //    [self.view insertSubview:tabBarController.view  aboveSubview:self.tableView];
 
 }

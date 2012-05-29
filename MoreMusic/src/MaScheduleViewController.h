@@ -10,6 +10,6 @@
 #import "MaRootViewController.h"
 #import "MHTabBarController.h"
 
-@interface MaScheduleViewController : MaRootViewController <MHTabBarControllerDelegate>
+@interface MaScheduleViewController : MaRootViewController 
 
 @end
