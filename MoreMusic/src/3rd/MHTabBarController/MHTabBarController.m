@@ -67,7 +67,7 @@ static const NSInteger TAG_OFFSET = 1000;
 	[button setBackgroundImage:image forState:UIControlStateNormal];
 	[button setBackgroundImage:image forState:UIControlStateHighlighted];
 
-	[button setTitleColor:[UIColor colorWithRed:175/255.0f green:85/255.0f blue:58/255.0f alpha:1.0f] forState:UIControlStateNormal];
+	[button setTitleColor:[UIColor colorWithRed:25/255.0f green:85/255.0f blue:150/255.0f alpha:1.0f] forState:UIControlStateNormal];
 	[button setTitleShadowColor:[UIColor whiteColor] forState:UIControlStateNormal];
 }
 

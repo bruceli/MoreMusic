@@ -9,8 +9,36 @@
 #import "MoreMusicAppDelegate.h"
 #import "MaRootViewController.h"
 
-@implementation MoreMusicAppDelegate
+//-------LaunchSplashScreen------------
+@interface LaunchImageTransition : UIViewController {
+}
+- (id)initWithViewController:(UIViewController *)controller animation:(UIModalTransitionStyle)transition;
+- (id)initWithViewController:(UIViewController *)controller animation:(UIModalTransitionStyle)transition delay:(NSTimeInterval)seconds;
+@end
 
+@implementation LaunchImageTransition
+- (id)initWithViewController:(UIViewController *)controller animation:(UIModalTransitionStyle)transition {
+	return [self initWithViewController:controller animation:transition delay:0.5];
+}
+
+- (id)initWithViewController:(UIViewController *)controller animation:(UIModalTransitionStyle)transition delay:(NSTimeInterval)seconds
+{
+	self = [super init];
+    [self.view addSubview:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Default.png"]]];
+    [controller setModalTransitionStyle:transition];
+    [NSTimer scheduledTimerWithTimeInterval:seconds target:self selector:@selector(timerFireMethod:) userInfo:controller repeats:NO];
+	
+	return self;
+}
+
+- (void)timerFireMethod:(NSTimer *)theTimer {
+	[self presentModalViewController:[theTimer userInfo] animated:YES];
+}
+@end
+
+//-------LaunchSplashScreen------END------
+
+@implementation MoreMusicAppDelegate
 @synthesize window = _window;
 @synthesize scheduleViewController = _scheduleViewController;
 @synthesize bandViewController = _bandViewController;
@@ -18,24 +46,21 @@
 @synthesize weiboStreamViewController = _weiboStreamViewController;
 @synthesize moreViewController = _moreViewController;
 
-//@synthesize tabBarController = _tabBarController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-//    self.window.rootViewController = [[MaRootViewController alloc] init];      
-//    UIStatusBarStyle
-    
-    MoreMusicAppDelegate* app = (MoreMusicAppDelegate *)[[UIApplication sharedApplication] delegate];
-    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleBlackOpaque animated:YES];
-    
     tabBarController = [[UITabBarController alloc] init]; 
+    
+    self.window.rootViewController = [[LaunchImageTransition alloc] initWithViewController:tabBarController animation:UIModalTransitionStyleCrossDissolve];
+//    self.window.rootViewController = tabBarController;
+
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleBlackOpaque animated:YES];
     UITabBar *tabBar = [tabBarController tabBar]; 
+    
     [tabBar setBackgroundImage:[UIImage imageNamed:@"tabBarBackground"]];
     
-    self.window.rootViewController = tabBarController;
     //-------------
-    
     UITableViewController *listViewController1 = [[UITableViewController alloc] initWithStyle:UITableViewStylePlain];
 	UITableViewController *listViewController2 = [[UITableViewController alloc] initWithStyle:UITableViewStylePlain];
 	UITableViewController *listViewController3 = [[UITableViewController alloc] initWithStyle:UITableViewStylePlain];
@@ -45,48 +70,45 @@
 	listViewController3.title = @"Day 3";
     
 	NSArray *viewControllers = [NSArray arrayWithObjects:listViewController1, listViewController2, listViewController3, nil];
-	MHTabBarController *titleTabController = [[MHTabBarController alloc] init];
+	_titleTabController = [[MHTabBarController alloc] init];
     
-	titleTabController.delegate = self;
-	titleTabController.viewControllers = viewControllers;
-
-    
+	_titleTabController.delegate = self;
+	_titleTabController.viewControllers = viewControllers;
     //-------------
-    /*
-    app.scheduleViewController = [[MaScheduleViewController alloc] init]; 
-	UINavigationController* schViewController = [[UINavigationController alloc] initWithRootViewController:app.scheduleViewController];
-    UINavigationBar* navBar = schViewController.navigationBar;
-    [navBar setBackgroundImage:[UIImage imageNamed: @"BarBackground"] forBarMetrics:UIBarMetricsDefault];
-     */
+//   _scheduleViewController = [[MaScheduleViewController alloc] init]; 
+//	UINavigationController* schViewController = [[UINavigationController alloc] initWithRootViewController:_scheduleViewController];
+//    UINavigationBar* navBar = schViewController.navigationBar;
+ //   [navBar setBackgroundImage:[UIImage imageNamed: @"BarBackground"] forBarMetrics:UIBarMetricsDefault];
     //-------------
-    
-    app.bandViewController = [[MaBandViewController alloc] init]; 
+    MoreMusicAppDelegate* app = (MoreMusicAppDelegate *)[[UIApplication sharedApplication] delegate];
+    _bandViewController = [[MaBandViewController alloc] init]; 
 	UINavigationController* banViewController = [[UINavigationController alloc] initWithRootViewController:app.bandViewController];
     UINavigationBar* navBar = banViewController.navigationBar;
     [navBar setBackgroundImage:[UIImage imageNamed: @"BarBackground"] forBarMetrics:UIBarMetricsDefault];
     
 
-    app.reviewViewController = [[MaReviewViewController alloc] init]; 
+    _reviewViewController = [[MaReviewViewController alloc] init]; 
 	UINavigationController* revViewController = [[UINavigationController alloc] initWithRootViewController:app.reviewViewController];
     navBar = revViewController.navigationBar;
     [navBar setBackgroundImage:[UIImage imageNamed: @"BarBackground"] forBarMetrics:UIBarMetricsDefault];
 
     
-    app.weiboStreamViewController = [[MaWeiboStreamViewController alloc] init]; 
+    _weiboStreamViewController = [[MaWeiboStreamViewController alloc] init]; 
 	UINavigationController* weiViewController = [[UINavigationController alloc] initWithRootViewController:app.weiboStreamViewController];
     navBar = weiViewController.navigationBar;
     [navBar setBackgroundImage:[UIImage imageNamed: @"BarBackground"] forBarMetrics:UIBarMetricsDefault];
-
     
-    app.moreViewController = [[MaMoreViewController alloc] init]; 
+    _moreViewController = [[MaMoreViewController alloc] init]; 
 	UINavigationController* morViewController = [[UINavigationController alloc] initWithRootViewController:app.moreViewController];
     navBar = morViewController.navigationBar;
     [navBar setBackgroundImage:[UIImage imageNamed: @"BarBackground"] forBarMetrics:UIBarMetricsDefault];
 
-    tabBarController.viewControllers = [NSArray arrayWithObjects:titleTabController, banViewController, revViewController, weiViewController, morViewController, nil];
+    tabBarController.viewControllers = [NSArray arrayWithObjects:_titleTabController, _bandViewController, _reviewViewController, _weiboStreamViewController, _moreViewController, nil];
     
     [self.window addSubview:tabBarController.view];
+
     [self.window makeKeyAndVisible];
+
     return YES;
 }
 
@@ -116,6 +138,23 @@
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+- (BOOL)mh_tabBarController:(MHTabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController atIndex:(NSUInteger)index
+{
+	NSLog(@"mh_tabBarController %@ shouldSelectViewController %@ at index %u", _titleTabController, viewController, index);
+    
+	// Uncomment this to prevent "Tab 3" from being selected.
+	//return (index != 2);
+    
+	return YES;
+}
+
+- (void)mh_tabBarController:(MHTabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController atIndex:(NSUInteger)index
+{
+	NSLog(@"mh_tabBarController %@ didSelectViewController %@ at index %u", _titleTabController, viewController, index);
+}
+
+
 
 /*
 // Optional UITabBarControllerDelegate method.

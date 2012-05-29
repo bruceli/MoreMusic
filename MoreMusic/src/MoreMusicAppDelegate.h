@@ -15,6 +15,7 @@
 
 @interface MoreMusicAppDelegate : UIResponder <UIApplicationDelegate, UITabBarControllerDelegate, MHTabBarControllerDelegate>
 {
+    MHTabBarController* _titleTabController;
     MaScheduleViewController* _scheduleViewController;
     MaBandViewController*   _bandViewController;
     MaReviewViewController* _reviewViewController;

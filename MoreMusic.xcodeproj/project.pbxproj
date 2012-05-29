@@ -23,6 +23,8 @@
 		598281941571EE260056E1A5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 598281931571EE260056E1A5 /* CoreGraphics.framework */; };
 		5982819A1571EE260056E1A5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 598281981571EE260056E1A5 /* InfoPlist.strings */; };
 		5982819C1571EE260056E1A5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5982819B1571EE260056E1A5 /* main.m */; };
+		59DE731A15754E85001AF315 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 59DE731815754E85001AF315 /* Default.png */; };
+		59DE731B15754E85001AF315 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59DE731915754E85001AF315 /* Default@2x.png */; };
 		59EBF45D1573C0F00073325A /* MaScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59EBF45C1573C0F00073325A /* MaScheduleViewController.m */; };
 		59EBF4601573C1160073325A /* MaBandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59EBF45F1573C1160073325A /* MaBandViewController.m */; };
 		59EBF4661573C1660073325A /* MoreMusicAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 59EBF4651573C1650073325A /* MoreMusicAppDelegate.m */; };
@@ -258,6 +260,8 @@
 		598281991571EE260056E1A5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5982819B1571EE260056E1A5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5982819D1571EE260056E1A5 /* MoreMusic-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MoreMusic-Prefix.pch"; sourceTree = "<group>"; };
+		59DE731815754E85001AF315 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = MoreMusic/Resources/Default.png; sourceTree = "<group>"; };
+		59DE731915754E85001AF315 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "MoreMusic/Resources/Default@2x.png"; sourceTree = "<group>"; };
 		59EBF45B1573C0F00073325A /* MaScheduleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MaScheduleViewController.h; path = src/MaScheduleViewController.h; sourceTree = "<group>"; };
 		59EBF45C1573C0F00073325A /* MaScheduleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MaScheduleViewController.m; path = src/MaScheduleViewController.m; sourceTree = "<group>"; };
 		59EBF45E1573C1160073325A /* MaBandViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MaBandViewController.h; path = src/MaBandViewController.h; sourceTree = "<group>"; };
@@ -535,6 +539,8 @@
 				320B6C86F11D9990244A9730 /* Three20.bundle */,
 				594DD0EB1574E94100037861 /* tabBarBackground.png */,
 				594DD0EC1574E94200037861 /* tabBarBackground@2x.png */,
+				59DE731815754E85001AF315 /* Default.png */,
+				59DE731915754E85001AF315 /* Default@2x.png */,
 				594DD0E71574D7E500037861 /* BarBackground.png */,
 				594DD0E81574D7E500037861 /* BarBackground@2x.png */,
 				59EBF53B1573FF910073325A /* speech_bubble_transparent.png */,
@@ -794,6 +800,8 @@
 				594DD17C157502DE00037861 /* MHTabBarActiveTab.png in Resources */,
 				594DD17D157502DE00037861 /* MHTabBarInactiveTab.png in Resources */,
 				594DD17E157502DE00037861 /* MHTabBarIndicator.png in Resources */,
+				59DE731A15754E85001AF315 /* Default.png in Resources */,
+				59DE731B15754E85001AF315 /* Default@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
