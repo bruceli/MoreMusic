@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "Three20/Three20.h"
 
-@interface MaRootViewController : TTTableViewController
+//@interface MaRootViewController : TTTableViewController
+@interface MaRootViewController : UIViewController
 {
 
 }
