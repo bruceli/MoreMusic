@@ -43,7 +43,11 @@
     UITableViewController *listViewController1 = [[UITableViewController alloc] initWithStyle:UITableViewStylePlain];
 	UITableViewController *listViewController2 = [[UITableViewController alloc] initWithStyle:UITableViewStylePlain];
 	UITableViewController *listViewController3 = [[UITableViewController alloc] initWithStyle:UITableViewStylePlain];
-	
+   
+    // listViewController1.tableView.backgroundColor = [UIColor lightGrayColor];
+    // listViewController2.tableView.backgroundColor = [UIColor grayColor];
+    // listViewController3.tableView.backgroundColor = [UIColor darkGrayColor];
+
 	listViewController1.title = @"Day 1";
 	listViewController2.title = @"Day 2";
 	listViewController3.title = @"Day 3";
