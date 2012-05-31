@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ActivityArray</key>
+	<array>
+		<dict>
+			<key>site</key>
+			<string>Site A</string>
+			<key>date</key>
+			<date>2012-05-31T06:43:01Z</date>
+			<key>band</key>
+			<string>The big bang theory</string>
+			<key>title</key>
+			<string>Sheldon Cooper</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>site</key>
+			<string>Site A</string>
+			<key>date</key>
+			<date>2012-05-31T06:43:01Z</date>
+			<key>band</key>
+			<string>The big bang theory</string>
+			<key>title</key>
+			<string>Penny</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>site</key>
+			<string>Site A</string>
+			<key>date</key>
+			<date>2012-05-31T06:43:01Z</date>
+			<key>band</key>
+			<string>The big bang theory</string>
+			<key>title</key>
+			<string>Wolowitz</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>site</key>
+			<string>Site A</string>
+			<key>date</key>
+			<date>2012-05-31T06:43:01Z</date>
+			<key>band</key>
+			<string>The big bang theory</string>
+			<key>title</key>
+			<string>Wolowitz</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+	</array>
+</dict>
+</plist>

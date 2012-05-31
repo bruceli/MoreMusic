@@ -18,7 +18,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Stream" image:[UIImage imageNamed:@"speech_bubble_transparent"] tag:0];
+        self.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Stream" image:[UIImage imageNamed:@"weibo"] tag:0];
     }
     return self;
 }
