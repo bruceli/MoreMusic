@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>historyArray</key>
+	<array>
+		<dict>
+			<key>title</key>
+			<string>2008 张冠李戴</string>
+			<key>backgroundImage</key>
+			<string></string>
+			<key>detailImage</key>
+			<string>happy2008</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>2009 张冠李戴</string>
+			<key>backgroundImage</key>
+			<string></string>
+			<key>detailImage</key>
+			<string>happy2009</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>2009 张冠李戴 第二季</string>
+			<key>backgroundImage</key>
+			<string></string>
+			<key>detailImage</key>
+			<string>happy20092nd</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>2010 张冠李戴 Happy holiday</string>
+			<key>backgroundImage</key>
+			<string></string>
+			<key>detailImage</key>
+			<string>happy2010hh</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>2010 张冠李戴 Happy birthday</string>
+			<key>backgroundImage</key>
+			<string></string>
+			<key>detailImage</key>
+			<string>happy2010hb</string>
+		</dict>
+	</array>
+</dict>
+</plist>

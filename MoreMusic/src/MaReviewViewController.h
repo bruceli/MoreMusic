@@ -9,5 +9,8 @@
 #import "MaTableViewController.h"
 
 @interface MaReviewViewController : UITableViewController
+{
+    NSMutableArray* histroyArray;
 
+}
 @end

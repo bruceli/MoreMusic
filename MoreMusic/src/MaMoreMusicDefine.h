@@ -4,7 +4,6 @@ typedef enum{
     MaSecondDay,
 } MaActivityDay;
 
-#define FIRST_DAY_STRING    @"2012-6-20"
-#define SECOND_DAY_STRING   @"2012-6-21"
+#define FIRST_DAY_STRING    @"2012-6-22"
+#define SECOND_DAY_STRING   @"2012-6-23"
 
-#define MA_DATE_STRING      @"2012-6-21"

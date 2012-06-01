@@ -8,6 +8,6 @@
 
 #import "MaTableViewController.h"
 
-@interface MaBandViewController : MaTableViewController
+@interface MaBandViewController : UITableViewController
 
 @end

@@ -9,6 +9,16 @@
 /* Begin PBXBuildFile section */
 		320AF8492C47A4D819F7C451 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 320AF8492C47A4D819F7C450 /* QuartzCore.framework */; };
 		320B6C86F11D9990244A9731 /* Three20.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 320B6C86F11D9990244A9730 /* Three20.bundle */; };
+		590E94A41578E3D800BDE1C8 /* happy20092nd@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 590E949A1578E3D800BDE1C8 /* happy20092nd@2x.png */; };
+		590E94A51578E3D800BDE1C8 /* happy20092nd.png in Resources */ = {isa = PBXBuildFile; fileRef = 590E949B1578E3D800BDE1C8 /* happy20092nd.png */; };
+		590E94A61578E3D800BDE1C8 /* happy2010hh@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 590E949C1578E3D800BDE1C8 /* happy2010hh@2x.png */; };
+		590E94A71578E3D800BDE1C8 /* happy2010hh.png in Resources */ = {isa = PBXBuildFile; fileRef = 590E949D1578E3D800BDE1C8 /* happy2010hh.png */; };
+		590E94A81578E3D800BDE1C8 /* happy2010hb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 590E949E1578E3D800BDE1C8 /* happy2010hb@2x.png */; };
+		590E94A91578E3D800BDE1C8 /* happy2010hb.png in Resources */ = {isa = PBXBuildFile; fileRef = 590E949F1578E3D800BDE1C8 /* happy2010hb.png */; };
+		590E94AA1578E3D800BDE1C8 /* happy2009@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 590E94A01578E3D800BDE1C8 /* happy2009@2x.png */; };
+		590E94AB1578E3D800BDE1C8 /* happy2009.png in Resources */ = {isa = PBXBuildFile; fileRef = 590E94A11578E3D800BDE1C8 /* happy2009.png */; };
+		590E94AC1578E3D800BDE1C8 /* happy2008@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 590E94A21578E3D800BDE1C8 /* happy2008@2x.png */; };
+		590E94AD1578E3D800BDE1C8 /* happy2008.png in Resources */ = {isa = PBXBuildFile; fileRef = 590E94A31578E3D800BDE1C8 /* happy2008.png */; };
 		594DD178157502CF00037861 /* MHTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 594DD177157502CF00037861 /* MHTabBarController.m */; };
 		594DD17C157502DE00037861 /* MHTabBarActiveTab.png in Resources */ = {isa = PBXBuildFile; fileRef = 594DD179157502DE00037861 /* MHTabBarActiveTab.png */; };
 		594DD17D157502DE00037861 /* MHTabBarInactiveTab.png in Resources */ = {isa = PBXBuildFile; fileRef = 594DD17A157502DE00037861 /* MHTabBarInactiveTab.png */; };
@@ -77,6 +87,8 @@
 		59EBF53A1573FE2E0073325A /* MaMoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59EBF5391573FE2E0073325A /* MaMoreViewController.m */; };
 		59F2EB491578B6190062AEE3 /* NSDate-Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F2EB461578B6190062AEE3 /* NSDate-Utilities.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		59F2EB4A1578B6190062AEE3 /* TimeFormatters.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F2EB481578B6190062AEE3 /* TimeFormatters.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		59F2EB4C1578D4040062AEE3 /* history.plist in Resources */ = {isa = PBXBuildFile; fileRef = 59F2EB4B1578D4040062AEE3 /* history.plist */; };
+		59F2EB501578D7210062AEE3 /* MaDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F2EB4F1578D7210062AEE3 /* MaDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -260,6 +272,16 @@
 /* Begin PBXFileReference section */
 		320AF8492C47A4D819F7C450 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.frameworks; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		320B6C86F11D9990244A9730 /* Three20.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Three20.bundle; path = ../three20/src/Three20.bundle; sourceTree = SOURCE_ROOT; };
+		590E949A1578E3D800BDE1C8 /* happy20092nd@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "happy20092nd@2x.png"; path = "MoreMusic/Resources/happy20092nd@2x.png"; sourceTree = "<group>"; };
+		590E949B1578E3D800BDE1C8 /* happy20092nd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = happy20092nd.png; path = MoreMusic/Resources/happy20092nd.png; sourceTree = "<group>"; };
+		590E949C1578E3D800BDE1C8 /* happy2010hh@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "happy2010hh@2x.png"; path = "MoreMusic/Resources/happy2010hh@2x.png"; sourceTree = "<group>"; };
+		590E949D1578E3D800BDE1C8 /* happy2010hh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = happy2010hh.png; path = MoreMusic/Resources/happy2010hh.png; sourceTree = "<group>"; };
+		590E949E1578E3D800BDE1C8 /* happy2010hb@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "happy2010hb@2x.png"; path = "MoreMusic/Resources/happy2010hb@2x.png"; sourceTree = "<group>"; };
+		590E949F1578E3D800BDE1C8 /* happy2010hb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = happy2010hb.png; path = MoreMusic/Resources/happy2010hb.png; sourceTree = "<group>"; };
+		590E94A01578E3D800BDE1C8 /* happy2009@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "happy2009@2x.png"; path = "MoreMusic/Resources/happy2009@2x.png"; sourceTree = "<group>"; };
+		590E94A11578E3D800BDE1C8 /* happy2009.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = happy2009.png; path = MoreMusic/Resources/happy2009.png; sourceTree = "<group>"; };
+		590E94A21578E3D800BDE1C8 /* happy2008@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "happy2008@2x.png"; path = "MoreMusic/Resources/happy2008@2x.png"; sourceTree = "<group>"; };
+		590E94A31578E3D800BDE1C8 /* happy2008.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = happy2008.png; path = MoreMusic/Resources/happy2008.png; sourceTree = "<group>"; };
 		594DD176157502CF00037861 /* MHTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MHTabBarController.h; path = src/3rd/MHTabBarController/MHTabBarController.h; sourceTree = "<group>"; };
 		594DD177157502CF00037861 /* MHTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MHTabBarController.m; path = src/3rd/MHTabBarController/MHTabBarController.m; sourceTree = "<group>"; };
 		594DD179157502DE00037861 /* MHTabBarActiveTab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MHTabBarActiveTab.png; path = src/3rd/MHTabBarController/Images/MHTabBarActiveTab.png; sourceTree = "<group>"; };
@@ -360,6 +382,9 @@
 		59F2EB461578B6190062AEE3 /* NSDate-Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDate-Utilities.m"; path = "src/3rd/NSDate-Utilities.m"; sourceTree = "<group>"; };
 		59F2EB471578B6190062AEE3 /* TimeFormatters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TimeFormatters.h; path = src/3rd/TimeFormatters.h; sourceTree = "<group>"; };
 		59F2EB481578B6190062AEE3 /* TimeFormatters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TimeFormatters.m; path = src/3rd/TimeFormatters.m; sourceTree = "<group>"; };
+		59F2EB4B1578D4040062AEE3 /* history.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = history.plist; path = MoreMusic/history.plist; sourceTree = "<group>"; };
+		59F2EB4E1578D7210062AEE3 /* MaDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MaDetailViewController.h; path = src/MaDetailViewController.h; sourceTree = "<group>"; };
+		59F2EB4F1578D7210062AEE3 /* MaDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MaDetailViewController.m; path = src/MaDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -386,6 +411,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		590E94AE1578E94C00BDE1C8 /* img */ = {
+			isa = PBXGroup;
+			children = (
+				590E949A1578E3D800BDE1C8 /* happy20092nd@2x.png */,
+				590E949B1578E3D800BDE1C8 /* happy20092nd.png */,
+				590E949C1578E3D800BDE1C8 /* happy2010hh@2x.png */,
+				590E949D1578E3D800BDE1C8 /* happy2010hh.png */,
+				590E949E1578E3D800BDE1C8 /* happy2010hb@2x.png */,
+				590E949F1578E3D800BDE1C8 /* happy2010hb.png */,
+				590E94A01578E3D800BDE1C8 /* happy2009@2x.png */,
+				590E94A11578E3D800BDE1C8 /* happy2009.png */,
+				590E94A21578E3D800BDE1C8 /* happy2008@2x.png */,
+				590E94A31578E3D800BDE1C8 /* happy2008.png */,
+				59D82DA81577665700F69C26 /* Default.png */,
+				59D82DA91577665700F69C26 /* Default@2x.png */,
+				59D82DA4157764A100F69C26 /* band.png */,
+				59D82DA5157764A100F69C26 /* band@2x.png */,
+				59D82D7C1577649600F69C26 /* map.png */,
+				59D82D7D1577649600F69C26 /* map@2x.png */,
+				59D82D7E1577649600F69C26 /* more.png */,
+				59D82D7F1577649600F69C26 /* more@2x.png */,
+				59D82D801577649600F69C26 /* navBackground.png */,
+				59D82D811577649600F69C26 /* navBackground@2x.png */,
+				59D82D821577649600F69C26 /* review.png */,
+				59D82D831577649600F69C26 /* review@2x.png */,
+				59D82D841577649600F69C26 /* schedule.png */,
+				59D82D851577649600F69C26 /* schedule@2x.png */,
+				59D82D861577649600F69C26 /* subTitleActiveBackground.png */,
+				59D82D871577649600F69C26 /* subTitleActiveBackground@2x.png */,
+				59D82D881577649600F69C26 /* subTitleInactiveBackground.png */,
+				59D82D891577649600F69C26 /* subTitleInactiveBackground@2x.png */,
+				59D82D8A1577649600F69C26 /* tabBarBackground.png */,
+				59D82D8B1577649600F69C26 /* tabBarBackground@2x.png */,
+				59D82D8C1577649600F69C26 /* ticket.png */,
+				59D82D8D1577649600F69C26 /* ticket@2x.png */,
+				59D82D8E1577649600F69C26 /* weibo.png */,
+				59D82D8F1577649600F69C26 /* weibo@2x.png */,
+			);
+			name = img;
+			sourceTree = "<group>";
+		};
 		598281801571EE260056E1A5 = {
 			isa = PBXGroup;
 			children = (
@@ -433,8 +499,8 @@
 				59EBF4651573C1650073325A /* MoreMusicAppDelegate.m */,
 				59D82D311577467300F69C26 /* MaMoreMusicDefine.h */,
 				59EBF4541573BFE30073325A /* ViewControllers */,
-				596157C2157362D400792739 /* MaRootViewController.h */,
 				596157C3157362D400792739 /* MaRootViewController.m */,
+				596157C2157362D400792739 /* MaRootViewController.h */,
 				598281961571EE260056E1A5 /* Supporting Files */,
 			);
 			path = MoreMusic;
@@ -567,6 +633,7 @@
 			children = (
 				59EBF4D71573EA160073325A /* MaTableViewController.h */,
 				59EBF4D81573EA170073325A /* MaTableViewController.m */,
+				59F2EB4D1578D6F10062AEE3 /* Detail */,
 				59EBF45A1573C0350073325A /* Contact */,
 				59EBF4591573C02A0073325A /* Map */,
 				59EBF5371573FE080073325A /* More */,
@@ -648,30 +715,8 @@
 		59EBF4DA1573EFCF0073325A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				59D82DA81577665700F69C26 /* Default.png */,
-				59D82DA91577665700F69C26 /* Default@2x.png */,
-				59D82DA4157764A100F69C26 /* band.png */,
-				59D82DA5157764A100F69C26 /* band@2x.png */,
-				59D82D7C1577649600F69C26 /* map.png */,
-				59D82D7D1577649600F69C26 /* map@2x.png */,
-				59D82D7E1577649600F69C26 /* more.png */,
-				59D82D7F1577649600F69C26 /* more@2x.png */,
-				59D82D801577649600F69C26 /* navBackground.png */,
-				59D82D811577649600F69C26 /* navBackground@2x.png */,
-				59D82D821577649600F69C26 /* review.png */,
-				59D82D831577649600F69C26 /* review@2x.png */,
-				59D82D841577649600F69C26 /* schedule.png */,
-				59D82D851577649600F69C26 /* schedule@2x.png */,
-				59D82D861577649600F69C26 /* subTitleActiveBackground.png */,
-				59D82D871577649600F69C26 /* subTitleActiveBackground@2x.png */,
-				59D82D881577649600F69C26 /* subTitleInactiveBackground.png */,
-				59D82D891577649600F69C26 /* subTitleInactiveBackground@2x.png */,
-				59D82D8A1577649600F69C26 /* tabBarBackground.png */,
-				59D82D8B1577649600F69C26 /* tabBarBackground@2x.png */,
-				59D82D8C1577649600F69C26 /* ticket.png */,
-				59D82D8D1577649600F69C26 /* ticket@2x.png */,
-				59D82D8E1577649600F69C26 /* weibo.png */,
-				59D82D8F1577649600F69C26 /* weibo@2x.png */,
+				590E94AE1578E94C00BDE1C8 /* img */,
+				59F2EB4B1578D4040062AEE3 /* history.plist */,
 				59D82D3E15774A1F00F69C26 /* ActivityDataSource.plist */,
 				320B6C86F11D9990244A9730 /* Three20.bundle */,
 			);
@@ -685,6 +730,15 @@
 				59EBF5391573FE2E0073325A /* MaMoreViewController.m */,
 			);
 			name = More;
+			sourceTree = "<group>";
+		};
+		59F2EB4D1578D6F10062AEE3 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				59F2EB4E1578D7210062AEE3 /* MaDetailViewController.h */,
+				59F2EB4F1578D7210062AEE3 /* MaDetailViewController.m */,
+			);
+			name = Detail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -933,6 +987,17 @@
 				59D82DAA1577665700F69C26 /* Default.png in Resources */,
 				59D82DAB1577665700F69C26 /* Default@2x.png in Resources */,
 				59D82DAD1577669300F69C26 /* MHTabBarIndicator@2x.png in Resources */,
+				59F2EB4C1578D4040062AEE3 /* history.plist in Resources */,
+				590E94A41578E3D800BDE1C8 /* happy20092nd@2x.png in Resources */,
+				590E94A51578E3D800BDE1C8 /* happy20092nd.png in Resources */,
+				590E94A61578E3D800BDE1C8 /* happy2010hh@2x.png in Resources */,
+				590E94A71578E3D800BDE1C8 /* happy2010hh.png in Resources */,
+				590E94A81578E3D800BDE1C8 /* happy2010hb@2x.png in Resources */,
+				590E94A91578E3D800BDE1C8 /* happy2010hb.png in Resources */,
+				590E94AA1578E3D800BDE1C8 /* happy2009@2x.png in Resources */,
+				590E94AB1578E3D800BDE1C8 /* happy2009.png in Resources */,
+				590E94AC1578E3D800BDE1C8 /* happy2008@2x.png in Resources */,
+				590E94AD1578E3D800BDE1C8 /* happy2008.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -969,6 +1034,7 @@
 				59C923F1157721D40082DC4E /* SBJsonWriter.m in Sources */,
 				59F2EB491578B6190062AEE3 /* NSDate-Utilities.m in Sources */,
 				59F2EB4A1578B6190062AEE3 /* TimeFormatters.m in Sources */,
+				59F2EB501578D7210062AEE3 /* MaDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
