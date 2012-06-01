@@ -13,8 +13,10 @@
 //UITableViewController
 @interface MaScheduleViewController : MaRootViewController <UITableViewDelegate, UITableViewDataSource, MHTabBarControllerDelegate>
 {
-    NSMutableArray* activityArray;  
-    NSMutableArray* sectionArray;
+    NSMutableArray* allActivityArray;  
+    NSMutableArray* currentActivityArray;
+    NSMutableDictionary* dataSource;
+//    NSMutableArray* ;
 //    NSMutableDictionary *secondDayActivityArray;        
 
     NSInteger currentActivity;

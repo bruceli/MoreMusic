@@ -75,6 +75,8 @@
 		59EBF46C1573C2480073325A /* MaWeiboStreamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59EBF46B1573C2480073325A /* MaWeiboStreamViewController.m */; };
 		59EBF4D91573EA170073325A /* MaTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59EBF4D81573EA170073325A /* MaTableViewController.m */; };
 		59EBF53A1573FE2E0073325A /* MaMoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59EBF5391573FE2E0073325A /* MaMoreViewController.m */; };
+		59F2EB491578B6190062AEE3 /* NSDate-Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F2EB461578B6190062AEE3 /* NSDate-Utilities.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		59F2EB4A1578B6190062AEE3 /* TimeFormatters.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F2EB481578B6190062AEE3 /* TimeFormatters.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -354,6 +356,10 @@
 		59EBF4D81573EA170073325A /* MaTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MaTableViewController.m; path = src/MaTableViewController.m; sourceTree = "<group>"; };
 		59EBF5381573FE2E0073325A /* MaMoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MaMoreViewController.h; path = src/MaMoreViewController.h; sourceTree = "<group>"; };
 		59EBF5391573FE2E0073325A /* MaMoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MaMoreViewController.m; path = src/MaMoreViewController.m; sourceTree = "<group>"; };
+		59F2EB451578B6190062AEE3 /* NSDate-Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDate-Utilities.h"; path = "src/3rd/NSDate-Utilities.h"; sourceTree = "<group>"; };
+		59F2EB461578B6190062AEE3 /* NSDate-Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDate-Utilities.m"; path = "src/3rd/NSDate-Utilities.m"; sourceTree = "<group>"; };
+		59F2EB471578B6190062AEE3 /* TimeFormatters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TimeFormatters.h; path = src/3rd/TimeFormatters.h; sourceTree = "<group>"; };
+		59F2EB481578B6190062AEE3 /* TimeFormatters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TimeFormatters.m; path = src/3rd/TimeFormatters.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -625,6 +631,10 @@
 		59EBF4BB1573D5AF0073325A /* 3rdParty */ = {
 			isa = PBXGroup;
 			children = (
+				59F2EB451578B6190062AEE3 /* NSDate-Utilities.h */,
+				59F2EB461578B6190062AEE3 /* NSDate-Utilities.m */,
+				59F2EB471578B6190062AEE3 /* TimeFormatters.h */,
+				59F2EB481578B6190062AEE3 /* TimeFormatters.m */,
 				59D82DAC1577669300F69C26 /* MHTabBarIndicator@2x.png */,
 				594DD179157502DE00037861 /* MHTabBarActiveTab.png */,
 				594DD17A157502DE00037861 /* MHTabBarInactiveTab.png */,
@@ -957,6 +967,8 @@
 				59C923EF157721D40082DC4E /* SBJsonBase.m in Sources */,
 				59C923F0157721D40082DC4E /* SBJsonParser.m in Sources */,
 				59C923F1157721D40082DC4E /* SBJsonWriter.m in Sources */,
+				59F2EB491578B6190062AEE3 /* NSDate-Utilities.m in Sources */,
+				59F2EB4A1578B6190062AEE3 /* TimeFormatters.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,6 +8,7 @@
 #import "MaMoreMusicDefine.h"
 #import "MaScheduleViewController.h"
 #import "MaTableViewController.h"
+#import "NSDate-Utilities.h"
 
 @interface MaScheduleViewController ()
 
@@ -42,8 +43,10 @@
     NSLog(@"Datasource Location... %@", path);
     
     NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
-    activityArray = [dict objectForKey:@"ActivityArray"];
-    
+    allActivityArray = [dict objectForKey:@"ActivityArray"];
+    currentActivityArray = [[NSMutableArray alloc] init];
+    dataSource = [[NSMutableDictionary alloc] init];
+
     //NSArray* array = [activityArray allKeys];
     
     //NSArray* array  = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"ActivityDataSource" ofType:@"plist"]];
@@ -60,11 +63,11 @@
 
 	listViewController1.title = @"Day 1";
 	listViewController2.title = @"Day 2";
- /*   listViewController1.tableView.delegate = self; 
+    listViewController1.tableView.delegate = self; 
     listViewController1.tableView.dataSource = self; 
     listViewController2.tableView.delegate = self; 
     listViewController2.tableView.dataSource = self; 
-*/
+
 	NSArray *viewControllers = [NSArray arrayWithObjects:listViewController1, listViewController2, nil];
 	MHTabBarController *tabBarController = [[MHTabBarController alloc] init];
     
@@ -95,32 +98,42 @@
 
 #pragma mark -
 #pragma mark Table view delegate
-/*
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView 
 {
-    return 0;
-    //NSInteger count =  [[activityArray allKeys] count];
+    NSArray* siteArray = [dataSource objectForKey:@"sectionNameArray"];
+    int count = [siteArray count];
     NSLog(@"activity section count %d", count);
     return count;
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {    
-//    return [[[self.sections allKeys] sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)] objectAtIndex:section];
+    NSArray* siteArray = [dataSource objectForKey:@"sectionNameArray"];
+    return [siteArray objectAtIndex:section];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section 
 {
-//    return [[self.sections valueForKey:[[[self.sections allKeys] sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)] objectAtIndex:section]] count];
+    NSInteger count = 0;
+    // get section array from dataSource
+    NSArray* siteArray = [dataSource objectForKey:@"sectionNameArray"];
+    
+    // get site name from array
+    NSString* siteName = [siteArray objectAtIndex:section];
+    
+    // get activity array from site name
+    NSArray* activityArray = [dataSource objectForKey:siteName];
+    
+    count = [activityArray count];
+    return  count;
 }
 
 
-//- (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView {
-//    return [[self.sections allKeys] sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)];}
-*/
+//- (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView { return [[self.sections allKeys] sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)];}
+
 // Customize the appearance of table view cells.
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
     static NSString *CellIdentifier = @"Cell";
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
@@ -128,18 +141,17 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     }
     
-    switch (currentActivity) {
-        case MaFirstDay:
+    // get section array from dataSource
+    NSArray* siteArray = [dataSource objectForKey:@"sectionNameArray"];
+    
+    // get site name from array
+    NSString* siteName = [siteArray objectAtIndex:indexPath.section];
+    
+    // get activity array from site name
+    NSArray* activityArray = [dataSource objectForKey:siteName];
 
-            break;
-            
-        case MaSecondDay:
-
-            break;  
-            
-        default:
-            break;  
-    }
+    NSDictionary* dict = [activityArray objectAtIndex:indexPath.row];
+    cell.textLabel.text = [dict objectForKey:@"title"];
 
     
 //    NSDictionary *book = [[self.sections valueForKey:[[[self.sections allKeys] sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)] objectAtIndex:indexPath.section]] objectAtIndex:indexPath.row];
@@ -151,71 +163,83 @@
 }
 
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+
+
+}
+
+
+
+#pragma mark -
+#pragma mark Table view data source 
+
+-(void)updateSiteArray
+{
+    [dataSource removeAllObjects];
+    NSMutableArray* sectionArray = [[NSMutableArray alloc] init];
+
+    // get all site name
+    for (NSDictionary *dict in currentActivityArray) {
+        NSString* siteString = [dict objectForKey:@"site"];
+        if(![sectionArray containsObject:siteString])
+            [sectionArray addObject:siteString];
+    }
+    [dataSource setObject:sectionArray forKey:@"sectionNameArray"];
+
+    // seprate array by site name
+    for(NSString* siteString in sectionArray)
+    {
+        NSMutableArray* secArray  = [[NSMutableArray alloc] init];
+        for (NSDictionary *dict in currentActivityArray) {
+            NSString* string = [dict objectForKey:@"site"];
+            if([string isEqualToString:siteString])
+                [secArray addObject:dict];     
+            
+        }
+        [dataSource setObject:secArray forKey:siteString];
+    }
+}
+
+-(void)updateCurrentActivityByDate:(NSUInteger)inDate
+{
+    [currentActivityArray removeAllObjects];
+    
+    NSDateFormatter *mmddccyy = [[NSDateFormatter alloc] init];
+    [mmddccyy setTimeZone:[NSTimeZone timeZoneForSecondsFromGMT:8]];
+    mmddccyy.timeStyle = NSDateFormatterNoStyle;
+    mmddccyy.dateFormat = @"yyyy-MM-dd";
+    NSDate *activityDate;
+    
+    if (inDate == MaFirstDay) {
+         activityDate = [mmddccyy dateFromString:FIRST_DAY_STRING];
+    }
+    if (inDate == MaSecondDay) {
+        activityDate = [mmddccyy dateFromString:SECOND_DAY_STRING];
+    }
+    
+    for (NSDictionary *dict in allActivityArray) {
+        NSDate* date = [dict objectForKey:@"date"];
+        if([date isEqualToDateIgnoringTime:activityDate])
+            [currentActivityArray addObject:dict];
+    }
+}
 
 
 - (BOOL)mh_tabBarController:(MHTabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController atIndex:(NSUInteger)index
 {
 	NSLog(@"mh_tabBarController %@ shouldSelectViewController %@ at index %u", tabBarController, viewController, index);
-    
-    switch (index) {
-        case MaFirstDay:
-            currentActivity = MaFirstDay;
-            break;
-            
-        case MaSecondDay:
-            currentActivity = MaSecondDay;
-            break;  
-            
-        default:
-            currentActivity = MaFirstDay;
-    }
-    
-    
-	// Uncomment this to prevent "Tab 3" from being selected.
-	//return (index != 2);
-    
+    [self updateCurrentActivityByDate:index];
+    [self updateSiteArray];
 	return YES;
 }
 
 - (void)mh_tabBarController:(MHTabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController atIndex:(NSUInteger)index
 {
 	NSLog(@"mh_tabBarController %@ didSelectViewController %@ at index %u", tabBarController, viewController, index);
-    
-    switch (index) {
-        case MaFirstDay:
-            currentActivity = MaFirstDay;
-            break;
-            
-        case MaSecondDay:
-            currentActivity = MaSecondDay;
-            break;  
-            
-        default:
-            currentActivity = MaFirstDay;
-    }
-
+    [self updateCurrentActivityByDate:index];
+    [self updateSiteArray];
 }
 
-#pragma mark -
-#pragma mark Table view data source 
-/*
--(NSArray*)getItemsBySiteName:(NSString*)site
-{
-    NSMutableArray* array = [[NSMutableArray alloc] init]; 
-    
-    for (NSDictionary *dict in array) {
-        if (![dict objectForKey:@"site"]) {
-            [dict setObject:[NSMutableArray array] forKey:location.country];
-        }
-        [(NSMutableArray *)[dict objectForKey:location.country] addObject:location];
 
-    }
-}
-
--(NSArray*)getItemsByDate:(NSDate*)date
-{
-
-
-}
- */
 @end
