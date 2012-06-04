@@ -18,15 +18,17 @@
     CGRect bounds = [ [ UIScreen mainScreen ] applicationFrame ];  
     _scrollView = [ [UIScrollView alloc ] initWithFrame:bounds ];  
     self.view = _scrollView;
-
+    _scrollView.backgroundColor = [UIColor darkGrayColor];
 }
 
 -(void)initImageView
 {
     UIImage* image = [UIImage imageNamed:_imageName];
     _imageView = [[UIImageView alloc] initWithImage:image];
+    _imageView.backgroundColor = [UIColor darkGrayColor];
     [self.view addSubview:_imageView];
     _scrollView.contentSize = image.size;
+    
 }
 
 

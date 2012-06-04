@@ -35,15 +35,17 @@
 
 -(void)initSubViews
 {
-    //UIImage* image = [UIImage imageNamed:@""];
-    //imageView = [[UIImageView alloc] initWithImage:image];
+    NSMutableString* imgName = [NSMutableString stringWithString:[_info objectForKey:@"image"]];
+    [imgName appendString:@"Detail"];
+    UIImage* image = [UIImage imageNamed:imgName];
+    imageView = [[UIImageView alloc] initWithImage:image];
     
-    imageView.backgroundColor = [UIColor redColor];
+//    imageView.backgroundColor = [UIColor redColor];
 
-    nameLabel.shadowColor = [UIColor lightGrayColor];
+    nameLabel.shadowColor = [UIColor darkGrayColor];
     nameLabel.backgroundColor = [UIColor clearColor];
-    nameLabel.font = [UIFont fontWithName:@"MicrosoftYaHei" size:22];
-    nameLabel.textColor = [UIColor darkGrayColor];
+    nameLabel.font = [UIFont fontWithName:@"MicrosoftYaHei" size:25];
+    nameLabel.textColor = [UIColor whiteColor];
     nameLabel.shadowOffset = CGSizeMake(0.5f, 0.5f);
     nameLabel.shadowBlur = 4.0f;
     nameLabel.text = [_info objectForKey:@"title"] ;

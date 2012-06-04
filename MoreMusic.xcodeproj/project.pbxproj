@@ -33,7 +33,6 @@
 		591A14FD157C5D29000832AD /* 2008background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 591A14F3157C5D29000832AD /* 2008background@2x.png */; };
 		591A14FE157C5D29000832AD /* 2008background.png in Resources */ = {isa = PBXBuildFile; fileRef = 591A14F4157C5D29000832AD /* 2008background.png */; };
 		591A1501157C6245000832AD /* lableSectionBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 591A14FF157C6245000832AD /* lableSectionBackground.png */; };
-		591A1502157C6245000832AD /* lableSectionBackground@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 591A1500157C6245000832AD /* lableSectionBackground@2x.jpg */; };
 		591A153E157C765C000832AD /* AOK.png in Resources */ = {isa = PBXBuildFile; fileRef = 591A150B157C765C000832AD /* AOK.png */; };
 		591A153F157C765C000832AD /* AOK@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 591A150C157C765C000832AD /* AOK@2x.png */; };
 		591A1540157C765C000832AD /* Nous underground.png in Resources */ = {isa = PBXBuildFile; fileRef = 591A150D157C765C000832AD /* Nous underground.png */; };
@@ -148,6 +147,61 @@
 		59D82DAD1577669300F69C26 /* MHTabBarIndicator@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D82DAC1577669300F69C26 /* MHTabBarIndicator@2x.png */; };
 		59D99D6F157C9D2700ABCC4F /* detailBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D99D6D157C9D2700ABCC4F /* detailBackground@2x.png */; };
 		59D99D70157C9D2700ABCC4F /* detailBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D99D6E157C9D2700ABCC4F /* detailBackground.png */; };
+		59D99D73157CA57800ABCC4F /* toptabBarBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D99D71157CA57800ABCC4F /* toptabBarBackground.png */; };
+		59D99D74157CA57800ABCC4F /* toptabBarBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D99D72157CA57800ABCC4F /* toptabBarBackground@2x.png */; };
+		59D99E2B157CB35F00ABCC4F /* 赵彬Detail.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D99DF7157CB35F00ABCC4F /* 赵彬Detail.png */; };
+		59D99E2D157CB35F00ABCC4F /* Nous undergroundDetail.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D99DF9157CB35F00ABCC4F /* Nous undergroundDetail.png */; };
+		59D99E2E157CB35F00ABCC4F /* OOC控制之外Detail.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D99DFA157CB35F00ABCC4F /* OOC控制之外Detail.png */; };
+		59D99E2F157CB35F00ABCC4F /* TBORDetail.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D99DFB157CB35F00ABCC4F /* TBORDetail.png */; };
+		59D99E30157CB35F00ABCC4F /* THE FUZZDetail.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D99DFC157CB35F00ABCC4F /* THE FUZZDetail.png */; };
+		59D99E31157CB35F00ABCC4F /* 曹方Detail.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D99DFD157CB35F00ABCC4F /* 曹方Detail.png */; };
+		59D99E32157CB35F00ABCC4F /* 岛屿心情Detail.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D99DFE157CB35F00ABCC4F /* 岛屿心情Detail.png */; };
+		59D99E33157CB35F00ABCC4F /* 赌鬼Detail.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D99DFF157CB35F00ABCC4F /* 赌鬼Detail.png */; };
+		59D99E34157CB35F00ABCC4F /* 二手玫瑰Detail.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D99E00157CB35F00ABCC4F /* 二手玫瑰Detail.png */; };
+		59D99E35157CB35F00ABCC4F /* 杭盖Detail.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D99E01157CB35F00ABCC4F /* 杭盖Detail.png */; };
+		59D99E36157CB35F00ABCC4F /* 郝云Detail.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D99E02157CB35F00ABCC4F /* 郝云Detail.png */; };
+		59D99E37157CB35F00ABCC4F /* 黑撒乐队Detail.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D99E03157CB35F00ABCC4F /* 黑撒乐队Detail.png */; };
+		59D99E38157CB35F00ABCC4F /* 琥珀Detail.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D99E04157CB35F00ABCC4F /* 琥珀Detail.png */; };
+		59D99E39157CB35F00ABCC4F /* 马飞Detail.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D99E05157CB35F00ABCC4F /* 马飞Detail.png */; };
+		59D99E3A157CB35F00ABCC4F /* 爽子Detail.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D99E06157CB35F00ABCC4F /* 爽子Detail.png */; };
+		59D99E3B157CB35F00ABCC4F /* 逃跑计划Detail.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D99E07157CB35F00ABCC4F /* 逃跑计划Detail.png */; };
+		59D99E3C157CB35F00ABCC4F /* 王建房Detail.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D99E08157CB35F00ABCC4F /* 王建房Detail.png */; };
+		59D99E3D157CB35F00ABCC4F /* 惘闻Detail.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D99E09157CB35F00ABCC4F /* 惘闻Detail.png */; };
+		59D99E3E157CB35F00ABCC4F /* 未卜乐队Detail.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D99E0A157CB35F00ABCC4F /* 未卜乐队Detail.png */; };
+		59D99E3F157CB35F00ABCC4F /* 无争Detail.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D99E0B157CB35F00ABCC4F /* 无争Detail.png */; };
+		59D99E40157CB35F00ABCC4F /* 谢天笑Detail.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D99E0C157CB35F00ABCC4F /* 谢天笑Detail.png */; };
+		59D99E41157CB35F00ABCC4F /* 玄乐队Detail.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D99E0D157CB35F00ABCC4F /* 玄乐队Detail.png */; };
+		59D99E42157CB35F00ABCC4F /* 诱导社Detail.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D99E0E157CB35F00ABCC4F /* 诱导社Detail.png */; };
+		59D99E43157CB35F00ABCC4F /* 战斧Detail.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D99E0F157CB35F00ABCC4F /* 战斧Detail.png */; };
+		59D99E44157CB35F00ABCC4F /* 张楚Detail.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D99E10157CB35F00ABCC4F /* 张楚Detail.png */; };
+		59D99E45157CB35F00ABCC4F /* 张楚Detail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D99E11157CB35F00ABCC4F /* 张楚Detail@2x.png */; };
+		59D99E46157CB35F00ABCC4F /* 赵彬Detail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D99E12157CB35F00ABCC4F /* 赵彬Detail@2x.png */; };
+		59D99E47157CB35F00ABCC4F /* 战斧Detail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D99E13157CB35F00ABCC4F /* 战斧Detail@2x.png */; };
+		59D99E48157CB35F00ABCC4F /* 诱导社Detail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D99E14157CB35F00ABCC4F /* 诱导社Detail@2x.png */; };
+		59D99E49157CB35F00ABCC4F /* 玄乐队Detail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D99E15157CB35F00ABCC4F /* 玄乐队Detail@2x.png */; };
+		59D99E4A157CB35F00ABCC4F /* 无争Detail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D99E16157CB35F00ABCC4F /* 无争Detail@2x.png */; };
+		59D99E4B157CB35F00ABCC4F /* 未卜乐队Detail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D99E17157CB35F00ABCC4F /* 未卜乐队Detail@2x.png */; };
+		59D99E4C157CB35F00ABCC4F /* 惘闻Detail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D99E18157CB35F00ABCC4F /* 惘闻Detail@2x.png */; };
+		59D99E4D157CB35F00ABCC4F /* 王建房Detail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D99E19157CB35F00ABCC4F /* 王建房Detail@2x.png */; };
+		59D99E4E157CB35F00ABCC4F /* 逃跑计划Detail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D99E1A157CB35F00ABCC4F /* 逃跑计划Detail@2x.png */; };
+		59D99E4F157CB35F00ABCC4F /* 爽子Detail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D99E1B157CB35F00ABCC4F /* 爽子Detail@2x.png */; };
+		59D99E50157CB35F00ABCC4F /* 马飞Detail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D99E1C157CB35F00ABCC4F /* 马飞Detail@2x.png */; };
+		59D99E51157CB35F00ABCC4F /* 琥珀Detail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D99E1D157CB35F00ABCC4F /* 琥珀Detail@2x.png */; };
+		59D99E52157CB35F00ABCC4F /* 谢天笑Detail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D99E1E157CB35F00ABCC4F /* 谢天笑Detail@2x.png */; };
+		59D99E53157CB35F00ABCC4F /* 二手玫瑰Detail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D99E1F157CB35F00ABCC4F /* 二手玫瑰Detail@2x.png */; };
+		59D99E54157CB35F00ABCC4F /* 黑撒乐队Detail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D99E20157CB35F00ABCC4F /* 黑撒乐队Detail@2x.png */; };
+		59D99E55157CB35F00ABCC4F /* 郝云Detail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D99E21157CB35F00ABCC4F /* 郝云Detail@2x.png */; };
+		59D99E56157CB35F00ABCC4F /* 杭盖Detail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D99E22157CB35F00ABCC4F /* 杭盖Detail@2x.png */; };
+		59D99E57157CB35F00ABCC4F /* 赌鬼Detail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D99E23157CB35F00ABCC4F /* 赌鬼Detail@2x.png */; };
+		59D99E58157CB35F00ABCC4F /* 岛屿心情Detail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D99E24157CB35F00ABCC4F /* 岛屿心情Detail@2x.png */; };
+		59D99E59157CB35F00ABCC4F /* 曹方Detail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D99E25157CB35F00ABCC4F /* 曹方Detail@2x.png */; };
+		59D99E5A157CB35F00ABCC4F /* THE FUZZDetail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D99E26157CB35F00ABCC4F /* THE FUZZDetail@2x.png */; };
+		59D99E5B157CB35F00ABCC4F /* TBORDetail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D99E27157CB35F00ABCC4F /* TBORDetail@2x.png */; };
+		59D99E5C157CB35F00ABCC4F /* OOC控制之外Detail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D99E28157CB35F00ABCC4F /* OOC控制之外Detail@2x.png */; };
+		59D99E5D157CB35F00ABCC4F /* Nous undergroundDetail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D99E29157CB35F00ABCC4F /* Nous undergroundDetail@2x.png */; };
+		59D99E5E157CB35F00ABCC4F /* AOKDetail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D99E2A157CB35F00ABCC4F /* AOKDetail@2x.png */; };
+		59D99E60157CB3D800ABCC4F /* AOKDetail.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D99E5F157CB3D700ABCC4F /* AOKDetail.png */; };
+		59D99E62157CB87900ABCC4F /* lableSectionBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D99E61157CB87900ABCC4F /* lableSectionBackground@2x.png */; };
 		59EBF45D1573C0F00073325A /* MaScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59EBF45C1573C0F00073325A /* MaScheduleViewController.m */; };
 		59EBF4601573C1160073325A /* MaBandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59EBF45F1573C1160073325A /* MaBandViewController.m */; };
 		59EBF4661573C1660073325A /* MoreMusicAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 59EBF4651573C1650073325A /* MoreMusicAppDelegate.m */; };
@@ -368,7 +422,6 @@
 		591A14F3157C5D29000832AD /* 2008background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "2008background@2x.png"; path = "MoreMusic/Resources/review/2008background@2x.png"; sourceTree = "<group>"; };
 		591A14F4157C5D29000832AD /* 2008background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 2008background.png; path = MoreMusic/Resources/review/2008background.png; sourceTree = "<group>"; };
 		591A14FF157C6245000832AD /* lableSectionBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lableSectionBackground.png; path = MoreMusic/Resources/lableSectionBackground.png; sourceTree = "<group>"; };
-		591A1500157C6245000832AD /* lableSectionBackground@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "lableSectionBackground@2x.jpg"; path = "MoreMusic/Resources/lableSectionBackground@2x.jpg"; sourceTree = "<group>"; };
 		591A150B157C765C000832AD /* AOK.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AOK.png; path = MoreMusic/Resources/band/AOK.png; sourceTree = "<group>"; };
 		591A150C157C765C000832AD /* AOK@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "AOK@2x.png"; path = "MoreMusic/Resources/band/AOK@2x.png"; sourceTree = "<group>"; };
 		591A150D157C765C000832AD /* Nous underground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Nous underground.png"; path = "MoreMusic/Resources/band/Nous underground.png"; sourceTree = "<group>"; };
@@ -490,10 +543,10 @@
 		59D82D831577649600F69C26 /* review@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "review@2x.png"; path = "MoreMusic/Resources/review@2x.png"; sourceTree = "<group>"; };
 		59D82D841577649600F69C26 /* schedule.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = schedule.png; path = MoreMusic/Resources/schedule.png; sourceTree = "<group>"; };
 		59D82D851577649600F69C26 /* schedule@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "schedule@2x.png"; path = "MoreMusic/Resources/schedule@2x.png"; sourceTree = "<group>"; };
-		59D82D861577649600F69C26 /* subTitleActiveBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = subTitleActiveBackground.png; path = MoreMusic/Resources/subTitleActiveBackground.png; sourceTree = "<group>"; };
-		59D82D871577649600F69C26 /* subTitleActiveBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "subTitleActiveBackground@2x.png"; path = "MoreMusic/Resources/subTitleActiveBackground@2x.png"; sourceTree = "<group>"; };
-		59D82D881577649600F69C26 /* subTitleInactiveBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = subTitleInactiveBackground.png; path = MoreMusic/Resources/subTitleInactiveBackground.png; sourceTree = "<group>"; };
-		59D82D891577649600F69C26 /* subTitleInactiveBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "subTitleInactiveBackground@2x.png"; path = "MoreMusic/Resources/subTitleInactiveBackground@2x.png"; sourceTree = "<group>"; };
+		59D82D861577649600F69C26 /* subTitleActiveBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = subTitleActiveBackground.png; path = Resources/subTitleActiveBackground.png; sourceTree = "<group>"; };
+		59D82D871577649600F69C26 /* subTitleActiveBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "subTitleActiveBackground@2x.png"; path = "Resources/subTitleActiveBackground@2x.png"; sourceTree = "<group>"; };
+		59D82D881577649600F69C26 /* subTitleInactiveBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = subTitleInactiveBackground.png; path = Resources/subTitleInactiveBackground.png; sourceTree = "<group>"; };
+		59D82D891577649600F69C26 /* subTitleInactiveBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "subTitleInactiveBackground@2x.png"; path = "Resources/subTitleInactiveBackground@2x.png"; sourceTree = "<group>"; };
 		59D82D8A1577649600F69C26 /* tabBarBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tabBarBackground.png; path = MoreMusic/Resources/tabBarBackground.png; sourceTree = "<group>"; };
 		59D82D8B1577649600F69C26 /* tabBarBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tabBarBackground@2x.png"; path = "MoreMusic/Resources/tabBarBackground@2x.png"; sourceTree = "<group>"; };
 		59D82D8C1577649600F69C26 /* ticket.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ticket.png; path = MoreMusic/Resources/ticket.png; sourceTree = "<group>"; };
@@ -507,6 +560,61 @@
 		59D82DAC1577669300F69C26 /* MHTabBarIndicator@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "MHTabBarIndicator@2x.png"; path = "src/3rd/MHTabBarController/Images/MHTabBarIndicator@2x.png"; sourceTree = "<group>"; };
 		59D99D6D157C9D2700ABCC4F /* detailBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "detailBackground@2x.png"; path = "MoreMusic/Resources/detailBackground@2x.png"; sourceTree = "<group>"; };
 		59D99D6E157C9D2700ABCC4F /* detailBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = detailBackground.png; path = MoreMusic/Resources/detailBackground.png; sourceTree = "<group>"; };
+		59D99D71157CA57800ABCC4F /* toptabBarBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toptabBarBackground.png; path = Resources/toptabBarBackground.png; sourceTree = "<group>"; };
+		59D99D72157CA57800ABCC4F /* toptabBarBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "toptabBarBackground@2x.png"; path = "Resources/toptabBarBackground@2x.png"; sourceTree = "<group>"; };
+		59D99DF7157CB35F00ABCC4F /* 赵彬Detail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "赵彬Detail.png"; path = "MoreMusic/Resources/band/赵彬Detail.png"; sourceTree = "<group>"; };
+		59D99DF9157CB35F00ABCC4F /* Nous undergroundDetail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Nous undergroundDetail.png"; path = "MoreMusic/Resources/band/Nous undergroundDetail.png"; sourceTree = "<group>"; };
+		59D99DFA157CB35F00ABCC4F /* OOC控制之外Detail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "OOC控制之外Detail.png"; path = "MoreMusic/Resources/band/OOC控制之外Detail.png"; sourceTree = "<group>"; };
+		59D99DFB157CB35F00ABCC4F /* TBORDetail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TBORDetail.png; path = MoreMusic/Resources/band/TBORDetail.png; sourceTree = "<group>"; };
+		59D99DFC157CB35F00ABCC4F /* THE FUZZDetail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "THE FUZZDetail.png"; path = "MoreMusic/Resources/band/THE FUZZDetail.png"; sourceTree = "<group>"; };
+		59D99DFD157CB35F00ABCC4F /* 曹方Detail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "曹方Detail.png"; path = "MoreMusic/Resources/band/曹方Detail.png"; sourceTree = "<group>"; };
+		59D99DFE157CB35F00ABCC4F /* 岛屿心情Detail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "岛屿心情Detail.png"; path = "MoreMusic/Resources/band/岛屿心情Detail.png"; sourceTree = "<group>"; };
+		59D99DFF157CB35F00ABCC4F /* 赌鬼Detail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "赌鬼Detail.png"; path = "MoreMusic/Resources/band/赌鬼Detail.png"; sourceTree = "<group>"; };
+		59D99E00157CB35F00ABCC4F /* 二手玫瑰Detail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "二手玫瑰Detail.png"; path = "MoreMusic/Resources/band/二手玫瑰Detail.png"; sourceTree = "<group>"; };
+		59D99E01157CB35F00ABCC4F /* 杭盖Detail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "杭盖Detail.png"; path = "MoreMusic/Resources/band/杭盖Detail.png"; sourceTree = "<group>"; };
+		59D99E02157CB35F00ABCC4F /* 郝云Detail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "郝云Detail.png"; path = "MoreMusic/Resources/band/郝云Detail.png"; sourceTree = "<group>"; };
+		59D99E03157CB35F00ABCC4F /* 黑撒乐队Detail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "黑撒乐队Detail.png"; path = "MoreMusic/Resources/band/黑撒乐队Detail.png"; sourceTree = "<group>"; };
+		59D99E04157CB35F00ABCC4F /* 琥珀Detail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "琥珀Detail.png"; path = "MoreMusic/Resources/band/琥珀Detail.png"; sourceTree = "<group>"; };
+		59D99E05157CB35F00ABCC4F /* 马飞Detail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "马飞Detail.png"; path = "MoreMusic/Resources/band/马飞Detail.png"; sourceTree = "<group>"; };
+		59D99E06157CB35F00ABCC4F /* 爽子Detail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "爽子Detail.png"; path = "MoreMusic/Resources/band/爽子Detail.png"; sourceTree = "<group>"; };
+		59D99E07157CB35F00ABCC4F /* 逃跑计划Detail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "逃跑计划Detail.png"; path = "MoreMusic/Resources/band/逃跑计划Detail.png"; sourceTree = "<group>"; };
+		59D99E08157CB35F00ABCC4F /* 王建房Detail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "王建房Detail.png"; path = "MoreMusic/Resources/band/王建房Detail.png"; sourceTree = "<group>"; };
+		59D99E09157CB35F00ABCC4F /* 惘闻Detail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "惘闻Detail.png"; path = "MoreMusic/Resources/band/惘闻Detail.png"; sourceTree = "<group>"; };
+		59D99E0A157CB35F00ABCC4F /* 未卜乐队Detail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "未卜乐队Detail.png"; path = "MoreMusic/Resources/band/未卜乐队Detail.png"; sourceTree = "<group>"; };
+		59D99E0B157CB35F00ABCC4F /* 无争Detail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "无争Detail.png"; path = "MoreMusic/Resources/band/无争Detail.png"; sourceTree = "<group>"; };
+		59D99E0C157CB35F00ABCC4F /* 谢天笑Detail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "谢天笑Detail.png"; path = "MoreMusic/Resources/band/谢天笑Detail.png"; sourceTree = "<group>"; };
+		59D99E0D157CB35F00ABCC4F /* 玄乐队Detail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "玄乐队Detail.png"; path = "MoreMusic/Resources/band/玄乐队Detail.png"; sourceTree = "<group>"; };
+		59D99E0E157CB35F00ABCC4F /* 诱导社Detail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "诱导社Detail.png"; path = "MoreMusic/Resources/band/诱导社Detail.png"; sourceTree = "<group>"; };
+		59D99E0F157CB35F00ABCC4F /* 战斧Detail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "战斧Detail.png"; path = "MoreMusic/Resources/band/战斧Detail.png"; sourceTree = "<group>"; };
+		59D99E10157CB35F00ABCC4F /* 张楚Detail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "张楚Detail.png"; path = "MoreMusic/Resources/band/张楚Detail.png"; sourceTree = "<group>"; };
+		59D99E11157CB35F00ABCC4F /* 张楚Detail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "张楚Detail@2x.png"; path = "MoreMusic/Resources/band/张楚Detail@2x.png"; sourceTree = "<group>"; };
+		59D99E12157CB35F00ABCC4F /* 赵彬Detail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "赵彬Detail@2x.png"; path = "MoreMusic/Resources/band/赵彬Detail@2x.png"; sourceTree = "<group>"; };
+		59D99E13157CB35F00ABCC4F /* 战斧Detail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "战斧Detail@2x.png"; path = "MoreMusic/Resources/band/战斧Detail@2x.png"; sourceTree = "<group>"; };
+		59D99E14157CB35F00ABCC4F /* 诱导社Detail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "诱导社Detail@2x.png"; path = "MoreMusic/Resources/band/诱导社Detail@2x.png"; sourceTree = "<group>"; };
+		59D99E15157CB35F00ABCC4F /* 玄乐队Detail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "玄乐队Detail@2x.png"; path = "MoreMusic/Resources/band/玄乐队Detail@2x.png"; sourceTree = "<group>"; };
+		59D99E16157CB35F00ABCC4F /* 无争Detail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "无争Detail@2x.png"; path = "MoreMusic/Resources/band/无争Detail@2x.png"; sourceTree = "<group>"; };
+		59D99E17157CB35F00ABCC4F /* 未卜乐队Detail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "未卜乐队Detail@2x.png"; path = "MoreMusic/Resources/band/未卜乐队Detail@2x.png"; sourceTree = "<group>"; };
+		59D99E18157CB35F00ABCC4F /* 惘闻Detail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "惘闻Detail@2x.png"; path = "MoreMusic/Resources/band/惘闻Detail@2x.png"; sourceTree = "<group>"; };
+		59D99E19157CB35F00ABCC4F /* 王建房Detail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "王建房Detail@2x.png"; path = "MoreMusic/Resources/band/王建房Detail@2x.png"; sourceTree = "<group>"; };
+		59D99E1A157CB35F00ABCC4F /* 逃跑计划Detail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "逃跑计划Detail@2x.png"; path = "MoreMusic/Resources/band/逃跑计划Detail@2x.png"; sourceTree = "<group>"; };
+		59D99E1B157CB35F00ABCC4F /* 爽子Detail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "爽子Detail@2x.png"; path = "MoreMusic/Resources/band/爽子Detail@2x.png"; sourceTree = "<group>"; };
+		59D99E1C157CB35F00ABCC4F /* 马飞Detail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "马飞Detail@2x.png"; path = "MoreMusic/Resources/band/马飞Detail@2x.png"; sourceTree = "<group>"; };
+		59D99E1D157CB35F00ABCC4F /* 琥珀Detail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "琥珀Detail@2x.png"; path = "MoreMusic/Resources/band/琥珀Detail@2x.png"; sourceTree = "<group>"; };
+		59D99E1E157CB35F00ABCC4F /* 谢天笑Detail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "谢天笑Detail@2x.png"; path = "MoreMusic/Resources/band/谢天笑Detail@2x.png"; sourceTree = "<group>"; };
+		59D99E1F157CB35F00ABCC4F /* 二手玫瑰Detail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "二手玫瑰Detail@2x.png"; path = "MoreMusic/Resources/band/二手玫瑰Detail@2x.png"; sourceTree = "<group>"; };
+		59D99E20157CB35F00ABCC4F /* 黑撒乐队Detail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "黑撒乐队Detail@2x.png"; path = "MoreMusic/Resources/band/黑撒乐队Detail@2x.png"; sourceTree = "<group>"; };
+		59D99E21157CB35F00ABCC4F /* 郝云Detail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "郝云Detail@2x.png"; path = "MoreMusic/Resources/band/郝云Detail@2x.png"; sourceTree = "<group>"; };
+		59D99E22157CB35F00ABCC4F /* 杭盖Detail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "杭盖Detail@2x.png"; path = "MoreMusic/Resources/band/杭盖Detail@2x.png"; sourceTree = "<group>"; };
+		59D99E23157CB35F00ABCC4F /* 赌鬼Detail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "赌鬼Detail@2x.png"; path = "MoreMusic/Resources/band/赌鬼Detail@2x.png"; sourceTree = "<group>"; };
+		59D99E24157CB35F00ABCC4F /* 岛屿心情Detail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "岛屿心情Detail@2x.png"; path = "MoreMusic/Resources/band/岛屿心情Detail@2x.png"; sourceTree = "<group>"; };
+		59D99E25157CB35F00ABCC4F /* 曹方Detail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "曹方Detail@2x.png"; path = "MoreMusic/Resources/band/曹方Detail@2x.png"; sourceTree = "<group>"; };
+		59D99E26157CB35F00ABCC4F /* THE FUZZDetail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "THE FUZZDetail@2x.png"; path = "MoreMusic/Resources/band/THE FUZZDetail@2x.png"; sourceTree = "<group>"; };
+		59D99E27157CB35F00ABCC4F /* TBORDetail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "TBORDetail@2x.png"; path = "MoreMusic/Resources/band/TBORDetail@2x.png"; sourceTree = "<group>"; };
+		59D99E28157CB35F00ABCC4F /* OOC控制之外Detail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "OOC控制之外Detail@2x.png"; path = "MoreMusic/Resources/band/OOC控制之外Detail@2x.png"; sourceTree = "<group>"; };
+		59D99E29157CB35F00ABCC4F /* Nous undergroundDetail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Nous undergroundDetail@2x.png"; path = "MoreMusic/Resources/band/Nous undergroundDetail@2x.png"; sourceTree = "<group>"; };
+		59D99E2A157CB35F00ABCC4F /* AOKDetail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "AOKDetail@2x.png"; path = "MoreMusic/Resources/band/AOKDetail@2x.png"; sourceTree = "<group>"; };
+		59D99E5F157CB3D700ABCC4F /* AOKDetail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AOKDetail.png; path = MoreMusic/Resources/band/AOKDetail.png; sourceTree = "<group>"; };
+		59D99E61157CB87900ABCC4F /* lableSectionBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lableSectionBackground@2x.png"; path = "MoreMusic/Resources/lableSectionBackground@2x.png"; sourceTree = "<group>"; };
 		59EBF45B1573C0F00073325A /* MaScheduleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MaScheduleViewController.h; path = src/MaScheduleViewController.h; sourceTree = "<group>"; };
 		59EBF45C1573C0F00073325A /* MaScheduleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MaScheduleViewController.m; path = src/MaScheduleViewController.m; sourceTree = "<group>"; };
 		59EBF45E1573C1160073325A /* MaBandViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MaBandViewController.h; path = src/MaBandViewController.h; sourceTree = "<group>"; };
@@ -562,7 +670,7 @@
 				591A1504157C735D000832AD /* history */,
 				591A1503157C7357000832AD /* band */,
 				591A14FF157C6245000832AD /* lableSectionBackground.png */,
-				591A1500157C6245000832AD /* lableSectionBackground@2x.jpg */,
+				59D99E61157CB87900ABCC4F /* lableSectionBackground@2x.png */,
 				591A14D6157C5165000832AD /* defaultPerson.png */,
 				59D82DA81577665700F69C26 /* Default.png */,
 				59D82DA91577665700F69C26 /* Default@2x.png */,
@@ -578,10 +686,6 @@
 				59D82D831577649600F69C26 /* review@2x.png */,
 				59D82D841577649600F69C26 /* schedule.png */,
 				59D82D851577649600F69C26 /* schedule@2x.png */,
-				59D82D861577649600F69C26 /* subTitleActiveBackground.png */,
-				59D82D871577649600F69C26 /* subTitleActiveBackground@2x.png */,
-				59D82D881577649600F69C26 /* subTitleInactiveBackground.png */,
-				59D82D891577649600F69C26 /* subTitleInactiveBackground@2x.png */,
 				59D82D8A1577649600F69C26 /* tabBarBackground.png */,
 				59D82D8B1577649600F69C26 /* tabBarBackground@2x.png */,
 				59D82D8C1577649600F69C26 /* ticket.png */,
@@ -604,6 +708,58 @@
 		591A1503157C7357000832AD /* band */ = {
 			isa = PBXGroup;
 			children = (
+				59D99E5F157CB3D700ABCC4F /* AOKDetail.png */,
+				59D99DF7157CB35F00ABCC4F /* 赵彬Detail.png */,
+				59D99DF9157CB35F00ABCC4F /* Nous undergroundDetail.png */,
+				59D99DFA157CB35F00ABCC4F /* OOC控制之外Detail.png */,
+				59D99DFB157CB35F00ABCC4F /* TBORDetail.png */,
+				59D99DFC157CB35F00ABCC4F /* THE FUZZDetail.png */,
+				59D99DFD157CB35F00ABCC4F /* 曹方Detail.png */,
+				59D99DFE157CB35F00ABCC4F /* 岛屿心情Detail.png */,
+				59D99DFF157CB35F00ABCC4F /* 赌鬼Detail.png */,
+				59D99E00157CB35F00ABCC4F /* 二手玫瑰Detail.png */,
+				59D99E01157CB35F00ABCC4F /* 杭盖Detail.png */,
+				59D99E02157CB35F00ABCC4F /* 郝云Detail.png */,
+				59D99E03157CB35F00ABCC4F /* 黑撒乐队Detail.png */,
+				59D99E04157CB35F00ABCC4F /* 琥珀Detail.png */,
+				59D99E05157CB35F00ABCC4F /* 马飞Detail.png */,
+				59D99E06157CB35F00ABCC4F /* 爽子Detail.png */,
+				59D99E07157CB35F00ABCC4F /* 逃跑计划Detail.png */,
+				59D99E08157CB35F00ABCC4F /* 王建房Detail.png */,
+				59D99E09157CB35F00ABCC4F /* 惘闻Detail.png */,
+				59D99E0A157CB35F00ABCC4F /* 未卜乐队Detail.png */,
+				59D99E0B157CB35F00ABCC4F /* 无争Detail.png */,
+				59D99E0C157CB35F00ABCC4F /* 谢天笑Detail.png */,
+				59D99E0D157CB35F00ABCC4F /* 玄乐队Detail.png */,
+				59D99E0E157CB35F00ABCC4F /* 诱导社Detail.png */,
+				59D99E0F157CB35F00ABCC4F /* 战斧Detail.png */,
+				59D99E10157CB35F00ABCC4F /* 张楚Detail.png */,
+				59D99E11157CB35F00ABCC4F /* 张楚Detail@2x.png */,
+				59D99E12157CB35F00ABCC4F /* 赵彬Detail@2x.png */,
+				59D99E13157CB35F00ABCC4F /* 战斧Detail@2x.png */,
+				59D99E14157CB35F00ABCC4F /* 诱导社Detail@2x.png */,
+				59D99E15157CB35F00ABCC4F /* 玄乐队Detail@2x.png */,
+				59D99E16157CB35F00ABCC4F /* 无争Detail@2x.png */,
+				59D99E17157CB35F00ABCC4F /* 未卜乐队Detail@2x.png */,
+				59D99E18157CB35F00ABCC4F /* 惘闻Detail@2x.png */,
+				59D99E19157CB35F00ABCC4F /* 王建房Detail@2x.png */,
+				59D99E1A157CB35F00ABCC4F /* 逃跑计划Detail@2x.png */,
+				59D99E1B157CB35F00ABCC4F /* 爽子Detail@2x.png */,
+				59D99E1C157CB35F00ABCC4F /* 马飞Detail@2x.png */,
+				59D99E1D157CB35F00ABCC4F /* 琥珀Detail@2x.png */,
+				59D99E1E157CB35F00ABCC4F /* 谢天笑Detail@2x.png */,
+				59D99E1F157CB35F00ABCC4F /* 二手玫瑰Detail@2x.png */,
+				59D99E20157CB35F00ABCC4F /* 黑撒乐队Detail@2x.png */,
+				59D99E21157CB35F00ABCC4F /* 郝云Detail@2x.png */,
+				59D99E22157CB35F00ABCC4F /* 杭盖Detail@2x.png */,
+				59D99E23157CB35F00ABCC4F /* 赌鬼Detail@2x.png */,
+				59D99E24157CB35F00ABCC4F /* 岛屿心情Detail@2x.png */,
+				59D99E25157CB35F00ABCC4F /* 曹方Detail@2x.png */,
+				59D99E26157CB35F00ABCC4F /* THE FUZZDetail@2x.png */,
+				59D99E27157CB35F00ABCC4F /* TBORDetail@2x.png */,
+				59D99E28157CB35F00ABCC4F /* OOC控制之外Detail@2x.png */,
+				59D99E29157CB35F00ABCC4F /* Nous undergroundDetail@2x.png */,
+				59D99E2A157CB35F00ABCC4F /* AOKDetail@2x.png */,
 				591A150B157C765C000832AD /* AOK.png */,
 				591A150C157C765C000832AD /* AOK@2x.png */,
 				591A150D157C765C000832AD /* Nous underground.png */,
@@ -868,7 +1024,6 @@
 				591A14C6157C460D000832AD /* Cell */,
 				59EBF4D71573EA160073325A /* MaTableViewController.h */,
 				59EBF4D81573EA170073325A /* MaTableViewController.m */,
-				59F2EB4D1578D6F10062AEE3 /* Detail */,
 				59EBF45A1573C0350073325A /* Contact */,
 				59EBF4591573C02A0073325A /* Map */,
 				59EBF5371573FE080073325A /* More */,
@@ -903,6 +1058,8 @@
 		59EBF4571573C0140073325A /* Review */ = {
 			isa = PBXGroup;
 			children = (
+				59F2EB4E1578D7210062AEE3 /* MaDetailViewController.h */,
+				59F2EB4F1578D7210062AEE3 /* MaDetailViewController.m */,
 				59EBF4671573C1740073325A /* MaReviewViewController.h */,
 				59EBF4681573C1740073325A /* MaReviewViewController.m */,
 			);
@@ -935,6 +1092,12 @@
 		59EBF4BB1573D5AF0073325A /* 3rdParty */ = {
 			isa = PBXGroup;
 			children = (
+				59D99D71157CA57800ABCC4F /* toptabBarBackground.png */,
+				59D99D72157CA57800ABCC4F /* toptabBarBackground@2x.png */,
+				59D82D861577649600F69C26 /* subTitleActiveBackground.png */,
+				59D82D871577649600F69C26 /* subTitleActiveBackground@2x.png */,
+				59D82D881577649600F69C26 /* subTitleInactiveBackground.png */,
+				59D82D891577649600F69C26 /* subTitleInactiveBackground@2x.png */,
 				591A14E8157C5598000832AD /* FXLabel.h */,
 				591A14E9157C5598000832AD /* FXLabel.m */,
 				59F2EB451578B6190062AEE3 /* NSDate-Utilities.h */,
@@ -970,15 +1133,6 @@
 				59EBF5391573FE2E0073325A /* MaMoreViewController.m */,
 			);
 			name = More;
-			sourceTree = "<group>";
-		};
-		59F2EB4D1578D6F10062AEE3 /* Detail */ = {
-			isa = PBXGroup;
-			children = (
-				59F2EB4E1578D7210062AEE3 /* MaDetailViewController.h */,
-				59F2EB4F1578D7210062AEE3 /* MaDetailViewController.m */,
-			);
-			name = Detail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1250,7 +1404,6 @@
 				591A14FD157C5D29000832AD /* 2008background@2x.png in Resources */,
 				591A14FE157C5D29000832AD /* 2008background.png in Resources */,
 				591A1501157C6245000832AD /* lableSectionBackground.png in Resources */,
-				591A1502157C6245000832AD /* lableSectionBackground@2x.jpg in Resources */,
 				591A153E157C765C000832AD /* AOK.png in Resources */,
 				591A153F157C765C000832AD /* AOK@2x.png in Resources */,
 				591A1540157C765C000832AD /* Nous underground.png in Resources */,
@@ -1305,6 +1458,61 @@
 				591A1574157C893C000832AD /* msyh.ttf in Resources */,
 				59D99D6F157C9D2700ABCC4F /* detailBackground@2x.png in Resources */,
 				59D99D70157C9D2700ABCC4F /* detailBackground.png in Resources */,
+				59D99D73157CA57800ABCC4F /* toptabBarBackground.png in Resources */,
+				59D99D74157CA57800ABCC4F /* toptabBarBackground@2x.png in Resources */,
+				59D99E2B157CB35F00ABCC4F /* 赵彬Detail.png in Resources */,
+				59D99E2D157CB35F00ABCC4F /* Nous undergroundDetail.png in Resources */,
+				59D99E2E157CB35F00ABCC4F /* OOC控制之外Detail.png in Resources */,
+				59D99E2F157CB35F00ABCC4F /* TBORDetail.png in Resources */,
+				59D99E30157CB35F00ABCC4F /* THE FUZZDetail.png in Resources */,
+				59D99E31157CB35F00ABCC4F /* 曹方Detail.png in Resources */,
+				59D99E32157CB35F00ABCC4F /* 岛屿心情Detail.png in Resources */,
+				59D99E33157CB35F00ABCC4F /* 赌鬼Detail.png in Resources */,
+				59D99E34157CB35F00ABCC4F /* 二手玫瑰Detail.png in Resources */,
+				59D99E35157CB35F00ABCC4F /* 杭盖Detail.png in Resources */,
+				59D99E36157CB35F00ABCC4F /* 郝云Detail.png in Resources */,
+				59D99E37157CB35F00ABCC4F /* 黑撒乐队Detail.png in Resources */,
+				59D99E38157CB35F00ABCC4F /* 琥珀Detail.png in Resources */,
+				59D99E39157CB35F00ABCC4F /* 马飞Detail.png in Resources */,
+				59D99E3A157CB35F00ABCC4F /* 爽子Detail.png in Resources */,
+				59D99E3B157CB35F00ABCC4F /* 逃跑计划Detail.png in Resources */,
+				59D99E3C157CB35F00ABCC4F /* 王建房Detail.png in Resources */,
+				59D99E3D157CB35F00ABCC4F /* 惘闻Detail.png in Resources */,
+				59D99E3E157CB35F00ABCC4F /* 未卜乐队Detail.png in Resources */,
+				59D99E3F157CB35F00ABCC4F /* 无争Detail.png in Resources */,
+				59D99E40157CB35F00ABCC4F /* 谢天笑Detail.png in Resources */,
+				59D99E41157CB35F00ABCC4F /* 玄乐队Detail.png in Resources */,
+				59D99E42157CB35F00ABCC4F /* 诱导社Detail.png in Resources */,
+				59D99E43157CB35F00ABCC4F /* 战斧Detail.png in Resources */,
+				59D99E44157CB35F00ABCC4F /* 张楚Detail.png in Resources */,
+				59D99E45157CB35F00ABCC4F /* 张楚Detail@2x.png in Resources */,
+				59D99E46157CB35F00ABCC4F /* 赵彬Detail@2x.png in Resources */,
+				59D99E47157CB35F00ABCC4F /* 战斧Detail@2x.png in Resources */,
+				59D99E48157CB35F00ABCC4F /* 诱导社Detail@2x.png in Resources */,
+				59D99E49157CB35F00ABCC4F /* 玄乐队Detail@2x.png in Resources */,
+				59D99E4A157CB35F00ABCC4F /* 无争Detail@2x.png in Resources */,
+				59D99E4B157CB35F00ABCC4F /* 未卜乐队Detail@2x.png in Resources */,
+				59D99E4C157CB35F00ABCC4F /* 惘闻Detail@2x.png in Resources */,
+				59D99E4D157CB35F00ABCC4F /* 王建房Detail@2x.png in Resources */,
+				59D99E4E157CB35F00ABCC4F /* 逃跑计划Detail@2x.png in Resources */,
+				59D99E4F157CB35F00ABCC4F /* 爽子Detail@2x.png in Resources */,
+				59D99E50157CB35F00ABCC4F /* 马飞Detail@2x.png in Resources */,
+				59D99E51157CB35F00ABCC4F /* 琥珀Detail@2x.png in Resources */,
+				59D99E52157CB35F00ABCC4F /* 谢天笑Detail@2x.png in Resources */,
+				59D99E53157CB35F00ABCC4F /* 二手玫瑰Detail@2x.png in Resources */,
+				59D99E54157CB35F00ABCC4F /* 黑撒乐队Detail@2x.png in Resources */,
+				59D99E55157CB35F00ABCC4F /* 郝云Detail@2x.png in Resources */,
+				59D99E56157CB35F00ABCC4F /* 杭盖Detail@2x.png in Resources */,
+				59D99E57157CB35F00ABCC4F /* 赌鬼Detail@2x.png in Resources */,
+				59D99E58157CB35F00ABCC4F /* 岛屿心情Detail@2x.png in Resources */,
+				59D99E59157CB35F00ABCC4F /* 曹方Detail@2x.png in Resources */,
+				59D99E5A157CB35F00ABCC4F /* THE FUZZDetail@2x.png in Resources */,
+				59D99E5B157CB35F00ABCC4F /* TBORDetail@2x.png in Resources */,
+				59D99E5C157CB35F00ABCC4F /* OOC控制之外Detail@2x.png in Resources */,
+				59D99E5D157CB35F00ABCC4F /* Nous undergroundDetail@2x.png in Resources */,
+				59D99E5E157CB35F00ABCC4F /* AOKDetail@2x.png in Resources */,
+				59D99E60157CB3D800ABCC4F /* AOKDetail.png in Resources */,
+				59D99E62157CB87900ABCC4F /* lableSectionBackground@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

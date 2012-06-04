@@ -32,6 +32,7 @@ static const NSInteger TAG_OFFSET = 1000;
 	UIView *tabButtonsContainerView;
 	UIView *contentContainerView;
 	UIImageView *indicatorImageView;
+    UIImageView *backgroundImageView;
 }
 
 @synthesize viewControllers = _viewControllers;
@@ -145,7 +146,12 @@ static const NSInteger TAG_OFFSET = 1000;
     rect = CGRectMake(0, 0, self.view.bounds.size.width, TAB_BAR_HEIGHT);
 	tabButtonsContainerView = [[UIView alloc] initWithFrame:rect];
 	tabButtonsContainerView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
-	[self.view addSubview:tabButtonsContainerView];
+    
+    backgroundImageView = [[UIImageView alloc] initWithFrame:rect];
+    backgroundImageView.image = [UIImage imageNamed:@"toptabBarBackground"];
+    [self.view addSubview:backgroundImageView];
+
+    [self.view addSubview:tabButtonsContainerView];
 
 	rect.origin.y = TAB_BAR_HEIGHT;
 	rect.size.height = self.view.bounds.size.height - TAB_BAR_HEIGHT;
