@@ -19,6 +19,72 @@
 		590E94AB1578E3D800BDE1C8 /* happy2009.png in Resources */ = {isa = PBXBuildFile; fileRef = 590E94A11578E3D800BDE1C8 /* happy2009.png */; };
 		590E94AC1578E3D800BDE1C8 /* happy2008@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 590E94A21578E3D800BDE1C8 /* happy2008@2x.png */; };
 		590E94AD1578E3D800BDE1C8 /* happy2008.png in Resources */ = {isa = PBXBuildFile; fileRef = 590E94A31578E3D800BDE1C8 /* happy2008.png */; };
+		591A14C9157C4647000832AD /* MaSchViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 591A14C8157C4647000832AD /* MaSchViewCell.m */; };
+		591A14D7157C5165000832AD /* defaultPerson.png in Resources */ = {isa = PBXBuildFile; fileRef = 591A14D6157C5165000832AD /* defaultPerson.png */; };
+		591A14EA157C5598000832AD /* FXLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 591A14E9157C5598000832AD /* FXLabel.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		591A14F5157C5D29000832AD /* 2010background2nd@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 591A14EB157C5D29000832AD /* 2010background2nd@2x.png */; };
+		591A14F6157C5D29000832AD /* 2010background2nd.png in Resources */ = {isa = PBXBuildFile; fileRef = 591A14EC157C5D29000832AD /* 2010background2nd.png */; };
+		591A14F7157C5D29000832AD /* 2010background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 591A14ED157C5D29000832AD /* 2010background@2x.png */; };
+		591A14F8157C5D29000832AD /* 2010background.png in Resources */ = {isa = PBXBuildFile; fileRef = 591A14EE157C5D29000832AD /* 2010background.png */; };
+		591A14F9157C5D29000832AD /* 2009background2nd@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 591A14EF157C5D29000832AD /* 2009background2nd@2x.png */; };
+		591A14FA157C5D29000832AD /* 2009background2nd.png in Resources */ = {isa = PBXBuildFile; fileRef = 591A14F0157C5D29000832AD /* 2009background2nd.png */; };
+		591A14FB157C5D29000832AD /* 2009background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 591A14F1157C5D29000832AD /* 2009background@2x.png */; };
+		591A14FC157C5D29000832AD /* 2009background.png in Resources */ = {isa = PBXBuildFile; fileRef = 591A14F2157C5D29000832AD /* 2009background.png */; };
+		591A14FD157C5D29000832AD /* 2008background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 591A14F3157C5D29000832AD /* 2008background@2x.png */; };
+		591A14FE157C5D29000832AD /* 2008background.png in Resources */ = {isa = PBXBuildFile; fileRef = 591A14F4157C5D29000832AD /* 2008background.png */; };
+		591A1501157C6245000832AD /* lableSectionBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 591A14FF157C6245000832AD /* lableSectionBackground.png */; };
+		591A1502157C6245000832AD /* lableSectionBackground@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 591A1500157C6245000832AD /* lableSectionBackground@2x.jpg */; };
+		591A153E157C765C000832AD /* AOK.png in Resources */ = {isa = PBXBuildFile; fileRef = 591A150B157C765C000832AD /* AOK.png */; };
+		591A153F157C765C000832AD /* AOK@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 591A150C157C765C000832AD /* AOK@2x.png */; };
+		591A1540157C765C000832AD /* Nous underground.png in Resources */ = {isa = PBXBuildFile; fileRef = 591A150D157C765C000832AD /* Nous underground.png */; };
+		591A1541157C765C000832AD /* Nous underground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 591A150E157C765C000832AD /* Nous underground@2x.png */; };
+		591A1542157C765C000832AD /* OCC控制之外.png in Resources */ = {isa = PBXBuildFile; fileRef = 591A150F157C765C000832AD /* OCC控制之外.png */; };
+		591A1543157C765C000832AD /* OCC控制之外@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 591A1510157C765C000832AD /* OCC控制之外@2x.png */; };
+		591A1544157C765C000832AD /* TBOR.png in Resources */ = {isa = PBXBuildFile; fileRef = 591A1511157C765C000832AD /* TBOR.png */; };
+		591A1545157C765C000832AD /* TBOR@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 591A1512157C765C000832AD /* TBOR@2x.png */; };
+		591A1546157C765C000832AD /* THE FUZZ.png in Resources */ = {isa = PBXBuildFile; fileRef = 591A1513157C765C000832AD /* THE FUZZ.png */; };
+		591A1547157C765C000832AD /* THE FUZZ@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 591A1514157C765C000832AD /* THE FUZZ@2x.png */; };
+		591A1548157C765C000832AD /* 二手玫瑰.png in Resources */ = {isa = PBXBuildFile; fileRef = 591A1515157C765C000832AD /* 二手玫瑰.png */; };
+		591A1549157C765C000832AD /* 二手玫瑰@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 591A1516157C765C000832AD /* 二手玫瑰@2x.png */; };
+		591A154A157C765C000832AD /* 岛屿心情.png in Resources */ = {isa = PBXBuildFile; fileRef = 591A1517157C765C000832AD /* 岛屿心情.png */; };
+		591A154B157C765C000832AD /* 岛屿心情@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 591A1518157C765C000832AD /* 岛屿心情@2x.png */; };
+		591A154C157C765C000832AD /* 张楚.png in Resources */ = {isa = PBXBuildFile; fileRef = 591A1519157C765C000832AD /* 张楚.png */; };
+		591A154D157C765C000832AD /* 张楚@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 591A151A157C765C000832AD /* 张楚@2x.png */; };
+		591A154E157C765C000832AD /* 惘闻乐队.png in Resources */ = {isa = PBXBuildFile; fileRef = 591A151B157C765C000832AD /* 惘闻乐队.png */; };
+		591A154F157C765C000832AD /* 惘闻乐队@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 591A151C157C765C000832AD /* 惘闻乐队@2x.png */; };
+		591A1550157C765C000832AD /* 战斧.png in Resources */ = {isa = PBXBuildFile; fileRef = 591A151D157C765C000832AD /* 战斧.png */; };
+		591A1551157C765C000832AD /* 战斧@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 591A151E157C765C000832AD /* 战斧@2x.png */; };
+		591A1552157C765C000832AD /* 无争乐队@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 591A151F157C765C000832AD /* 无争乐队@2x.png */; };
+		591A1553157C765C000832AD /* 曹方.png in Resources */ = {isa = PBXBuildFile; fileRef = 591A1520157C765C000832AD /* 曹方.png */; };
+		591A1554157C765C000832AD /* 曹方@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 591A1521157C765C000832AD /* 曹方@2x.png */; };
+		591A1555157C765C000832AD /* 未卜乐队.png in Resources */ = {isa = PBXBuildFile; fileRef = 591A1522157C765C000832AD /* 未卜乐队.png */; };
+		591A1556157C765C000832AD /* 未卜乐队@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 591A1523157C765C000832AD /* 未卜乐队@2x.png */; };
+		591A1557157C765C000832AD /* 杭盖.png in Resources */ = {isa = PBXBuildFile; fileRef = 591A1524157C765C000832AD /* 杭盖.png */; };
+		591A1558157C765C000832AD /* 杭盖@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 591A1525157C765C000832AD /* 杭盖@2x.png */; };
+		591A1559157C765C000832AD /* 爽子.png in Resources */ = {isa = PBXBuildFile; fileRef = 591A1526157C765C000832AD /* 爽子.png */; };
+		591A155A157C765C000832AD /* 爽子@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 591A1527157C765C000832AD /* 爽子@2x.png */; };
+		591A155B157C765C000832AD /* 玄乐队.png in Resources */ = {isa = PBXBuildFile; fileRef = 591A1528157C765C000832AD /* 玄乐队.png */; };
+		591A155C157C765C000832AD /* 玄乐队@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 591A1529157C765C000832AD /* 玄乐队@2x.png */; };
+		591A155D157C765C000832AD /* 王建房.png in Resources */ = {isa = PBXBuildFile; fileRef = 591A152A157C765C000832AD /* 王建房.png */; };
+		591A155E157C765C000832AD /* 王建房@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 591A152B157C765C000832AD /* 王建房@2x.png */; };
+		591A155F157C765C000832AD /* 琥珀乐队.png in Resources */ = {isa = PBXBuildFile; fileRef = 591A152C157C765C000832AD /* 琥珀乐队.png */; };
+		591A1560157C765C000832AD /* 琥珀乐队@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 591A152D157C765C000832AD /* 琥珀乐队@2x.png */; };
+		591A1561157C765C000832AD /* 诱导社.png in Resources */ = {isa = PBXBuildFile; fileRef = 591A152E157C765C000832AD /* 诱导社.png */; };
+		591A1562157C765C000832AD /* 诱导社@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 591A152F157C765C000832AD /* 诱导社@2x.png */; };
+		591A1563157C765C000832AD /* 谢天笑.png in Resources */ = {isa = PBXBuildFile; fileRef = 591A1530157C765C000832AD /* 谢天笑.png */; };
+		591A1564157C765C000832AD /* 谢天笑@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 591A1531157C765C000832AD /* 谢天笑@2x.png */; };
+		591A1565157C765C000832AD /* 赌鬼乐队.png in Resources */ = {isa = PBXBuildFile; fileRef = 591A1532157C765C000832AD /* 赌鬼乐队.png */; };
+		591A1566157C765C000832AD /* 赌鬼乐队@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 591A1533157C765C000832AD /* 赌鬼乐队@2x.png */; };
+		591A1567157C765C000832AD /* 赵彬.png in Resources */ = {isa = PBXBuildFile; fileRef = 591A1534157C765C000832AD /* 赵彬.png */; };
+		591A1568157C765C000832AD /* 赵彬@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 591A1535157C765C000832AD /* 赵彬@2x.png */; };
+		591A1569157C765C000832AD /* 逃跑计划.png in Resources */ = {isa = PBXBuildFile; fileRef = 591A1536157C765C000832AD /* 逃跑计划.png */; };
+		591A156A157C765C000832AD /* 逃跑计划@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 591A1537157C765C000832AD /* 逃跑计划@2x.png */; };
+		591A156B157C765C000832AD /* 郝云.png in Resources */ = {isa = PBXBuildFile; fileRef = 591A1538157C765C000832AD /* 郝云.png */; };
+		591A156C157C765C000832AD /* 郝云@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 591A1539157C765C000832AD /* 郝云@2x.png */; };
+		591A156D157C765C000832AD /* 马飞.png in Resources */ = {isa = PBXBuildFile; fileRef = 591A153A157C765C000832AD /* 马飞.png */; };
+		591A156E157C765C000832AD /* 马飞@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 591A153B157C765C000832AD /* 马飞@2x.png */; };
+		591A156F157C765C000832AD /* 黑撒.png in Resources */ = {isa = PBXBuildFile; fileRef = 591A153C157C765C000832AD /* 黑撒.png */; };
+		591A1570157C765C000832AD /* 黑撒@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 591A153D157C765C000832AD /* 黑撒@2x.png */; };
 		594DD178157502CF00037861 /* MHTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 594DD177157502CF00037861 /* MHTabBarController.m */; };
 		594DD17C157502DE00037861 /* MHTabBarActiveTab.png in Resources */ = {isa = PBXBuildFile; fileRef = 594DD179157502DE00037861 /* MHTabBarActiveTab.png */; };
 		594DD17D157502DE00037861 /* MHTabBarInactiveTab.png in Resources */ = {isa = PBXBuildFile; fileRef = 594DD17A157502DE00037861 /* MHTabBarInactiveTab.png */; };
@@ -282,6 +348,74 @@
 		590E94A11578E3D800BDE1C8 /* happy2009.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = happy2009.png; path = MoreMusic/Resources/happy2009.png; sourceTree = "<group>"; };
 		590E94A21578E3D800BDE1C8 /* happy2008@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "happy2008@2x.png"; path = "MoreMusic/Resources/happy2008@2x.png"; sourceTree = "<group>"; };
 		590E94A31578E3D800BDE1C8 /* happy2008.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = happy2008.png; path = MoreMusic/Resources/happy2008.png; sourceTree = "<group>"; };
+		591A14C7157C4647000832AD /* MaSchViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MaSchViewCell.h; path = src/MaSchViewCell.h; sourceTree = "<group>"; };
+		591A14C8157C4647000832AD /* MaSchViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MaSchViewCell.m; path = src/MaSchViewCell.m; sourceTree = "<group>"; };
+		591A14D6157C5165000832AD /* defaultPerson.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = defaultPerson.png; path = MoreMusic/Resources/defaultPerson.png; sourceTree = "<group>"; };
+		591A14E8157C5598000832AD /* FXLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FXLabel.h; path = src/3rd/FXLabel.h; sourceTree = "<group>"; };
+		591A14E9157C5598000832AD /* FXLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FXLabel.m; path = src/3rd/FXLabel.m; sourceTree = "<group>"; };
+		591A14EB157C5D29000832AD /* 2010background2nd@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "2010background2nd@2x.png"; path = "MoreMusic/Resources/review/2010background2nd@2x.png"; sourceTree = "<group>"; };
+		591A14EC157C5D29000832AD /* 2010background2nd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 2010background2nd.png; path = MoreMusic/Resources/review/2010background2nd.png; sourceTree = "<group>"; };
+		591A14ED157C5D29000832AD /* 2010background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "2010background@2x.png"; path = "MoreMusic/Resources/review/2010background@2x.png"; sourceTree = "<group>"; };
+		591A14EE157C5D29000832AD /* 2010background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 2010background.png; path = MoreMusic/Resources/review/2010background.png; sourceTree = "<group>"; };
+		591A14EF157C5D29000832AD /* 2009background2nd@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "2009background2nd@2x.png"; path = "MoreMusic/Resources/review/2009background2nd@2x.png"; sourceTree = "<group>"; };
+		591A14F0157C5D29000832AD /* 2009background2nd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 2009background2nd.png; path = MoreMusic/Resources/review/2009background2nd.png; sourceTree = "<group>"; };
+		591A14F1157C5D29000832AD /* 2009background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "2009background@2x.png"; path = "MoreMusic/Resources/review/2009background@2x.png"; sourceTree = "<group>"; };
+		591A14F2157C5D29000832AD /* 2009background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 2009background.png; path = MoreMusic/Resources/review/2009background.png; sourceTree = "<group>"; };
+		591A14F3157C5D29000832AD /* 2008background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "2008background@2x.png"; path = "MoreMusic/Resources/review/2008background@2x.png"; sourceTree = "<group>"; };
+		591A14F4157C5D29000832AD /* 2008background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 2008background.png; path = MoreMusic/Resources/review/2008background.png; sourceTree = "<group>"; };
+		591A14FF157C6245000832AD /* lableSectionBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lableSectionBackground.png; path = MoreMusic/Resources/lableSectionBackground.png; sourceTree = "<group>"; };
+		591A1500157C6245000832AD /* lableSectionBackground@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "lableSectionBackground@2x.jpg"; path = "MoreMusic/Resources/lableSectionBackground@2x.jpg"; sourceTree = "<group>"; };
+		591A150B157C765C000832AD /* AOK.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AOK.png; path = MoreMusic/Resources/band/AOK.png; sourceTree = "<group>"; };
+		591A150C157C765C000832AD /* AOK@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "AOK@2x.png"; path = "MoreMusic/Resources/band/AOK@2x.png"; sourceTree = "<group>"; };
+		591A150D157C765C000832AD /* Nous underground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Nous underground.png"; path = "MoreMusic/Resources/band/Nous underground.png"; sourceTree = "<group>"; };
+		591A150E157C765C000832AD /* Nous underground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Nous underground@2x.png"; path = "MoreMusic/Resources/band/Nous underground@2x.png"; sourceTree = "<group>"; };
+		591A150F157C765C000832AD /* OCC控制之外.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "OCC控制之外.png"; path = "MoreMusic/Resources/band/OCC控制之外.png"; sourceTree = "<group>"; };
+		591A1510157C765C000832AD /* OCC控制之外@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "OCC控制之外@2x.png"; path = "MoreMusic/Resources/band/OCC控制之外@2x.png"; sourceTree = "<group>"; };
+		591A1511157C765C000832AD /* TBOR.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TBOR.png; path = MoreMusic/Resources/band/TBOR.png; sourceTree = "<group>"; };
+		591A1512157C765C000832AD /* TBOR@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "TBOR@2x.png"; path = "MoreMusic/Resources/band/TBOR@2x.png"; sourceTree = "<group>"; };
+		591A1513157C765C000832AD /* THE FUZZ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "THE FUZZ.png"; path = "MoreMusic/Resources/band/THE FUZZ.png"; sourceTree = "<group>"; };
+		591A1514157C765C000832AD /* THE FUZZ@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "THE FUZZ@2x.png"; path = "MoreMusic/Resources/band/THE FUZZ@2x.png"; sourceTree = "<group>"; };
+		591A1515157C765C000832AD /* 二手玫瑰.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "二手玫瑰.png"; path = "MoreMusic/Resources/band/二手玫瑰.png"; sourceTree = "<group>"; };
+		591A1516157C765C000832AD /* 二手玫瑰@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "二手玫瑰@2x.png"; path = "MoreMusic/Resources/band/二手玫瑰@2x.png"; sourceTree = "<group>"; };
+		591A1517157C765C000832AD /* 岛屿心情.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "岛屿心情.png"; path = "MoreMusic/Resources/band/岛屿心情.png"; sourceTree = "<group>"; };
+		591A1518157C765C000832AD /* 岛屿心情@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "岛屿心情@2x.png"; path = "MoreMusic/Resources/band/岛屿心情@2x.png"; sourceTree = "<group>"; };
+		591A1519157C765C000832AD /* 张楚.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "张楚.png"; path = "MoreMusic/Resources/band/张楚.png"; sourceTree = "<group>"; };
+		591A151A157C765C000832AD /* 张楚@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "张楚@2x.png"; path = "MoreMusic/Resources/band/张楚@2x.png"; sourceTree = "<group>"; };
+		591A151B157C765C000832AD /* 惘闻乐队.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "惘闻乐队.png"; path = "MoreMusic/Resources/band/惘闻乐队.png"; sourceTree = "<group>"; };
+		591A151C157C765C000832AD /* 惘闻乐队@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "惘闻乐队@2x.png"; path = "MoreMusic/Resources/band/惘闻乐队@2x.png"; sourceTree = "<group>"; };
+		591A151D157C765C000832AD /* 战斧.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "战斧.png"; path = "MoreMusic/Resources/band/战斧.png"; sourceTree = "<group>"; };
+		591A151E157C765C000832AD /* 战斧@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "战斧@2x.png"; path = "MoreMusic/Resources/band/战斧@2x.png"; sourceTree = "<group>"; };
+		591A151F157C765C000832AD /* 无争乐队@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "无争乐队@2x.png"; path = "MoreMusic/Resources/band/无争乐队@2x.png"; sourceTree = "<group>"; };
+		591A1520157C765C000832AD /* 曹方.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "曹方.png"; path = "MoreMusic/Resources/band/曹方.png"; sourceTree = "<group>"; };
+		591A1521157C765C000832AD /* 曹方@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "曹方@2x.png"; path = "MoreMusic/Resources/band/曹方@2x.png"; sourceTree = "<group>"; };
+		591A1522157C765C000832AD /* 未卜乐队.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "未卜乐队.png"; path = "MoreMusic/Resources/band/未卜乐队.png"; sourceTree = "<group>"; };
+		591A1523157C765C000832AD /* 未卜乐队@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "未卜乐队@2x.png"; path = "MoreMusic/Resources/band/未卜乐队@2x.png"; sourceTree = "<group>"; };
+		591A1524157C765C000832AD /* 杭盖.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "杭盖.png"; path = "MoreMusic/Resources/band/杭盖.png"; sourceTree = "<group>"; };
+		591A1525157C765C000832AD /* 杭盖@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "杭盖@2x.png"; path = "MoreMusic/Resources/band/杭盖@2x.png"; sourceTree = "<group>"; };
+		591A1526157C765C000832AD /* 爽子.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "爽子.png"; path = "MoreMusic/Resources/band/爽子.png"; sourceTree = "<group>"; };
+		591A1527157C765C000832AD /* 爽子@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "爽子@2x.png"; path = "MoreMusic/Resources/band/爽子@2x.png"; sourceTree = "<group>"; };
+		591A1528157C765C000832AD /* 玄乐队.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "玄乐队.png"; path = "MoreMusic/Resources/band/玄乐队.png"; sourceTree = "<group>"; };
+		591A1529157C765C000832AD /* 玄乐队@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "玄乐队@2x.png"; path = "MoreMusic/Resources/band/玄乐队@2x.png"; sourceTree = "<group>"; };
+		591A152A157C765C000832AD /* 王建房.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "王建房.png"; path = "MoreMusic/Resources/band/王建房.png"; sourceTree = "<group>"; };
+		591A152B157C765C000832AD /* 王建房@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "王建房@2x.png"; path = "MoreMusic/Resources/band/王建房@2x.png"; sourceTree = "<group>"; };
+		591A152C157C765C000832AD /* 琥珀乐队.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "琥珀乐队.png"; path = "MoreMusic/Resources/band/琥珀乐队.png"; sourceTree = "<group>"; };
+		591A152D157C765C000832AD /* 琥珀乐队@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "琥珀乐队@2x.png"; path = "MoreMusic/Resources/band/琥珀乐队@2x.png"; sourceTree = "<group>"; };
+		591A152E157C765C000832AD /* 诱导社.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "诱导社.png"; path = "MoreMusic/Resources/band/诱导社.png"; sourceTree = "<group>"; };
+		591A152F157C765C000832AD /* 诱导社@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "诱导社@2x.png"; path = "MoreMusic/Resources/band/诱导社@2x.png"; sourceTree = "<group>"; };
+		591A1530157C765C000832AD /* 谢天笑.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "谢天笑.png"; path = "MoreMusic/Resources/band/谢天笑.png"; sourceTree = "<group>"; };
+		591A1531157C765C000832AD /* 谢天笑@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "谢天笑@2x.png"; path = "MoreMusic/Resources/band/谢天笑@2x.png"; sourceTree = "<group>"; };
+		591A1532157C765C000832AD /* 赌鬼乐队.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "赌鬼乐队.png"; path = "MoreMusic/Resources/band/赌鬼乐队.png"; sourceTree = "<group>"; };
+		591A1533157C765C000832AD /* 赌鬼乐队@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "赌鬼乐队@2x.png"; path = "MoreMusic/Resources/band/赌鬼乐队@2x.png"; sourceTree = "<group>"; };
+		591A1534157C765C000832AD /* 赵彬.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "赵彬.png"; path = "MoreMusic/Resources/band/赵彬.png"; sourceTree = "<group>"; };
+		591A1535157C765C000832AD /* 赵彬@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "赵彬@2x.png"; path = "MoreMusic/Resources/band/赵彬@2x.png"; sourceTree = "<group>"; };
+		591A1536157C765C000832AD /* 逃跑计划.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "逃跑计划.png"; path = "MoreMusic/Resources/band/逃跑计划.png"; sourceTree = "<group>"; };
+		591A1537157C765C000832AD /* 逃跑计划@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "逃跑计划@2x.png"; path = "MoreMusic/Resources/band/逃跑计划@2x.png"; sourceTree = "<group>"; };
+		591A1538157C765C000832AD /* 郝云.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "郝云.png"; path = "MoreMusic/Resources/band/郝云.png"; sourceTree = "<group>"; };
+		591A1539157C765C000832AD /* 郝云@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "郝云@2x.png"; path = "MoreMusic/Resources/band/郝云@2x.png"; sourceTree = "<group>"; };
+		591A153A157C765C000832AD /* 马飞.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "马飞.png"; path = "MoreMusic/Resources/band/马飞.png"; sourceTree = "<group>"; };
+		591A153B157C765C000832AD /* 马飞@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "马飞@2x.png"; path = "MoreMusic/Resources/band/马飞@2x.png"; sourceTree = "<group>"; };
+		591A153C157C765C000832AD /* 黑撒.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "黑撒.png"; path = "MoreMusic/Resources/band/黑撒.png"; sourceTree = "<group>"; };
+		591A153D157C765C000832AD /* 黑撒@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "黑撒@2x.png"; path = "MoreMusic/Resources/band/黑撒@2x.png"; sourceTree = "<group>"; };
 		594DD176157502CF00037861 /* MHTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MHTabBarController.h; path = src/3rd/MHTabBarController/MHTabBarController.h; sourceTree = "<group>"; };
 		594DD177157502CF00037861 /* MHTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MHTabBarController.m; path = src/3rd/MHTabBarController/MHTabBarController.m; sourceTree = "<group>"; };
 		594DD179157502DE00037861 /* MHTabBarActiveTab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MHTabBarActiveTab.png; path = src/3rd/MHTabBarController/Images/MHTabBarActiveTab.png; sourceTree = "<group>"; };
@@ -414,16 +548,11 @@
 		590E94AE1578E94C00BDE1C8 /* img */ = {
 			isa = PBXGroup;
 			children = (
-				590E949A1578E3D800BDE1C8 /* happy20092nd@2x.png */,
-				590E949B1578E3D800BDE1C8 /* happy20092nd.png */,
-				590E949C1578E3D800BDE1C8 /* happy2010hh@2x.png */,
-				590E949D1578E3D800BDE1C8 /* happy2010hh.png */,
-				590E949E1578E3D800BDE1C8 /* happy2010hb@2x.png */,
-				590E949F1578E3D800BDE1C8 /* happy2010hb.png */,
-				590E94A01578E3D800BDE1C8 /* happy2009@2x.png */,
-				590E94A11578E3D800BDE1C8 /* happy2009.png */,
-				590E94A21578E3D800BDE1C8 /* happy2008@2x.png */,
-				590E94A31578E3D800BDE1C8 /* happy2008.png */,
+				591A1504157C735D000832AD /* history */,
+				591A1503157C7357000832AD /* band */,
+				591A14FF157C6245000832AD /* lableSectionBackground.png */,
+				591A1500157C6245000832AD /* lableSectionBackground@2x.jpg */,
+				591A14D6157C5165000832AD /* defaultPerson.png */,
 				59D82DA81577665700F69C26 /* Default.png */,
 				59D82DA91577665700F69C26 /* Default@2x.png */,
 				59D82DA4157764A100F69C26 /* band.png */,
@@ -450,6 +579,100 @@
 				59D82D8F1577649600F69C26 /* weibo@2x.png */,
 			);
 			name = img;
+			sourceTree = "<group>";
+		};
+		591A14C6157C460D000832AD /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				591A14C7157C4647000832AD /* MaSchViewCell.h */,
+				591A14C8157C4647000832AD /* MaSchViewCell.m */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		591A1503157C7357000832AD /* band */ = {
+			isa = PBXGroup;
+			children = (
+				591A150B157C765C000832AD /* AOK.png */,
+				591A150C157C765C000832AD /* AOK@2x.png */,
+				591A150D157C765C000832AD /* Nous underground.png */,
+				591A150E157C765C000832AD /* Nous underground@2x.png */,
+				591A150F157C765C000832AD /* OCC控制之外.png */,
+				591A1510157C765C000832AD /* OCC控制之外@2x.png */,
+				591A1511157C765C000832AD /* TBOR.png */,
+				591A1512157C765C000832AD /* TBOR@2x.png */,
+				591A1513157C765C000832AD /* THE FUZZ.png */,
+				591A1514157C765C000832AD /* THE FUZZ@2x.png */,
+				591A1515157C765C000832AD /* 二手玫瑰.png */,
+				591A1516157C765C000832AD /* 二手玫瑰@2x.png */,
+				591A1517157C765C000832AD /* 岛屿心情.png */,
+				591A1518157C765C000832AD /* 岛屿心情@2x.png */,
+				591A1519157C765C000832AD /* 张楚.png */,
+				591A151A157C765C000832AD /* 张楚@2x.png */,
+				591A151B157C765C000832AD /* 惘闻乐队.png */,
+				591A151C157C765C000832AD /* 惘闻乐队@2x.png */,
+				591A151D157C765C000832AD /* 战斧.png */,
+				591A151E157C765C000832AD /* 战斧@2x.png */,
+				591A151F157C765C000832AD /* 无争乐队@2x.png */,
+				591A1520157C765C000832AD /* 曹方.png */,
+				591A1521157C765C000832AD /* 曹方@2x.png */,
+				591A1522157C765C000832AD /* 未卜乐队.png */,
+				591A1523157C765C000832AD /* 未卜乐队@2x.png */,
+				591A1524157C765C000832AD /* 杭盖.png */,
+				591A1525157C765C000832AD /* 杭盖@2x.png */,
+				591A1526157C765C000832AD /* 爽子.png */,
+				591A1527157C765C000832AD /* 爽子@2x.png */,
+				591A1528157C765C000832AD /* 玄乐队.png */,
+				591A1529157C765C000832AD /* 玄乐队@2x.png */,
+				591A152A157C765C000832AD /* 王建房.png */,
+				591A152B157C765C000832AD /* 王建房@2x.png */,
+				591A152C157C765C000832AD /* 琥珀乐队.png */,
+				591A152D157C765C000832AD /* 琥珀乐队@2x.png */,
+				591A152E157C765C000832AD /* 诱导社.png */,
+				591A152F157C765C000832AD /* 诱导社@2x.png */,
+				591A1530157C765C000832AD /* 谢天笑.png */,
+				591A1531157C765C000832AD /* 谢天笑@2x.png */,
+				591A1532157C765C000832AD /* 赌鬼乐队.png */,
+				591A1533157C765C000832AD /* 赌鬼乐队@2x.png */,
+				591A1534157C765C000832AD /* 赵彬.png */,
+				591A1535157C765C000832AD /* 赵彬@2x.png */,
+				591A1536157C765C000832AD /* 逃跑计划.png */,
+				591A1537157C765C000832AD /* 逃跑计划@2x.png */,
+				591A1538157C765C000832AD /* 郝云.png */,
+				591A1539157C765C000832AD /* 郝云@2x.png */,
+				591A153A157C765C000832AD /* 马飞.png */,
+				591A153B157C765C000832AD /* 马飞@2x.png */,
+				591A153C157C765C000832AD /* 黑撒.png */,
+				591A153D157C765C000832AD /* 黑撒@2x.png */,
+			);
+			name = band;
+			sourceTree = "<group>";
+		};
+		591A1504157C735D000832AD /* history */ = {
+			isa = PBXGroup;
+			children = (
+				591A14EB157C5D29000832AD /* 2010background2nd@2x.png */,
+				591A14EC157C5D29000832AD /* 2010background2nd.png */,
+				591A14ED157C5D29000832AD /* 2010background@2x.png */,
+				591A14EE157C5D29000832AD /* 2010background.png */,
+				591A14EF157C5D29000832AD /* 2009background2nd@2x.png */,
+				591A14F0157C5D29000832AD /* 2009background2nd.png */,
+				591A14F1157C5D29000832AD /* 2009background@2x.png */,
+				591A14F2157C5D29000832AD /* 2009background.png */,
+				591A14F3157C5D29000832AD /* 2008background@2x.png */,
+				591A14F4157C5D29000832AD /* 2008background.png */,
+				590E949A1578E3D800BDE1C8 /* happy20092nd@2x.png */,
+				590E949B1578E3D800BDE1C8 /* happy20092nd.png */,
+				590E949C1578E3D800BDE1C8 /* happy2010hh@2x.png */,
+				590E949D1578E3D800BDE1C8 /* happy2010hh.png */,
+				590E949E1578E3D800BDE1C8 /* happy2010hb@2x.png */,
+				590E949F1578E3D800BDE1C8 /* happy2010hb.png */,
+				590E94A01578E3D800BDE1C8 /* happy2009@2x.png */,
+				590E94A11578E3D800BDE1C8 /* happy2009.png */,
+				590E94A21578E3D800BDE1C8 /* happy2008@2x.png */,
+				590E94A31578E3D800BDE1C8 /* happy2008.png */,
+			);
+			name = history;
 			sourceTree = "<group>";
 		};
 		598281801571EE260056E1A5 = {
@@ -631,6 +854,7 @@
 		59EBF4541573BFE30073325A /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				591A14C6157C460D000832AD /* Cell */,
 				59EBF4D71573EA160073325A /* MaTableViewController.h */,
 				59EBF4D81573EA170073325A /* MaTableViewController.m */,
 				59F2EB4D1578D6F10062AEE3 /* Detail */,
@@ -698,6 +922,8 @@
 		59EBF4BB1573D5AF0073325A /* 3rdParty */ = {
 			isa = PBXGroup;
 			children = (
+				591A14E8157C5598000832AD /* FXLabel.h */,
+				591A14E9157C5598000832AD /* FXLabel.m */,
 				59F2EB451578B6190062AEE3 /* NSDate-Utilities.h */,
 				59F2EB461578B6190062AEE3 /* NSDate-Utilities.m */,
 				59F2EB471578B6190062AEE3 /* TimeFormatters.h */,
@@ -998,6 +1224,70 @@
 				590E94AB1578E3D800BDE1C8 /* happy2009.png in Resources */,
 				590E94AC1578E3D800BDE1C8 /* happy2008@2x.png in Resources */,
 				590E94AD1578E3D800BDE1C8 /* happy2008.png in Resources */,
+				591A14D7157C5165000832AD /* defaultPerson.png in Resources */,
+				591A14F5157C5D29000832AD /* 2010background2nd@2x.png in Resources */,
+				591A14F6157C5D29000832AD /* 2010background2nd.png in Resources */,
+				591A14F7157C5D29000832AD /* 2010background@2x.png in Resources */,
+				591A14F8157C5D29000832AD /* 2010background.png in Resources */,
+				591A14F9157C5D29000832AD /* 2009background2nd@2x.png in Resources */,
+				591A14FA157C5D29000832AD /* 2009background2nd.png in Resources */,
+				591A14FB157C5D29000832AD /* 2009background@2x.png in Resources */,
+				591A14FC157C5D29000832AD /* 2009background.png in Resources */,
+				591A14FD157C5D29000832AD /* 2008background@2x.png in Resources */,
+				591A14FE157C5D29000832AD /* 2008background.png in Resources */,
+				591A1501157C6245000832AD /* lableSectionBackground.png in Resources */,
+				591A1502157C6245000832AD /* lableSectionBackground@2x.jpg in Resources */,
+				591A153E157C765C000832AD /* AOK.png in Resources */,
+				591A153F157C765C000832AD /* AOK@2x.png in Resources */,
+				591A1540157C765C000832AD /* Nous underground.png in Resources */,
+				591A1541157C765C000832AD /* Nous underground@2x.png in Resources */,
+				591A1542157C765C000832AD /* OCC控制之外.png in Resources */,
+				591A1543157C765C000832AD /* OCC控制之外@2x.png in Resources */,
+				591A1544157C765C000832AD /* TBOR.png in Resources */,
+				591A1545157C765C000832AD /* TBOR@2x.png in Resources */,
+				591A1546157C765C000832AD /* THE FUZZ.png in Resources */,
+				591A1547157C765C000832AD /* THE FUZZ@2x.png in Resources */,
+				591A1548157C765C000832AD /* 二手玫瑰.png in Resources */,
+				591A1549157C765C000832AD /* 二手玫瑰@2x.png in Resources */,
+				591A154A157C765C000832AD /* 岛屿心情.png in Resources */,
+				591A154B157C765C000832AD /* 岛屿心情@2x.png in Resources */,
+				591A154C157C765C000832AD /* 张楚.png in Resources */,
+				591A154D157C765C000832AD /* 张楚@2x.png in Resources */,
+				591A154E157C765C000832AD /* 惘闻乐队.png in Resources */,
+				591A154F157C765C000832AD /* 惘闻乐队@2x.png in Resources */,
+				591A1550157C765C000832AD /* 战斧.png in Resources */,
+				591A1551157C765C000832AD /* 战斧@2x.png in Resources */,
+				591A1552157C765C000832AD /* 无争乐队@2x.png in Resources */,
+				591A1553157C765C000832AD /* 曹方.png in Resources */,
+				591A1554157C765C000832AD /* 曹方@2x.png in Resources */,
+				591A1555157C765C000832AD /* 未卜乐队.png in Resources */,
+				591A1556157C765C000832AD /* 未卜乐队@2x.png in Resources */,
+				591A1557157C765C000832AD /* 杭盖.png in Resources */,
+				591A1558157C765C000832AD /* 杭盖@2x.png in Resources */,
+				591A1559157C765C000832AD /* 爽子.png in Resources */,
+				591A155A157C765C000832AD /* 爽子@2x.png in Resources */,
+				591A155B157C765C000832AD /* 玄乐队.png in Resources */,
+				591A155C157C765C000832AD /* 玄乐队@2x.png in Resources */,
+				591A155D157C765C000832AD /* 王建房.png in Resources */,
+				591A155E157C765C000832AD /* 王建房@2x.png in Resources */,
+				591A155F157C765C000832AD /* 琥珀乐队.png in Resources */,
+				591A1560157C765C000832AD /* 琥珀乐队@2x.png in Resources */,
+				591A1561157C765C000832AD /* 诱导社.png in Resources */,
+				591A1562157C765C000832AD /* 诱导社@2x.png in Resources */,
+				591A1563157C765C000832AD /* 谢天笑.png in Resources */,
+				591A1564157C765C000832AD /* 谢天笑@2x.png in Resources */,
+				591A1565157C765C000832AD /* 赌鬼乐队.png in Resources */,
+				591A1566157C765C000832AD /* 赌鬼乐队@2x.png in Resources */,
+				591A1567157C765C000832AD /* 赵彬.png in Resources */,
+				591A1568157C765C000832AD /* 赵彬@2x.png in Resources */,
+				591A1569157C765C000832AD /* 逃跑计划.png in Resources */,
+				591A156A157C765C000832AD /* 逃跑计划@2x.png in Resources */,
+				591A156B157C765C000832AD /* 郝云.png in Resources */,
+				591A156C157C765C000832AD /* 郝云@2x.png in Resources */,
+				591A156D157C765C000832AD /* 马飞.png in Resources */,
+				591A156E157C765C000832AD /* 马飞@2x.png in Resources */,
+				591A156F157C765C000832AD /* 黑撒.png in Resources */,
+				591A1570157C765C000832AD /* 黑撒@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1035,6 +1325,8 @@
 				59F2EB491578B6190062AEE3 /* NSDate-Utilities.m in Sources */,
 				59F2EB4A1578B6190062AEE3 /* TimeFormatters.m in Sources */,
 				59F2EB501578D7210062AEE3 /* MaDetailViewController.m in Sources */,
+				591A14C9157C4647000832AD /* MaSchViewCell.m in Sources */,
+				591A14EA157C5598000832AD /* FXLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

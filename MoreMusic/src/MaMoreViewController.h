@@ -8,6 +8,6 @@
 
 #import "MaTableViewController.h"
 
-@interface MaMoreViewController : MaTableViewController
+@interface MaMoreViewController : UITableViewController
 
 @end

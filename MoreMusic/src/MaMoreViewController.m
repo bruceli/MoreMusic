@@ -15,14 +15,6 @@
     if (self) {
         self.tabBarItem = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemMore tag:0];
         
-        self.dataSource = [TTSectionedDataSource dataSourceWithObjects:
-                           @"Generic Items",
-                           [TTTableSettingsItem itemWithText:Three20Version caption:@"Three20 Version"
-                                                         URL:@"tt://tableItemTest"],
-                           [TTTableTextItem itemWithText:@"TTTableTextItem" URL:@"tt://tableItemTest"
-                                            accessoryURL:@"http://www.google.com"],
-                           nil];
-
     }
     return self;
 }

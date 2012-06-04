@@ -9,5 +9,7 @@
 #import "MaTableViewController.h"
 
 @interface MaBandViewController : UITableViewController
-
+{
+    NSArray* dataSource;
+}
 @end

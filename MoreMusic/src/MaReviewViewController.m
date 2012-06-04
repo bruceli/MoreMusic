@@ -8,6 +8,7 @@
 
 #import "MaReviewViewController.h"
 #import "MaDetailViewController.h"
+#import "FXLabel.h"
 
 @interface MaReviewViewController ()
 
@@ -71,7 +72,24 @@
     
     // get section array from dataSource
     NSDictionary* dict = [histroyArray objectAtIndex:indexPath.row];
-    cell.textLabel.text = [dict objectForKey:@"title"];
+    //cell.textLabel.text = [dict objectForKey:@"title"];
+    
+    FXLabel *nameLabel = [[FXLabel alloc] initWithFrame:CGRectMake(5, 5,310 , 50)];
+    nameLabel.text = [dict objectForKey:@"title"];
+    [cell addSubview:nameLabel];
+    nameLabel.shadowColor = [UIColor blackColor];
+    nameLabel.backgroundColor = [UIColor clearColor];
+    
+    if ([nameLabel.text length]> 14) 
+        nameLabel.font = [UIFont fontWithName:@"STHeitiTC-Medium" size:20];
+    else
+        nameLabel.font = [UIFont fontWithName:@"STHeitiTC-Medium" size:27];
+
+    nameLabel.textColor = [UIColor whiteColor];
+    nameLabel.shadowOffset = CGSizeMake(1.0f, 1.0f);
+    nameLabel.shadowBlur = 8.0f;
+
+    cell.backgroundView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:[dict objectForKey:@"backgroundImage"]]];
     
     return cell;
 }

@@ -9,12 +9,14 @@
 #import "MaScheduleViewController.h"
 #import "MaTableViewController.h"
 #import "NSDate-Utilities.h"
+#import "MaSchViewCell.h"
 
 @interface MaScheduleViewController ()
 
 @end
 
 @implementation MaScheduleViewController
+@synthesize allActivityArray;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -38,7 +40,7 @@
 {
     [super viewDidLoad];
     currentActivity = MaFirstDay;
-    
+
     NSString* path = [[NSBundle mainBundle] pathForResource:@"ActivityDataSource" ofType:@"plist"];
     NSLog(@"Datasource Location... %@", path);
     
@@ -66,7 +68,7 @@
     listViewController1.tableView.delegate = self; 
     listViewController1.tableView.dataSource = self; 
     listViewController2.tableView.delegate = self; 
-    listViewController2.tableView.dataSource = self; 
+    listViewController2.tableView.dataSource = self;
 
 	NSArray *viewControllers = [NSArray arrayWithObjects:listViewController1, listViewController2, nil];
 	MHTabBarController *tabBarController = [[MHTabBarController alloc] init];
@@ -106,13 +108,32 @@
     NSLog(@"activity section count %d", count);
     return count;
 }
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    NSArray* siteArray = [dataSource objectForKey:@"sectionNameArray"];
+    NSString *sectionTitle =  [siteArray objectAtIndex:section];
 
+    // Create label with section title
+    UILabel *label = [[UILabel alloc] init];
+    label.frame = CGRectMake(5, 0, 284, 23);
+    label.textColor = [UIColor whiteColor];
+    label.font = [UIFont fontWithName:@"STHeitiTC-Medium" size:17];
+    label.text = sectionTitle;
+    label.backgroundColor = [UIColor clearColor];
+    
+    // Create header view and add label as a subview
+//    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 100)];
+    UIImageView* view = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"lableSectionBackground"]];
+    [view addSubview:label];
+    
+    return view;
+}
+/*
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {    
     NSArray* siteArray = [dataSource objectForKey:@"sectionNameArray"];
     return [siteArray objectAtIndex:section];
 }
-
+*/
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section 
 {
     NSInteger count = 0;
@@ -136,9 +157,9 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *CellIdentifier = @"Cell";
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    MaSchViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
+        cell = [[MaSchViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     }
     
     // get section array from dataSource
@@ -151,8 +172,13 @@
     NSArray* activityArray = [dataSource objectForKey:siteName];
 
     NSDictionary* dict = [activityArray objectAtIndex:indexPath.row];
-    cell.textLabel.text = [dict objectForKey:@"title"];
+    cell.nameString = [dict objectForKey:@"title"];
+    cell.startTime = [dict objectForKey:@"date"];
+    cell.endTime = [dict objectForKey:@"endDate"];
+    cell.bandImgName = [dict objectForKey:@"image"];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
 
+ //   cell.bandImg = ;
     
 //    NSDictionary *book = [[self.sections valueForKey:[[[self.sections allKeys] sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)] objectAtIndex:indexPath.section]] objectAtIndex:indexPath.row];
     
@@ -160,6 +186,11 @@
 //    cell.detailTextLabel.text = [book objectForKey:@"description"];
 	
     return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 60;
 }
 
 
