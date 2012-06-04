@@ -17,3 +17,7 @@ profile
 src/.DS_Store
 
 .DS_Store
+
+python/.weibo.py.swp
+
+python/weibo.pyc
