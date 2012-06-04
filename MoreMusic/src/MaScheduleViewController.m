@@ -10,6 +10,7 @@
 #import "MaTableViewController.h"
 #import "NSDate-Utilities.h"
 #import "MaSchViewCell.h"
+#import "MaSchDetailViewController.h"
 
 @interface MaScheduleViewController ()
 
@@ -176,14 +177,6 @@
     cell.startTime = [dict objectForKey:@"date"];
     cell.endTime = [dict objectForKey:@"endDate"];
     cell.bandImgName = [dict objectForKey:@"image"];
-    cell.selectionStyle = UITableViewCellSelectionStyleNone;
-
- //   cell.bandImg = ;
-    
-//    NSDictionary *book = [[self.sections valueForKey:[[[self.sections allKeys] sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)] objectAtIndex:indexPath.section]] objectAtIndex:indexPath.row];
-    
-//    cell.textLabel.text = [book objectForKey:@"title"];    
-//    cell.detailTextLabel.text = [book objectForKey:@"description"];
 	
     return cell;
 }
@@ -196,10 +189,22 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-
-
+    // get section array from dataSource
+    NSArray* siteArray = [dataSource objectForKey:@"sectionNameArray"];
+    
+    // get site name from array
+    NSString* siteName = [siteArray objectAtIndex:indexPath.section];
+    
+    // get activity array from site name
+    NSArray* activityArray = [dataSource objectForKey:siteName];
+    
+    NSDictionary* dict = [activityArray objectAtIndex:indexPath.row];
+    
+    MaSchDetailViewController* detViewController = [[MaSchDetailViewController alloc]init];
+    detViewController.info = dict;
+        
+    [self.navigationController pushViewController: detViewController animated:YES];
 }
-
 
 
 #pragma mark -
@@ -237,7 +242,7 @@
     [currentActivityArray removeAllObjects];
     
     NSDateFormatter *mmddccyy = [[NSDateFormatter alloc] init];
-    [mmddccyy setTimeZone:[NSTimeZone timeZoneForSecondsFromGMT:8]];
+    [mmddccyy setTimeZone:[NSTimeZone timeZoneForSecondsFromGMT:3600*8]];
     mmddccyy.timeStyle = NSDateFormatterNoStyle;
     mmddccyy.dateFormat = @"yyyy-MM-dd";
     NSDate *activityDate;

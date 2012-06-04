@@ -85,6 +85,8 @@
 		591A156E157C765C000832AD /* 马飞@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 591A153B157C765C000832AD /* 马飞@2x.png */; };
 		591A156F157C765C000832AD /* 黑撒.png in Resources */ = {isa = PBXBuildFile; fileRef = 591A153C157C765C000832AD /* 黑撒.png */; };
 		591A1570157C765C000832AD /* 黑撒@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 591A153D157C765C000832AD /* 黑撒@2x.png */; };
+		591A1574157C893C000832AD /* msyh.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 591A1573157C893B000832AD /* msyh.ttf */; };
+		592C1B8B157C8B8300CB0C14 /* MaSchDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 592C1B8A157C8B8300CB0C14 /* MaSchDetailViewController.m */; };
 		594DD178157502CF00037861 /* MHTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 594DD177157502CF00037861 /* MHTabBarController.m */; };
 		594DD17C157502DE00037861 /* MHTabBarActiveTab.png in Resources */ = {isa = PBXBuildFile; fileRef = 594DD179157502DE00037861 /* MHTabBarActiveTab.png */; };
 		594DD17D157502DE00037861 /* MHTabBarInactiveTab.png in Resources */ = {isa = PBXBuildFile; fileRef = 594DD17A157502DE00037861 /* MHTabBarInactiveTab.png */; };
@@ -144,6 +146,8 @@
 		59D82DAA1577665700F69C26 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D82DA81577665700F69C26 /* Default.png */; };
 		59D82DAB1577665700F69C26 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D82DA91577665700F69C26 /* Default@2x.png */; };
 		59D82DAD1577669300F69C26 /* MHTabBarIndicator@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D82DAC1577669300F69C26 /* MHTabBarIndicator@2x.png */; };
+		59D99D6F157C9D2700ABCC4F /* detailBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D99D6D157C9D2700ABCC4F /* detailBackground@2x.png */; };
+		59D99D70157C9D2700ABCC4F /* detailBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D99D6E157C9D2700ABCC4F /* detailBackground.png */; };
 		59EBF45D1573C0F00073325A /* MaScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59EBF45C1573C0F00073325A /* MaScheduleViewController.m */; };
 		59EBF4601573C1160073325A /* MaBandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59EBF45F1573C1160073325A /* MaBandViewController.m */; };
 		59EBF4661573C1660073325A /* MoreMusicAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 59EBF4651573C1650073325A /* MoreMusicAppDelegate.m */; };
@@ -352,7 +356,7 @@
 		591A14C8157C4647000832AD /* MaSchViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MaSchViewCell.m; path = src/MaSchViewCell.m; sourceTree = "<group>"; };
 		591A14D6157C5165000832AD /* defaultPerson.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = defaultPerson.png; path = MoreMusic/Resources/defaultPerson.png; sourceTree = "<group>"; };
 		591A14E8157C5598000832AD /* FXLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FXLabel.h; path = src/3rd/FXLabel.h; sourceTree = "<group>"; };
-		591A14E9157C5598000832AD /* FXLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FXLabel.m; path = src/3rd/FXLabel.m; sourceTree = "<group>"; };
+		591A14E9157C5598000832AD /* FXLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = FXLabel.m; path = src/3rd/FXLabel.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		591A14EB157C5D29000832AD /* 2010background2nd@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "2010background2nd@2x.png"; path = "MoreMusic/Resources/review/2010background2nd@2x.png"; sourceTree = "<group>"; };
 		591A14EC157C5D29000832AD /* 2010background2nd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 2010background2nd.png; path = MoreMusic/Resources/review/2010background2nd.png; sourceTree = "<group>"; };
 		591A14ED157C5D29000832AD /* 2010background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "2010background@2x.png"; path = "MoreMusic/Resources/review/2010background@2x.png"; sourceTree = "<group>"; };
@@ -416,6 +420,9 @@
 		591A153B157C765C000832AD /* 马飞@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "马飞@2x.png"; path = "MoreMusic/Resources/band/马飞@2x.png"; sourceTree = "<group>"; };
 		591A153C157C765C000832AD /* 黑撒.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "黑撒.png"; path = "MoreMusic/Resources/band/黑撒.png"; sourceTree = "<group>"; };
 		591A153D157C765C000832AD /* 黑撒@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "黑撒@2x.png"; path = "MoreMusic/Resources/band/黑撒@2x.png"; sourceTree = "<group>"; };
+		591A1573157C893B000832AD /* msyh.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = msyh.ttf; path = MoreMusic/Resources/msyh.ttf; sourceTree = "<group>"; };
+		592C1B89157C8B8300CB0C14 /* MaSchDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MaSchDetailViewController.h; path = src/MaSchDetailViewController.h; sourceTree = "<group>"; };
+		592C1B8A157C8B8300CB0C14 /* MaSchDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MaSchDetailViewController.m; path = src/MaSchDetailViewController.m; sourceTree = "<group>"; };
 		594DD176157502CF00037861 /* MHTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MHTabBarController.h; path = src/3rd/MHTabBarController/MHTabBarController.h; sourceTree = "<group>"; };
 		594DD177157502CF00037861 /* MHTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MHTabBarController.m; path = src/3rd/MHTabBarController/MHTabBarController.m; sourceTree = "<group>"; };
 		594DD179157502DE00037861 /* MHTabBarActiveTab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MHTabBarActiveTab.png; path = src/3rd/MHTabBarController/Images/MHTabBarActiveTab.png; sourceTree = "<group>"; };
@@ -498,6 +505,8 @@
 		59D82DA81577665700F69C26 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = MoreMusic/Resources/Default.png; sourceTree = "<group>"; };
 		59D82DA91577665700F69C26 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "MoreMusic/Resources/Default@2x.png"; sourceTree = "<group>"; };
 		59D82DAC1577669300F69C26 /* MHTabBarIndicator@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "MHTabBarIndicator@2x.png"; path = "src/3rd/MHTabBarController/Images/MHTabBarIndicator@2x.png"; sourceTree = "<group>"; };
+		59D99D6D157C9D2700ABCC4F /* detailBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "detailBackground@2x.png"; path = "MoreMusic/Resources/detailBackground@2x.png"; sourceTree = "<group>"; };
+		59D99D6E157C9D2700ABCC4F /* detailBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = detailBackground.png; path = MoreMusic/Resources/detailBackground.png; sourceTree = "<group>"; };
 		59EBF45B1573C0F00073325A /* MaScheduleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MaScheduleViewController.h; path = src/MaScheduleViewController.h; sourceTree = "<group>"; };
 		59EBF45C1573C0F00073325A /* MaScheduleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MaScheduleViewController.m; path = src/MaScheduleViewController.m; sourceTree = "<group>"; };
 		59EBF45E1573C1160073325A /* MaBandViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MaBandViewController.h; path = src/MaBandViewController.h; sourceTree = "<group>"; };
@@ -548,6 +557,8 @@
 		590E94AE1578E94C00BDE1C8 /* img */ = {
 			isa = PBXGroup;
 			children = (
+				59D99D6D157C9D2700ABCC4F /* detailBackground@2x.png */,
+				59D99D6E157C9D2700ABCC4F /* detailBackground.png */,
 				591A1504157C735D000832AD /* history */,
 				591A1503157C7357000832AD /* band */,
 				591A14FF157C6245000832AD /* lableSectionBackground.png */,
@@ -872,6 +883,8 @@
 		59EBF4551573BFF20073325A /* Schedule */ = {
 			isa = PBXGroup;
 			children = (
+				592C1B89157C8B8300CB0C14 /* MaSchDetailViewController.h */,
+				592C1B8A157C8B8300CB0C14 /* MaSchDetailViewController.m */,
 				59EBF45B1573C0F00073325A /* MaScheduleViewController.h */,
 				59EBF45C1573C0F00073325A /* MaScheduleViewController.m */,
 			);
@@ -941,6 +954,7 @@
 		59EBF4DA1573EFCF0073325A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				591A1573157C893B000832AD /* msyh.ttf */,
 				590E94AE1578E94C00BDE1C8 /* img */,
 				59F2EB4B1578D4040062AEE3 /* history.plist */,
 				59D82D3E15774A1F00F69C26 /* ActivityDataSource.plist */,
@@ -1288,6 +1302,9 @@
 				591A156E157C765C000832AD /* 马飞@2x.png in Resources */,
 				591A156F157C765C000832AD /* 黑撒.png in Resources */,
 				591A1570157C765C000832AD /* 黑撒@2x.png in Resources */,
+				591A1574157C893C000832AD /* msyh.ttf in Resources */,
+				59D99D6F157C9D2700ABCC4F /* detailBackground@2x.png in Resources */,
+				59D99D70157C9D2700ABCC4F /* detailBackground.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1327,6 +1344,7 @@
 				59F2EB501578D7210062AEE3 /* MaDetailViewController.m in Sources */,
 				591A14C9157C4647000832AD /* MaSchViewCell.m in Sources */,
 				591A14EA157C5598000832AD /* FXLabel.m in Sources */,
+				592C1B8B157C8B8300CB0C14 /* MaSchDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

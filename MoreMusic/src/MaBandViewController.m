@@ -8,7 +8,7 @@
 #import "MoreMusicAppDelegate.h"
 #import "MaBandViewController.h"
 #import "MaSchViewCell.h"
-
+#import "MaSchDetailViewController.h"
 @interface MaBandViewController ()
 
 @end
@@ -83,6 +83,18 @@
 {
     return 60;
 }
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    // get section array from dataSource
+    NSDictionary* dict = [dataSource objectAtIndex:indexPath.row];
+    
+    MaSchDetailViewController* detViewController = [[MaSchDetailViewController alloc]init];
+    detViewController.info = dict;
+    
+    [self.navigationController pushViewController: detViewController animated:YES];
+}
+
 
 
 @end

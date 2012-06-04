@@ -81,16 +81,17 @@
     nameLabel.backgroundColor = [UIColor clearColor];
     
     if ([nameLabel.text length]> 14) 
-        nameLabel.font = [UIFont fontWithName:@"STHeitiTC-Medium" size:20];
+        nameLabel.font = [UIFont fontWithName:@"MicrosoftYaHei" size:20];
     else
-        nameLabel.font = [UIFont fontWithName:@"STHeitiTC-Medium" size:27];
+        nameLabel.font = [UIFont fontWithName:@"MicrosoftYaHei" size:27];
 
     nameLabel.textColor = [UIColor whiteColor];
     nameLabel.shadowOffset = CGSizeMake(1.0f, 1.0f);
     nameLabel.shadowBlur = 8.0f;
 
     cell.backgroundView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:[dict objectForKey:@"backgroundImage"]]];
-    
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+
     return cell;
 }
 
