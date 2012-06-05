@@ -91,6 +91,13 @@
 		594DD17D157502DE00037861 /* MHTabBarInactiveTab.png in Resources */ = {isa = PBXBuildFile; fileRef = 594DD17A157502DE00037861 /* MHTabBarInactiveTab.png */; };
 		594DD17E157502DE00037861 /* MHTabBarIndicator.png in Resources */ = {isa = PBXBuildFile; fileRef = 594DD17B157502DE00037861 /* MHTabBarIndicator.png */; };
 		596157C4157362D400792739 /* MaRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 596157C3157362D400792739 /* MaRootViewController.m */; };
+		597FF8A7157E168F00E8C7C6 /* MaMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 597FF8A6157E168F00E8C7C6 /* MaMapViewController.m */; };
+		597FF8A9157E16C300E8C7C6 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 597FF8A8157E16C300E8C7C6 /* MapKit.framework */; };
+		597FF8AB157E179800E8C7C6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 597FF8AA157E179800E8C7C6 /* CoreLocation.framework */; };
+		597FF8AE157E1D9000E8C7C6 /* MaMapSelectorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 597FF8AD157E1D9000E8C7C6 /* MaMapSelectorController.m */; };
+		597FF8B9157E1DF000E8C7C6 /* CurledViewBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 597FF8B4157E1DF000E8C7C6 /* CurledViewBase.m */; };
+		597FF8BA157E1DF000E8C7C6 /* UIButton+Curled.m in Sources */ = {isa = PBXBuildFile; fileRef = 597FF8B6157E1DF000E8C7C6 /* UIButton+Curled.m */; };
+		597FF8BB157E1DF000E8C7C6 /* UIImageView+Curled.m in Sources */ = {isa = PBXBuildFile; fileRef = 597FF8B8157E1DF000E8C7C6 /* UIImageView+Curled.m */; };
 		598281901571EE260056E1A5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5982818F1571EE260056E1A5 /* UIKit.framework */; };
 		598281921571EE260056E1A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 598281911571EE260056E1A5 /* Foundation.framework */; };
 		598281941571EE260056E1A5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 598281931571EE260056E1A5 /* CoreGraphics.framework */; };
@@ -483,6 +490,18 @@
 		594DD17B157502DE00037861 /* MHTabBarIndicator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MHTabBarIndicator.png; path = src/3rd/MHTabBarController/Images/MHTabBarIndicator.png; sourceTree = "<group>"; };
 		596157C2157362D400792739 /* MaRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MaRootViewController.h; path = src/MaRootViewController.h; sourceTree = "<group>"; };
 		596157C3157362D400792739 /* MaRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MaRootViewController.m; path = src/MaRootViewController.m; sourceTree = "<group>"; };
+		597FF8A5157E168F00E8C7C6 /* MaMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MaMapViewController.h; path = src/MaMapViewController.h; sourceTree = "<group>"; };
+		597FF8A6157E168F00E8C7C6 /* MaMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MaMapViewController.m; path = src/MaMapViewController.m; sourceTree = "<group>"; };
+		597FF8A8157E16C300E8C7C6 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		597FF8AA157E179800E8C7C6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		597FF8AC157E1D8F00E8C7C6 /* MaMapSelectorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MaMapSelectorController.h; path = src/MaMapSelectorController.h; sourceTree = "<group>"; };
+		597FF8AD157E1D9000E8C7C6 /* MaMapSelectorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MaMapSelectorController.m; path = src/MaMapSelectorController.m; sourceTree = "<group>"; };
+		597FF8B3157E1DF000E8C7C6 /* CurledViewBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CurledViewBase.h; path = src/3rd/curledView/CurledViewBase.h; sourceTree = "<group>"; };
+		597FF8B4157E1DF000E8C7C6 /* CurledViewBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CurledViewBase.m; path = src/3rd/curledView/CurledViewBase.m; sourceTree = "<group>"; };
+		597FF8B5157E1DF000E8C7C6 /* UIButton+Curled.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIButton+Curled.h"; path = "src/3rd/curledView/UIButton+Curled.h"; sourceTree = "<group>"; };
+		597FF8B6157E1DF000E8C7C6 /* UIButton+Curled.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIButton+Curled.m"; path = "src/3rd/curledView/UIButton+Curled.m"; sourceTree = "<group>"; };
+		597FF8B7157E1DF000E8C7C6 /* UIImageView+Curled.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImageView+Curled.h"; path = "src/3rd/curledView/UIImageView+Curled.h"; sourceTree = "<group>"; };
+		597FF8B8157E1DF000E8C7C6 /* UIImageView+Curled.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+Curled.m"; path = "src/3rd/curledView/UIImageView+Curled.m"; sourceTree = "<group>"; };
 		5982818B1571EE260056E1A5 /* MoreMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoreMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5982818F1571EE260056E1A5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		598281911571EE260056E1A5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -656,6 +675,8 @@
 				598281921571EE260056E1A5 /* Foundation.framework in Frameworks */,
 				598281941571EE260056E1A5 /* CoreGraphics.framework in Frameworks */,
 				59AAE80C157722AC008B3B37 /* Security.framework in Frameworks */,
+				597FF8A9157E16C300E8C7C6 /* MapKit.framework in Frameworks */,
+				597FF8AB157E179800E8C7C6 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -871,6 +892,8 @@
 				59C9232D157720CD0082DC4E /* Three20UICommon.xcodeproj */,
 				59C92324157720CB0082DC4E /* Three20Style.xcodeproj */,
 				59C92318157720C90082DC4E /* extThree20JSON.xcodeproj */,
+				597FF8AA157E179800E8C7C6 /* CoreLocation.framework */,
+				597FF8A8157E16C300E8C7C6 /* MapKit.framework */,
 				320AF8492C47A4D819F7C450 /* QuartzCore.framework */,
 				59AAE80B157722AC008B3B37 /* Security.framework */,
 				5982818F1571EE260056E1A5 /* UIKit.framework */,
@@ -1078,6 +1101,10 @@
 		59EBF4591573C02A0073325A /* Map */ = {
 			isa = PBXGroup;
 			children = (
+				597FF8A5157E168F00E8C7C6 /* MaMapViewController.h */,
+				597FF8A6157E168F00E8C7C6 /* MaMapViewController.m */,
+				597FF8AC157E1D8F00E8C7C6 /* MaMapSelectorController.h */,
+				597FF8AD157E1D9000E8C7C6 /* MaMapSelectorController.m */,
 			);
 			name = Map;
 			sourceTree = "<group>";
@@ -1092,6 +1119,12 @@
 		59EBF4BB1573D5AF0073325A /* 3rdParty */ = {
 			isa = PBXGroup;
 			children = (
+				597FF8B3157E1DF000E8C7C6 /* CurledViewBase.h */,
+				597FF8B4157E1DF000E8C7C6 /* CurledViewBase.m */,
+				597FF8B5157E1DF000E8C7C6 /* UIButton+Curled.h */,
+				597FF8B6157E1DF000E8C7C6 /* UIButton+Curled.m */,
+				597FF8B7157E1DF000E8C7C6 /* UIImageView+Curled.h */,
+				597FF8B8157E1DF000E8C7C6 /* UIImageView+Curled.m */,
 				59D99D71157CA57800ABCC4F /* toptabBarBackground.png */,
 				59D99D72157CA57800ABCC4F /* toptabBarBackground@2x.png */,
 				59D82D861577649600F69C26 /* subTitleActiveBackground.png */,
@@ -1553,6 +1586,11 @@
 				591A14C9157C4647000832AD /* MaSchViewCell.m in Sources */,
 				591A14EA157C5598000832AD /* FXLabel.m in Sources */,
 				592C1B8B157C8B8300CB0C14 /* MaSchDetailViewController.m in Sources */,
+				597FF8A7157E168F00E8C7C6 /* MaMapViewController.m in Sources */,
+				597FF8AE157E1D9000E8C7C6 /* MaMapSelectorController.m in Sources */,
+				597FF8B9157E1DF000E8C7C6 /* CurledViewBase.m in Sources */,
+				597FF8BA157E1DF000E8C7C6 /* UIButton+Curled.m in Sources */,
+				597FF8BB157E1DF000E8C7C6 /* UIImageView+Curled.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

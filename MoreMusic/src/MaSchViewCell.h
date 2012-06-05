@@ -21,7 +21,7 @@
     UILabel* endTimeLabel;
     UIImageView* bandImgView;
     
-    BOOL _isBandCell;
+    BOOL _isSchCell;
     
 }
 
@@ -29,6 +29,6 @@
 @property (nonatomic, copy) NSDate *startTime;
 @property (nonatomic, copy) NSDate *endTime;
 @property (nonatomic, copy) NSString *bandImgName;
-@property (nonatomic) BOOL isBandCell;
+@property (nonatomic) BOOL isSchCell;
 
 @end

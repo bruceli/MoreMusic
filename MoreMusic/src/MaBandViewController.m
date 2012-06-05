@@ -73,7 +73,7 @@
     cell.nameString = [dict objectForKey:@"title"];
     cell.startTime = [dict objectForKey:@"date"];
     cell.endTime = [dict objectForKey:@"endDate"];
-    cell.isBandCell = NO;
+    cell.isSchCell = NO;
     cell.bandImgName = [dict objectForKey:@"image"];
 
     return cell;

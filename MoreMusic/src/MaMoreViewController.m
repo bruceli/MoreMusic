@@ -7,6 +7,9 @@
 //
 
 #import "MaMoreViewController.h"
+#import "FXLabel.h"
+#import "MaSchViewCell.h"
+#import "MaMapViewController.h"
 
 @implementation MaMoreViewController
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -14,7 +17,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         self.tabBarItem = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemMore tag:0];
-        
+        dataSource = [NSMutableArray arrayWithObjects:@"Map", @"Ticket",@"About", nil];
     }
     return self;
 }
@@ -37,6 +40,65 @@
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
+
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView 
+{
+    return 1;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 60;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section 
+{
+    return [dataSource count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *CellIdentifier = @"Cell";
+    
+    MaSchViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil) {
+        cell = [[MaSchViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
+    }
+
+    cell.isSchCell = NO;
+    cell.nameString = [dataSource objectAtIndex:indexPath.row];
+    cell.bandImgName = [dataSource objectAtIndex:indexPath.row];
+    
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    switch (indexPath.row) {
+        case 0:{
+            MaMapViewController* viewController = [[MaMapViewController alloc]init];
+            [self.navigationController pushViewController: viewController animated:YES];
+            break;
+        }
+            
+        case 1:{
+            UIViewController* detViewController = [[UIViewController alloc]init];
+            [self.navigationController pushViewController: detViewController animated:YES];
+            break;
+        }
+            
+        case 2:{
+            UIViewController* detViewController = [[UIViewController alloc]init];
+            [self.navigationController pushViewController: detViewController animated:YES];
+            break;
+        }
+            
+
+        default:
+            break;
+    }    
+}
+
 
 
 @end

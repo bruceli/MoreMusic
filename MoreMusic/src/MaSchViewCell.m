@@ -14,7 +14,7 @@
 @synthesize startTime = _startTime;
 @synthesize endTime = _endTime;
 @synthesize bandImgName = _bandImgName;
-@synthesize isBandCell = _isBandCell;
+@synthesize isSchCell = _isSchCell;
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
@@ -24,7 +24,7 @@
         bandImgView = [[UIImageView alloc] initWithFrame:CGRectMake(10, 5, 50, 50)];
         nameLabel = [[FXLabel alloc] initWithFrame:CGRectMake(75, 5,190 , 30)];
         timeLabel = [[UILabel alloc] initWithFrame:CGRectMake(75, 35, 120, 25)];
-        _isBandCell = YES;
+        _isSchCell = YES;
         self.selectionStyle = UITableViewCellSelectionStyleNone;
         
     }
@@ -50,15 +50,16 @@
     NSString *startString = [timeFormatter stringFromDate: _startTime];
     NSString *endString = [timeFormatter stringFromDate: _endTime];
    
-    [timeString appendString:startString];
-    [timeString appendString:@" ~ "];
-    [timeString appendString:endString];
-    timeLabel.text = timeString;    
-    timeLabel.font = [UIFont systemFontOfSize:14];
-    timeLabel.textColor =[UIColor grayColor];
-    
-    [timeLabel sizeToFit];
-
+    if ([startString length]>0 && [endString length]>0) {
+        [timeString appendString:startString];
+        [timeString appendString:@" ~ "];
+        [timeString appendString:endString];
+        timeLabel.text = timeString;    
+        timeLabel.font = [UIFont systemFontOfSize:14];
+        timeLabel.textColor =[UIColor grayColor];
+        
+        [timeLabel sizeToFit];
+    }
 }
 
 - (void)layoutSubviews{
@@ -80,7 +81,7 @@
     bandImgView.image = bandImg;
     [self addSubview:bandImgView];
     
-    if (! _isBandCell) {    // band cell view
+    if (! _isSchCell) {    // band cell view
         [timeLabel removeFromSuperview];
         CGRect frame = nameLabel.frame;
         frame.origin.y = 15;

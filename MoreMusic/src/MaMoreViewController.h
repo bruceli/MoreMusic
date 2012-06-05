@@ -9,5 +9,7 @@
 #import "MaTableViewController.h"
 
 @interface MaMoreViewController : UITableViewController
-
+{
+    NSMutableArray* dataSource;
+}
 @end
