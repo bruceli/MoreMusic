@@ -9,7 +9,9 @@
 #import "MaMoreViewController.h"
 #import "FXLabel.h"
 #import "MaSchViewCell.h"
-#import "MaMapViewController.h"
+#import "MaMapSelectorController.h"
+#import "MaTicketViewController.h"
+#import "MaWallpaperViewController.h"
 
 @implementation MaMoreViewController
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -17,7 +19,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         self.tabBarItem = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemMore tag:0];
-        dataSource = [NSMutableArray arrayWithObjects:@"Map", @"Ticket",@"About", nil];
+        dataSource = [NSMutableArray arrayWithObjects:@"Map", @"Ticket",@"Wallpaper", @"About", nil];
     }
     return self;
 }
@@ -76,18 +78,24 @@
 {
     switch (indexPath.row) {
         case 0:{
-            MaMapViewController* viewController = [[MaMapViewController alloc]init];
+            MaMapSelectorController* viewController = [[MaMapSelectorController alloc]init];
             [self.navigationController pushViewController: viewController animated:YES];
             break;
         }
             
         case 1:{
-            UIViewController* detViewController = [[UIViewController alloc]init];
-            [self.navigationController pushViewController: detViewController animated:YES];
+            MaTicketViewController* viewController = [[MaTicketViewController alloc]init];
+            [self.navigationController pushViewController: viewController animated:YES];
             break;
         }
             
         case 2:{
+            MaWallpaperViewController* viewController = [[MaWallpaperViewController alloc]init];
+            [self.navigationController pushViewController: viewController animated:YES];
+            break;
+        }
+
+        case 3:{
             UIViewController* detViewController = [[UIViewController alloc]init];
             [self.navigationController pushViewController: detViewController animated:YES];
             break;

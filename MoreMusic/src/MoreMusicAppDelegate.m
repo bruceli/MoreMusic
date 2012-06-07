@@ -22,9 +22,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    
+//    TTNavigator* navigator = [TTNavigator navigator];
+//    navigator.persistenceMode = TTNavigatorPersistenceModeAll;
+
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    
+//    TTURLMap* map = navigator.URLMap;
+//    [map from:@"*" toViewController:[TTWebController class]];
+//    [map                    from: @"tt://ticket" toSharedViewController: [MaTicketViewController class]];
+
     MoreMusicAppDelegate* app = (MoreMusicAppDelegate *)[[UIApplication sharedApplication] delegate];
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleBlackOpaque animated:YES];
     

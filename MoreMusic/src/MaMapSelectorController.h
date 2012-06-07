@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface MaMapSelectorController : UIViewController
-
+{
+    UIButton* googleMapButton;
+    UIButton* cartoonButton;
+}
 @end
