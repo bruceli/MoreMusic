@@ -9,6 +9,7 @@
 #import "MaMapSelectorController.h"
 #import "UIButton+Curled.h"
 #import "MaMapViewController.h"
+#import "MaDetailImageViewController.h"
 #import "FXLabel.h"
 
 @interface MaMapSelectorController ()
@@ -89,7 +90,8 @@
 
 -(void)loadCartoonMap
 {
-    MaMapViewController* viewController = [[MaMapViewController alloc]init];
+    MaDetailImageViewController* viewController = [[MaDetailImageViewController alloc]init];
+    viewController.imageName = @"cartoonOriginal.jpg";
     [self.navigationController pushViewController: viewController animated:YES];
 }
 
