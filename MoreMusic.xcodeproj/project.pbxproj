@@ -55,6 +55,7 @@
 		591A1501157C6245000832AD /* lableSectionBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 591A14FF157C6245000832AD /* lableSectionBackground.png */; };
 		591A1574157C893C000832AD /* msyh.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 591A1573157C893B000832AD /* msyh.ttf */; };
 		592C1B8B157C8B8300CB0C14 /* MaSchDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 592C1B8A157C8B8300CB0C14 /* MaSchDetailViewController.m */; };
+		59398181158282E400250E9D /* POAPinyin.m in Sources */ = {isa = PBXBuildFile; fileRef = 59398180158282E400250E9D /* POAPinyin.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		594DD178157502CF00037861 /* MHTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 594DD177157502CF00037861 /* MHTabBarController.m */; };
 		594DD17C157502DE00037861 /* MHTabBarActiveTab.png in Resources */ = {isa = PBXBuildFile; fileRef = 594DD179157502DE00037861 /* MHTabBarActiveTab.png */; };
 		594DD17D157502DE00037861 /* MHTabBarInactiveTab.png in Resources */ = {isa = PBXBuildFile; fileRef = 594DD17A157502DE00037861 /* MHTabBarInactiveTab.png */; };
@@ -562,6 +563,8 @@
 		591A1573157C893B000832AD /* msyh.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = msyh.ttf; path = MoreMusic/Resources/msyh.ttf; sourceTree = "<group>"; };
 		592C1B89157C8B8300CB0C14 /* MaSchDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MaSchDetailViewController.h; path = src/MaSchDetailViewController.h; sourceTree = "<group>"; };
 		592C1B8A157C8B8300CB0C14 /* MaSchDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MaSchDetailViewController.m; path = src/MaSchDetailViewController.m; sourceTree = "<group>"; };
+		5939817F158282E400250E9D /* POAPinyin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = POAPinyin.h; path = src/3rd/POAPinyin.h; sourceTree = "<group>"; };
+		59398180158282E400250E9D /* POAPinyin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = POAPinyin.m; path = src/3rd/POAPinyin.m; sourceTree = "<group>"; };
 		594DD176157502CF00037861 /* MHTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MHTabBarController.h; path = src/3rd/MHTabBarController/MHTabBarController.h; sourceTree = "<group>"; };
 		594DD177157502CF00037861 /* MHTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MHTabBarController.m; path = src/3rd/MHTabBarController/MHTabBarController.m; sourceTree = "<group>"; };
 		594DD179157502DE00037861 /* MHTabBarActiveTab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MHTabBarActiveTab.png; path = src/3rd/MHTabBarController/Images/MHTabBarActiveTab.png; sourceTree = "<group>"; };
@@ -1462,6 +1465,8 @@
 		59EBF4BB1573D5AF0073325A /* 3rdParty */ = {
 			isa = PBXGroup;
 			children = (
+				5939817F158282E400250E9D /* POAPinyin.h */,
+				59398180158282E400250E9D /* POAPinyin.m */,
 				5913A4B51580AE8100219F36 /* Notification */,
 				5913A47415808BEC00219F36 /* SFContainerViewController.h */,
 				5913A47515808BEC00219F36 /* SFContainerViewController.m */,
@@ -2035,6 +2040,7 @@
 				5913A4D21580AE9900219F36 /* WBStickyNoticeView.m in Sources */,
 				5913A4D31580AE9900219F36 /* WBSuccessNoticeView.m in Sources */,
 				5913A59D1580CF8500219F36 /* MaDetailImageViewController.m in Sources */,
+				59398181158282E400250E9D /* POAPinyin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

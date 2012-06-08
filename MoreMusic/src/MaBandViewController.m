@@ -9,6 +9,29 @@
 #import "MaBandViewController.h"
 #import "MaSchViewCell.h"
 #import "MaSchDetailViewController.h"
+#import "POAPinyin.h"
+
+@interface NSDictionary(nameCompare)
+- (NSComparisonResult)compareName: (NSDictionary*)anotherDict;
+@end
+
+@implementation NSDictionary(nameCompare)
+- (NSComparisonResult)compareName: (NSDictionary*)anotherDict
+{
+    NSDictionary *firstDict = self;
+    NSString *first = [firstDict objectForKey: @"title"];
+    NSString *second = [anotherDict objectForKey: @"title"];
+
+    NSString* firstPY = [POAPinyin Convert:first];
+    NSString* secondPY = [POAPinyin Convert:second];
+    
+//    NSLog(@"%@ = %@",first,firstPY );
+//    NSLog(@"%@ = %@",second,secondPY );
+
+    return [firstPY compare: secondPY];    
+}
+@end
+
 @interface MaBandViewController ()
 
 @end
@@ -20,8 +43,17 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         MoreMusicAppDelegate* app = (MoreMusicAppDelegate *)[[UIApplication sharedApplication] delegate];
-        dataSource = [NSArray arrayWithArray: app.scheduleViewController.allActivityArray];
+        dataSource = [NSMutableArray arrayWithArray: app.scheduleViewController.allActivityArray];
+        [dataSource sortUsingSelector:@selector(compareName:)];
+        
+        // unable sort "唵", move it to the top of array.
+        NSDictionary* temp = [dataSource objectAtIndex:[dataSource count]-1 ];
+        [dataSource insertObject:temp atIndex:0];
+        [dataSource removeObjectAtIndex:[dataSource count]-1];
+        
         self.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Band" image:[UIImage imageNamed:@"band"] tag:0];
+        
+        
     }
     return self;
 }

@@ -10,6 +10,6 @@
 
 @interface MaBandViewController : UITableViewController
 {
-    NSArray* dataSource;
+    NSMutableArray* dataSource;
 }
 @end
