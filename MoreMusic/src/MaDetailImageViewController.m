@@ -37,10 +37,13 @@
  
     _scrollView.backgroundColor = [UIColor grayColor];
 
-    UIImageView* imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed: _imageName]];
+    UIImage* image = [UIImage imageNamed: _imageName];
+    
+    UIImageView* imageView = [[UIImageView alloc] initWithImage:image];
     [imageView setContentMode:UIViewContentModeScaleAspectFit];
     [_scrollView addSubview:imageView];
 
+    
    // CGRect frame = CGRectMake(0,0,320,400);
    // [imageView setFrame:frame];
     

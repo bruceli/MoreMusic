@@ -82,7 +82,7 @@
     UIImage* bandImg = [UIImage imageNamed:imageNameString];
     bandImgView.image = bandImg;
     [self addSubview:bandImgView];
-    assert(bandImg);
+
     if (! _isSchCell) {    // band cell view
         [timeLabel removeFromSuperview];
         CGRect frame = nameLabel.frame;

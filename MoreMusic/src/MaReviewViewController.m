@@ -101,7 +101,8 @@
 
     MaDetailViewController* detViewController = [[MaDetailViewController alloc]init];
     detViewController.imageName = [dict objectForKey:@"detailImage"];
-    
+    detViewController.text = [dict objectForKey:@"text"];
+
     [detViewController initImageView];
     
     [self.navigationController pushViewController: detViewController animated:YES];

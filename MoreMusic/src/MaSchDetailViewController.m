@@ -71,7 +71,8 @@
     backgroundImage = [[UIImageView alloc] initWithFrame:CGRectMake(0,160, 320, detailLabel.frame.size.height+20)];
     
     backgroundImage.contentMode = UIViewContentModeScaleAspectFill;
-    backgroundImage.image = [UIImage imageNamed:@"detailBackground"];
+    
+    backgroundImage.image = [UIImage imageNamed:@"detailBackground.jpeg"];
     [self.view addSubview:backgroundImage];
     [self.view addSubview:detailLabel];
     [self.view addSubview:imageView];

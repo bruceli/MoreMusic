@@ -206,6 +206,8 @@
             textRect.origin.x = rect.size.width - textRect.size.width;
             break;
         }
+        case UITextAlignmentLeft:
+            break;
     }
     switch (self.contentMode)
     {

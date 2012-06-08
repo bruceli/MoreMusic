@@ -38,7 +38,7 @@
     UIImageView* backgroundView = [[UIImageView alloc] initWithFrame:self.view.bounds];  
     [self.view addSubview: backgroundView];
     backgroundView.contentMode = UIViewContentModeScaleAspectFill;
-    backgroundView.image = [UIImage imageNamed:@"detailBackground"];
+    backgroundView.image = [UIImage imageNamed:@"detailBackground.jpeg"];
     
     NSError* error;
     CGRect frame = CGRectMake(5, 5, 310, self.view.bounds.size.height);
