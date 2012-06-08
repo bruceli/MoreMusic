@@ -32,7 +32,7 @@
 			<key>band</key>
 			<string></string>
 			<key>image</key>
-			<string>赌鬼乐队</string>
+			<string>赌鬼</string>
 			<key>detail</key>
 			<string>赌鬼乐队（Casino Demon）成立于2004年。乐队主创王子堪称不折不扣的“音乐神童”，无论从歌曲创作还是吉他技法上都自成一套，现场即兴更是他的拿手绝活。在音乐创作上，Casino Demon受The Strokes，The Libertines，Arcade Fire等乐队影响较大，注重琅琅上口的旋律和精妙的吉他编配，对青春，爱情，崇拜，冲动这些词汇极其敏感。</string>
 		</dict>
@@ -129,7 +129,7 @@
 			<string>主唱：程晨  吉他：苗佳  贝司：陈欣  鼓：文龙
 </string>
 			<key>image</key>
-			<string>OCC控制之外</string>
+			<string>OOC控制之外</string>
 			<key>detail</key>
 			<string>一路行走一路高歌，对自由与音乐的热爱从未因时光变迁有丝毫减少。主唱程晨在海外居住五年，曾经自驾车自西向东横穿北美大陆，历时一个月游历了美国的 18个州23个城市，看了98场演唱会。苗佳的吉他风格独立，陈欣曾经是01年 “摇滚生力军乐队比赛”和04年“康师傅冰红茶乐队大赛” “最佳贝司手”，鼓手文龙对各种音乐风格的把握非常自然，对他们来说，音乐是人生的一种标准和理想。
 </string>
@@ -147,7 +147,7 @@
 			<string>吉他：谢玉岗\耿鑫 贝斯：铮子 鼓：连江 键盘：张岩峰
 </string>
 			<key>image</key>
-			<string>惘闻乐队</string>
+			<string>惘闻</string>
 			<key>detail</key>
 			<string>惘闻的音乐仿佛在讲述一个个藏于他们内心的故事，或而是短暂的愉悦，或而是长久的悲恸。十年稳定坚实的创作，一场场令人激动振奋的现场演出，也使惘闻的名字开始越来越多的受到来自国内外业内人士及乐迷的广泛关注，并被认为是中国后摇滚/器乐摇滚的领军人。而对于他们本身，仿佛每一张唱片，每一次演出都仅仅是一个开始。
 </string>
@@ -280,7 +280,7 @@
 			<key>band</key>
 			<string></string>
 			<key>image</key>
-			<string>琥珀乐队</string>
+			<string>琥珀</string>
 			<key>detail</key>
 			<string>琥珀乐队开始于2010年,西安,夏末。取名琥珀(AMBER)，是因为他们的音乐追求华美的旋律，且在悦耳的音符后面，更多掺杂着他们创作时的情绪，他们的音乐融合着对生活的感悟。
 </string>
@@ -378,7 +378,7 @@
 			<key>band</key>
 			<string>主唱: 汤龙  吉它: 王思涵  吉它: 李宇行  贝司：陈星之  鼓：张超  </string>
 			<key>image</key>
-			<string>无争乐队</string>
+			<string>无争</string>
 			<key>detail</key>
 			<string>无争乐队成立于2008年，经过4年的时间，在不断的推陈出新和自我突破中完善，人员更换和旁人碎语等一切困难无法阻止我们继续坚持自己喜爱的风格的音乐，也希望你们会喜欢我们的作品。OK，整装待发，期待与朋友们在每一个现场见！JOIN US！
 </string>
@@ -415,6 +415,177 @@
 			<string>马飞</string>
 			<key>detail</key>
 			<string>陕西方言乐队，歌曲主要描写普通人的普通生活，代表作《长安县》，岐山面、谝闲传，马飞的歌在西安可以说无人不知，无人不晓。
+</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>杨众国</string>
+			<key>date</key>
+			<date>2012-06-22T07:15:00Z</date>
+			<key>endDate</key>
+			<date>2012-06-22T07:55:00Z</date>
+			<key>site</key>
+			<string>乐噪音舞台</string>
+			<key>band</key>
+			<string></string>
+			<key>image</key>
+			<string>杨众国</string>
+			<key>detail</key>
+			<string>杨众国，风格以实验即兴民谣为主，善于掌控嗓音和细微的声音，唱功与嗓音很独特而具有感染力，对于声音即兴的循环，以及情感的把握相当细腻，曾为树、小河、冯昊、内桥和久暖场交流，是一个非常有才华和潜力的原创歌手。
+</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>XBH</string>
+			<key>date</key>
+			<date>2012-06-22T08:15:00Z</date>
+			<key>endDate</key>
+			<date>2012-06-22T08:55:00Z</date>
+			<key>site</key>
+			<string>乐噪音舞台</string>
+			<key>band</key>
+			<string></string>
+			<key>image</key>
+			<string>XBH</string>
+			<key>detail</key>
+			<string>系统误差发起人之一，Colourful Z-bra乐队吉他手&amp;主唱，主要以吉他和效果器即兴为主，风格游走于即兴、噪音、迷幻之间。曾参与多场系统误差演出，与内河桥久和冯昊演出交流。
+</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>董黑木</string>
+			<key>date</key>
+			<date>2012-06-22T09:15:00Z</date>
+			<key>endDate</key>
+			<date>2012-06-22T09:55:00Z</date>
+			<key>site</key>
+			<string>乐噪音舞台</string>
+			<key>band</key>
+			<string></string>
+			<key>image</key>
+			<string>董黑木</string>
+			<key>detail</key>
+			<string>花搅乐队主唱&amp;吉他手，受后朋影响较大，音乐阴森冰冷。受POST punk/Psychedelic 音乐影响音乐最大的特点就是风格跨度很大，理念就是打造奇怪的兴奋点，为观众带来深刻的听觉刺激和心理冲击。
+</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>三噪谷</string>
+			<key>date</key>
+			<date>2012-06-22T10:15:00Z</date>
+			<key>endDate</key>
+			<date>2012-06-22T10:55:00Z</date>
+			<key>site</key>
+			<string>乐噪音舞台</string>
+			<key>band</key>
+			<string></string>
+			<key>image</key>
+			<string>三噪谷</string>
+			<key>detail</key>
+			<string>来自通州NOJIJI地下声响集团的李杨漾+梅志勇+杨修，带来硬性模拟与灵魂交错感的迷离高能噪音现场，他们分别以吉他和录音机扰动和硬件采样等方式带来的合奏与独奏之三角能量景观，确是让你进入另外一种生命次元的可能。
+</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>麻沸散</string>
+			<key>date</key>
+			<date>2012-06-22T11:15:00Z</date>
+			<key>endDate</key>
+			<date>2012-06-22T11:55:00Z</date>
+			<key>site</key>
+			<string>乐噪音舞台</string>
+			<key>band</key>
+			<string></string>
+			<key>image</key>
+			<string>麻沸散</string>
+			<key>detail</key>
+			<string>来自中国-颠倒古今时空、混淆中外观念、搅拌前后摇滚、致力于传统电声器乐的非常规演绎与破坏传统的常规演绎，以自由即兴的手法，不时在现场引发具有颠覆性的听觉事件。他们的音乐可以使人中枢神经信号传导速度提高，抑制焦虑，促进肾上腺素的分泌，并在强力气场中引发思维重组。
+</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>唵</string>
+			<key>date</key>
+			<date>2012-06-23T07:15:00Z</date>
+			<key>endDate</key>
+			<date>2012-06-23T07:55:00Z</date>
+			<key>site</key>
+			<string>乐噪音舞台</string>
+			<key>band</key>
+			<string></string>
+			<key>image</key>
+			<string>唵</string>
+			<key>detail</key>
+			<string>空，确实是 &quot;唵”最崇高，最伟大的体现。空是无始无终的存在。多人随机即兴团体，没有固定结构，没有固定玩法，没有主唱，没有什么美学价值，你要愿意也可以来参加，最好不会乐器，无技术者优先。事件剧，偶发剧，集体朗诵，群体即兴行为。
+</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Mind Fiber</string>
+			<key>date</key>
+			<date>2012-06-23T08:15:00Z</date>
+			<key>endDate</key>
+			<date>2012-06-23T08:55:00Z</date>
+			<key>site</key>
+			<string>乐噪音舞台</string>
+			<key>band</key>
+			<string></string>
+			<key>image</key>
+			<string>mindfiber</string>
+			<key>detail</key>
+			<string>Mind Fiber 是李剑鸿和 VAVABOND 的环境即兴团体，旨在通过即兴演奏的创作和演出，让所在的环境私人化，成为自我情感表达的一部分。不再需要观众的注意，不再需要常规的演出场地，生活中的一切环境声场都可以成为 Mind Fiber 即兴的兴趣所在，也将会是他们音乐的共同完成者。
+</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>颜峻</string>
+			<key>date</key>
+			<date>2012-06-23T09:15:00Z</date>
+			<key>endDate</key>
+			<date>2012-06-23T09:55:00Z</date>
+			<key>site</key>
+			<string>乐噪音舞台</string>
+			<key>band</key>
+			<string></string>
+			<key>image</key>
+			<string>颜峻</string>
+			<key>detail</key>
+			<string>颜峻，乐评人，独立音乐和艺术活动策划人，声音艺术家，即兴演奏者，诗人。现场常利用电子设备，在喇叭，话筒，观众以及环境之间形成微妙反馈关系，使声音自行变化。有“微型反馈”项目，以耳机线联接观众，近距离噪声催眠。偶尔用葵花籽做乐器，将即兴音乐化约为简单声音及其间隔。借以上乐器之延伸，环境之延伸，音乐概念之延伸，而参与艺术活动。
+</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>李剑鸿</string>
+			<key>date</key>
+			<date>2012-06-23T10:15:00Z</date>
+			<key>endDate</key>
+			<date>2012-06-23T10:55:00Z</date>
+			<key>site</key>
+			<string>乐噪音舞台</string>
+			<key>band</key>
+			<string></string>
+			<key>image</key>
+			<string>李剑鸿</string>
+			<key>detail</key>
+			<string>李剑鸿,目前中国大陆最活跃、最重要的噪音及即兴音乐家之一，擅长用吉它制造出强烈的噪音。李剑鸿早先擅长以电视机电磁波、接触式麦克风与效果器调制出强暴的噪音，目前演出以吉他和效果器的即兴为主，风格游走于即兴、噪音、迷幻音乐之间。最近开始在环境与演奏的相互关系中开拓创作新方向，以环境即兴为名经行系列创作。
+</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>陈皓伊与菲尔•明顿二重奏
+</string>
+			<key>date</key>
+			<date>2012-06-23T11:15:00Z</date>
+			<key>endDate</key>
+			<date>2012-06-23T11:55:00Z</date>
+			<key>site</key>
+			<string>乐噪音舞台</string>
+			<key>band</key>
+			<string></string>
+			<key>image</key>
+			<string>陈皓伊</string>
+			<key>detail</key>
+			<string>陈皓伊和菲尔•明顿的二重奏始于2006年，随后逐渐发展为一个非常独特的团体。他们专注于纯然的嗓音和唇齿之声，探索着自身天然的，身体的‘乐器’。他们的即兴演奏是无所畏惧的，易碎的，饥渴的，激情的，放荡的，哀恸的，野兽般的，人所能发出的各种声音。今年，他们在比利时实验大厂Sub Rosa发表了首张专辑。
 </string>
 		</dict>
 	</array>

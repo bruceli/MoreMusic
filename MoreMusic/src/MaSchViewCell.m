@@ -22,7 +22,7 @@
     if (self) {
         // Initialization code
         bandImgView = [[UIImageView alloc] initWithFrame:CGRectMake(10, 5, 50, 50)];
-        nameLabel = [[FXLabel alloc] initWithFrame:CGRectMake(75, 5,190 , 30)];
+        nameLabel = [[FXLabel alloc] initWithFrame:CGRectMake(75, 5,230 , 30)];
         timeLabel = [[UILabel alloc] initWithFrame:CGRectMake(75, 35, 120, 25)];
         _isSchCell = YES;
         self.selectionStyle = UITableViewCellSelectionStyleNone;
@@ -77,10 +77,12 @@
     nameLabel.shadowOffset = CGSizeMake(1.0f, 1.0f);
     nameLabel.shadowBlur = 3.0f;
 
-    UIImage* bandImg = [UIImage imageNamed:_bandImgName];
+    NSMutableString* imageNameString = [NSMutableString stringWithString:_bandImgName];
+    [imageNameString appendString:@".jpeg"];
+    UIImage* bandImg = [UIImage imageNamed:imageNameString];
     bandImgView.image = bandImg;
     [self addSubview:bandImgView];
-    
+    assert(bandImg);
     if (! _isSchCell) {    // band cell view
         [timeLabel removeFromSuperview];
         CGRect frame = nameLabel.frame;
@@ -88,6 +90,9 @@
         nameLabel.font = [UIFont fontWithName:@"MicrosoftYaHei" size:21];
         nameLabel.frame = frame;
         nameLabel.shadowBlur = 4.0f;
+        if ([_nameString length]>9) {
+            nameLabel.font = [UIFont fontWithName:@"MicrosoftYaHei" size:19];
+        }
 
     }
 }

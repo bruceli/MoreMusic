@@ -36,7 +36,8 @@
 -(void)initSubViews
 {
     NSMutableString* imgName = [NSMutableString stringWithString:[_info objectForKey:@"image"]];
-    [imgName appendString:@"Detail"];
+    [imgName appendString:@"Detail.jpeg"];
+    
     UIImage* image = [UIImage imageNamed:imgName];
     imageView = [[UIImageView alloc] initWithImage:image];
     
@@ -49,6 +50,9 @@
     nameLabel.shadowOffset = CGSizeMake(0.5f, 0.5f);
     nameLabel.shadowBlur = 4.0f;
     nameLabel.text = [_info objectForKey:@"title"] ;
+    if ([nameLabel.text length]>9) {
+        nameLabel.font = [UIFont fontWithName:@"MicrosoftYaHei" size:19];
+    }
 
     NSMutableString* infoString = [[NSMutableString alloc] init];
     NSString* bandString = [_info objectForKey:@"band"];
