@@ -30,7 +30,7 @@
 			<key>site</key>
 			<string>乐来乐快乐舞台</string>
 			<key>band</key>
-			<string></string>
+			<string>主唱/吉他: 王梓  贝司：刘昊  鼓：关铮 </string>
 			<key>image</key>
 			<string>赌鬼</string>
 			<key>detail</key>
@@ -78,7 +78,7 @@
 			<key>site</key>
 			<string>乐来乐快乐舞台</string>
 			<key>band</key>
-			<string></string>
+			<string>主唱：雷霖  吉他：张帆  贝司：梁伟  鼓：于巍</string>
 			<key>image</key>
 			<string>诱导社</string>
 			<key>detail</key>
@@ -162,13 +162,11 @@
 			<key>site</key>
 			<string>乐来乐快乐舞台</string>
 			<key>band</key>
-			<string>吉他：谢玉岗\耿鑫 贝斯：铮子 鼓：连江 键盘：张岩峰
-</string>
+			<string>主唱：爽子  吉他：苗佳  DJ：吕硕  贝司：陈然然  键盘：小吉  鼓：李浩</string>
 			<key>image</key>
 			<string>爽子</string>
 			<key>detail</key>
-			<string>爽子：MC，中国嘻哈之王。爽子是中国第一代嘻哈歌手，他以纯正的HIP-HOP风格融合地道的京腔儿说唱开创了中国嘻哈音乐之先河，爽子的主打歌曲《挂念》、《离开》、《在北京》等数首广为流传的曲目，展现了新新人类独特的视角和另类的表达方式。数年来不断的创作与演出，让爽子在全国积累了大批忠实歌迷。犀利的表达与深刻的寓意，让爽子成为中国当代年轻人无可争辩的代言人。
-</string>
+			<string>爽子：MC，中国嘻哈之王。爽子是中国第一代嘻哈歌手，他以纯正的HIP-HOP风格融合地道的京腔儿说唱开创了中国嘻哈音乐之先河，爽子的主打歌曲《挂念》、《离开》、《在北京》等数首广为流传的曲目，展现了新新人类独特的视角和另类的表达方式。数年来不断的创作与演出，让爽子在全国积累了大批忠实歌迷。犀利的表达与深刻的寓意，让爽子成为中国当代年轻人无可争辩的代言人。</string>
 		</dict>
 		<dict>
 			<key>title</key>
@@ -278,7 +276,7 @@
 			<key>site</key>
 			<string>张冠李戴舞台</string>
 			<key>band</key>
-			<string></string>
+			<string>吉它: 王左   吉它: 杨谅  贝司：崔尧  鼓：李冠宇</string>
 			<key>image</key>
 			<string>琥珀</string>
 			<key>detail</key>
@@ -311,7 +309,7 @@
 			<key>site</key>
 			<string>张冠李戴舞台</string>
 			<key>band</key>
-			<string></string>
+			<string>主唱：曹石  王大治  吉他：张宁  贝司：双喜  鼓手：毕涛</string>
 			<key>image</key>
 			<string>黑撒</string>
 			<key>detail</key>
@@ -327,7 +325,7 @@
 			<key>site</key>
 			<string>张冠李戴舞台</string>
 			<key>band</key>
-			<string></string>
+			<string>主唱：杰森  吉他/合成器：蓝野  贝斯/合成器：马克  鼓手：铂洋</string>
 			<key>image</key>
 			<string>THE FUZZ</string>
 			<key>detail</key>
