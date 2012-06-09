@@ -70,10 +70,10 @@
 - (void)imageSavedToPhotosAlbum:(UIImage *)image didFinishSavingWithError:(NSError *)error contextInfo:(void *)contextInfo {  
 
     if (!error) {  
-        WBSuccessNoticeView *notice = [WBSuccessNoticeView successNoticeInView:self.view title:@"Wallpaper Saved Successfully."];
+        WBSuccessNoticeView *notice = [WBSuccessNoticeView successNoticeInView:self.view title:NSLocalizedString(@"WallpaperSaved",nil)];
         [notice show];
     } else {  
-        WBErrorNoticeView *notice = [WBErrorNoticeView errorNoticeInView:self.view title:@"Error" message:@"Can't save wallpaper."];
+        WBErrorNoticeView *notice = [WBErrorNoticeView errorNoticeInView:self.view title:NSLocalizedString(@"ERROR",nil) message:NSLocalizedString(@"WallpaperSaveError",nil)];
         [notice show];
     }  
 }  
