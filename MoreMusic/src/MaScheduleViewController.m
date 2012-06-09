@@ -24,7 +24,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         self.view.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleHeight;          
-        self.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Schedule" image:[UIImage imageNamed:@"schedule"] tag:0];
+        self.tabBarItem = [[UITabBarItem alloc] initWithTitle:NSLocalizedString(@"Schedule",nil) image:[UIImage imageNamed:@"schedule"] tag:0];
         return self;
 
 
@@ -43,7 +43,7 @@
     currentActivity = MaFirstDay;
 
     NSString* path = [[NSBundle mainBundle] pathForResource:@"ActivityDataSource" ofType:@"plist"];
-    NSLog(@"Datasource Location... %@", path);
+//    NSLog(@"Datasource Location... %@", path);
     
     NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
     allActivityArray = [dict objectForKey:@"ActivityArray"];
@@ -56,16 +56,16 @@
 
 	// Do any additional setup after loading the view.
 //    self.tableView.backgroundColor = [UIColor darkGrayColor];
-    self.navigationItem.title = @"MaScheduleViewController";
-
+    self.navigationItem.title = NSLocalizedString(@"Schedule",nil);
+    
     UITableViewController *listViewController1 = [[UITableViewController alloc] initWithStyle:UITableViewStylePlain];
 	UITableViewController *listViewController2 = [[UITableViewController alloc] initWithStyle:UITableViewStylePlain];
    
     // listViewController1.tableView.backgroundColor = [UIColor lightGrayColor];
     // listViewController2.tableView.backgroundColor = [UIColor grayColor];
 
-	listViewController1.title = @"Day 1";
-	listViewController2.title = @"Day 2";
+	listViewController1.title = NSLocalizedString(@"Day1",nil);
+	listViewController2.title = NSLocalizedString(@"Day2",nil);
     listViewController1.tableView.delegate = self; 
     listViewController1.tableView.dataSource = self; 
     listViewController2.tableView.delegate = self; 
@@ -106,7 +106,7 @@
 {
     NSArray* siteArray = [dataSource objectForKey:@"sectionNameArray"];
     int count = [siteArray count];
-    NSLog(@"activity section count %d", count);
+//    NSLog(@"activity section count %d", count);
     return count;
 }
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
@@ -202,7 +202,9 @@
     
     MaSchDetailViewController* detViewController = [[MaSchDetailViewController alloc]init];
     detViewController.info = dict;
-        
+    
+    detViewController.navigationItem.title = [dict objectForKey:@"title"];
+
     [self.navigationController pushViewController: detViewController animated:YES];
 }
 
@@ -264,7 +266,7 @@
 
 - (BOOL)mh_tabBarController:(MHTabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController atIndex:(NSUInteger)index
 {
-	NSLog(@"mh_tabBarController %@ shouldSelectViewController %@ at index %u", tabBarController, viewController, index);
+//	NSLog(@"mh_tabBarController %@ shouldSelectViewController %@ at index %u", tabBarController, viewController, index);
     [self updateCurrentActivityByDate:index];
     [self updateSiteArray];
 	return YES;
@@ -272,7 +274,7 @@
 
 - (void)mh_tabBarController:(MHTabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController atIndex:(NSUInteger)index
 {
-	NSLog(@"mh_tabBarController %@ didSelectViewController %@ at index %u", tabBarController, viewController, index);
+//	NSLog(@"mh_tabBarController %@ didSelectViewController %@ at index %u", tabBarController, viewController, index);
     [self updateCurrentActivityByDate:index];
     [self updateSiteArray];
 }

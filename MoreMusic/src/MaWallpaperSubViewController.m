@@ -83,6 +83,7 @@
     if (image) {
         MaWallpaperDetailViewController *viewController = [[MaWallpaperDetailViewController alloc] init];
         viewController.wallPaperName = _wallPaperName;
+
         [self.navigationController pushViewController: viewController animated:YES];
     }
     

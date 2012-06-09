@@ -52,7 +52,8 @@
     [super viewDidLoad];
     _mapView = [[MKMapView alloc] initWithFrame:self.view.bounds];
     [self.view addSubview:_mapView];
-    
+    self.navigationItem.title = NSLocalizedString(@"GoogleMap",nil);
+
     CLLocationCoordinate2D ctrpoint = CLLocationCoordinate2DMake(34.269277,109.059539);
     MKCoordinateSpan span = MKCoordinateSpanMake(0.05, 0.05);
     MKCoordinateRegion region = MKCoordinateRegionMake(ctrpoint, span);

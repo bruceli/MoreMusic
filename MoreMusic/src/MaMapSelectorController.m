@@ -34,21 +34,22 @@
     backgroundView.image = [UIImage imageNamed:@"mapViewBackground.jpg"];
     [self.view addSubview:backgroundView];
 
-    
+    self.navigationItem.title = NSLocalizedString(@"Map",nil);
+
     googleMapButton = [[UIButton alloc] initWithFrame:CGRectMake(25, 30, 270, 130)];
     [googleMapButton setContentMode:UIViewContentModeScaleAspectFill];
     [googleMapButton setImage:[UIImage imageNamed:@"googleMap.png"] borderWidth:5.0 shadowDepth:10.0 controlPointXOffset:30.0 controlPointYOffset:70.0 forState:UIControlStateNormal];
     [googleMapButton addTarget:self action:@selector(loadGoogleMap) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:googleMapButton];
     
-    FXLabel* googleLabel = [[FXLabel alloc] initWithFrame:CGRectMake(130, 110, 150, 50)];
+    FXLabel* googleLabel = [[FXLabel alloc] initWithFrame:CGRectMake(180, 110, 150, 50)];
     googleLabel.shadowColor = [UIColor blackColor];
     googleLabel.backgroundColor = [UIColor clearColor];
     googleLabel.font = [UIFont fontWithName:@"MicrosoftYaHei" size:22];
     googleLabel.textColor = [UIColor whiteColor];
     googleLabel.shadowOffset = CGSizeMake(1.0f, 1.0f);
     googleLabel.shadowBlur = 4.0f;
-    googleLabel.text = @"Google Map";
+    googleLabel.text = NSLocalizedString(@"GoogleMap",nil);
     [self.view addSubview:googleLabel];
 
     
@@ -58,14 +59,14 @@
     [cartoonButton addTarget:self action:@selector(loadCartoonMap) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:cartoonButton];
     
-    FXLabel* cartoonLabel = [[FXLabel alloc] initWithFrame:CGRectMake(130, 280, 150, 50)];
+    FXLabel* cartoonLabel = [[FXLabel alloc] initWithFrame:CGRectMake(200, 280, 150, 50)];
     cartoonLabel.shadowColor = [UIColor blackColor];
     cartoonLabel.backgroundColor = [UIColor clearColor];
     cartoonLabel.font = [UIFont fontWithName:@"MicrosoftYaHei" size:22];
     cartoonLabel.textColor = [UIColor whiteColor];
     cartoonLabel.shadowOffset = CGSizeMake(1.0f, 1.0f);
     cartoonLabel.shadowBlur = 4.0f;
-    cartoonLabel.text = @"Cartoon Map";
+    cartoonLabel.text = NSLocalizedString(@"CartoonMap",nil);
     [self.view addSubview:cartoonLabel];
 
 }
@@ -92,6 +93,8 @@
 {
     MaDetailImageViewController* viewController = [[MaDetailImageViewController alloc]init];
     viewController.imageName = @"cartoonOriginal.jpg";
+    viewController.navigationItem.title = NSLocalizedString(@"CartoonMap",nil);
+
     [self.navigationController pushViewController: viewController animated:YES];
 }
 

@@ -20,7 +20,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Review" image:[UIImage imageNamed:@"review"] tag:0];
+        self.tabBarItem = [[UITabBarItem alloc] initWithTitle:NSLocalizedString(@"Review",nil) image:[UIImage imageNamed:@"review"] tag:0];
     }
     return self;
 }
@@ -30,7 +30,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     self.tableView.backgroundColor = [UIColor darkGrayColor];
-    self.navigationItem.title = @"MaReviewViewController";
+    self.navigationItem.title = NSLocalizedString(@"Review",nil);
     NSString* path = [[NSBundle mainBundle] pathForResource:@"history" ofType:@"plist"];
     NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
     histroyArray = [dict objectForKey:@"historyArray"];
@@ -102,6 +102,9 @@
     MaDetailViewController* detViewController = [[MaDetailViewController alloc]init];
     detViewController.imageName = [dict objectForKey:@"detailImage"];
     detViewController.text = [dict objectForKey:@"text"];
+    
+    NSString* titleString = [[dict objectForKey:@"title"] substringWithRange:NSMakeRange(0, 9)];
+    detViewController.navigationItem.title = titleString;
 
     [detViewController initImageView];
     

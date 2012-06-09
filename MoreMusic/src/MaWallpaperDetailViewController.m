@@ -45,6 +45,7 @@
 	UIBarButtonItem *saveButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSave target:self action:@selector(save)];
     
 	self.navigationItem.rightBarButtonItem = saveButton;
+    self.navigationItem.title = NSLocalizedString(@"Wallpaper",nil);
 
 }
 

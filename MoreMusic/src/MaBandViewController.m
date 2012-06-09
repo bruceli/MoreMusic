@@ -51,7 +51,7 @@
         [dataSource insertObject:temp atIndex:0];
         [dataSource removeObjectAtIndex:[dataSource count]-1];
         
-        self.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Band" image:[UIImage imageNamed:@"band"] tag:0];
+        self.tabBarItem = [[UITabBarItem alloc] initWithTitle:NSLocalizedString(@"Band",nil) image:[UIImage imageNamed:@"band"] tag:0];
         
         
     }
@@ -63,8 +63,8 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     self.tableView.backgroundColor = [UIColor whiteColor];
-    self.navigationItem.title = @"MaBandViewController";
-    
+    self.navigationItem.title = NSLocalizedString(@"Band",nil);
+
     
 }
 
@@ -123,7 +123,8 @@
     
     MaSchDetailViewController* detViewController = [[MaSchDetailViewController alloc]init];
     detViewController.info = dict;
-    
+    detViewController.navigationItem.title = [dict objectForKey:@"title"];
+
     [self.navigationController pushViewController: detViewController animated:YES];
 }
 

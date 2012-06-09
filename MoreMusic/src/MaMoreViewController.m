@@ -29,7 +29,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     self.tableView.backgroundColor = [UIColor whiteColor];
-    self.navigationItem.title = @"MaMoreViewController";
+    self.navigationItem.title = NSLocalizedString(@"More",nil);
 }
 
 - (void)viewDidUnload
@@ -68,7 +68,7 @@
     }
 
     cell.isSchCell = NO;
-    cell.nameString = [dataSource objectAtIndex:indexPath.row];
+    cell.nameString =  NSLocalizedString([dataSource objectAtIndex:indexPath.row],nil);
     cell.bandImgName = [[dataSource objectAtIndex:indexPath.row] lowercaseString];
     
     return cell;

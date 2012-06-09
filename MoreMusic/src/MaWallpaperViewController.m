@@ -30,7 +30,8 @@
     [super viewDidLoad];
     int columns = 4;
     int rows = 4;
-    
+    self.navigationItem.title = NSLocalizedString(@"Wallpaper",nil);
+
     //! just some random child controllers generation
     MaWallpaperSubView *containerView = [[MaWallpaperSubView alloc] init];
     self.view = containerView;

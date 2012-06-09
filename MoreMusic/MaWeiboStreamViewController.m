@@ -18,7 +18,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Stream" image:[UIImage imageNamed:@"weibo"] tag:0];
+        self.tabBarItem = [[UITabBarItem alloc] initWithTitle:NSLocalizedString(@"Weibo",nil) image:[UIImage imageNamed:@"weibo"] tag:0];
     }
     return self;
 }
@@ -28,7 +28,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     self.tableView.backgroundColor = [UIColor lightGrayColor];
-    self.navigationItem.title = @"MaWeiboStreamViewController";
+    self.navigationItem.title = NSLocalizedString(@"Weibo",nil);
 }
 
 - (void)viewDidUnload

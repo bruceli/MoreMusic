@@ -68,8 +68,8 @@ static const NSInteger TAG_OFFSET = 1000;
 	[button setBackgroundImage:image forState:UIControlStateNormal];
 	[button setBackgroundImage:image forState:UIControlStateHighlighted];
 
-	[button setTitleColor:[UIColor colorWithRed:100/255.0f green:100/255.0f blue:100/255.0f alpha:1.0f] forState:UIControlStateNormal];
-	[button setTitleShadowColor:[UIColor whiteColor] forState:UIControlStateNormal];
+	[button setTitleColor:[UIColor colorWithWhite:255 alpha:0.3f] forState:UIControlStateNormal];
+//    [button setTitleShadowColor:[UIColor colorWithWhite:0.0f alpha:0.5f] forState:UIControlStateNormal];
 }
 
 - (void)removeTabButtons
