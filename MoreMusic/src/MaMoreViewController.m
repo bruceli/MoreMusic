@@ -69,7 +69,7 @@
 
     cell.isSchCell = NO;
     cell.nameString = [dataSource objectAtIndex:indexPath.row];
-    cell.bandImgName = [dataSource objectAtIndex:indexPath.row];
+    cell.bandImgName = [[dataSource objectAtIndex:indexPath.row] lowercaseString];
     
     return cell;
 }
