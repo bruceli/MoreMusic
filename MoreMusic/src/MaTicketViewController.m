@@ -31,7 +31,8 @@
     TTNavigator *navigator = [TTNavigator navigator];
     navigator.persistenceMode = TTNavigatorPersistenceModeNone;
     navigator.delegate = self;
-    
+    self.navigationItem.title = NSLocalizedString(@"Ticket",nil);
+
     UIScrollView* scrollView = [[UIScrollView alloc] initWithFrame:self.view.bounds];
     self.view = scrollView;
     scrollView.backgroundColor = [UIColor darkGrayColor];
