@@ -12,6 +12,9 @@
 #import "MaReviewViewController.h"
 #import "MaWeiboStreamViewController.h"
 #import "MaMoreViewController.h"
+#import "HomeViewController.h"
+
+@class MaAuthMgr;
 
 @interface MoreMusicAppDelegate : UIResponder <UIApplicationDelegate, UITabBarControllerDelegate>
 {
@@ -20,7 +23,9 @@
     MaReviewViewController* _reviewViewController;
     MaWeiboStreamViewController* _weiboStreamViewController;
     MaMoreViewController* _moreViewController;
+    HomeViewController* _HomeViewController;
     UITabBarController *tabBarController;
+    MaAuthMgr* _authMgr;
 
 }
 @property (strong, nonatomic) UIWindow *window;
@@ -29,6 +34,7 @@
 @property (nonatomic, retain) MaReviewViewController* reviewViewController;
 @property (nonatomic, retain) MaWeiboStreamViewController* weiboStreamViewController;
 @property (nonatomic, retain) MaMoreViewController* moreViewController;
-
+@property (nonatomic, retain) HomeViewController* homeViewController;
+@property (nonatomic, retain) MaAuthMgr* authMgr;
 
 @end

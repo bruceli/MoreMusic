@@ -17,6 +17,8 @@
 @synthesize reviewViewController = _reviewViewController;
 @synthesize weiboStreamViewController = _weiboStreamViewController;
 @synthesize moreViewController = _moreViewController;
+@synthesize homeViewController = _homeViewController;
+@synthesize authMgr = _authMgr;
 
 //@synthesize tabBarController = _tabBarController;
 

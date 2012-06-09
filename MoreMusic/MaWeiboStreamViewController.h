@@ -6,9 +6,7 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "MaTableViewController.h"
 
-
-@interface MaWeiboStreamViewController : MaTableViewController
+@interface MaWeiboStreamViewController : UITableViewController
 
 @end

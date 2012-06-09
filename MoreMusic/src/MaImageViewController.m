@@ -1,19 +1,19 @@
 //
-//  MaTableViewController.m
-//  MoreMusic
+//  MaImageViewController.m
+//  WeiboNote
 //
-//  Created by Accthun He on 5/29/12.
+//  Created by Accthun He on 4/24/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "MaTableViewController.h"
-#import "MoreMusicAppDelegate.h"
+#import "MaImageViewController.h"
 
-@interface MaTableViewController ()
+@interface MaImageViewController ()
 
 @end
 
-@implementation MaTableViewController
+@implementation MaImageViewController
+@synthesize theImage = _theImage;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,6 +27,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(done)];
+    
+    UIImageView* imgView = [[UIImageView alloc] initWithImage:_theImage];
+    
+    [self.view addSubview:imgView];
+
+    [imgView sizeToFit];
+    
 	// Do any additional setup after loading the view.
 }
 
@@ -39,6 +48,11 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+-(void)done
+{
+    [self dismissModalViewControllerAnimated:YES];
 }
 
 @end

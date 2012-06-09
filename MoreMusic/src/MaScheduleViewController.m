@@ -7,7 +7,6 @@
 //
 #import "MaMoreMusicDefine.h"
 #import "MaScheduleViewController.h"
-#import "MaTableViewController.h"
 #import "NSDate-Utilities.h"
 #import "MaSchViewCell.h"
 #import "MaSchDetailViewController.h"
