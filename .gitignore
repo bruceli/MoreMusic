@@ -21,3 +21,5 @@ src/.DS_Store
 python/.weibo.py.swp
 
 python/weibo.pyc
+
+python/.weibo_parser.py.swp
