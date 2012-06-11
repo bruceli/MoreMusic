@@ -13,7 +13,7 @@
 #import "RDActionSheet.h"
 #import "MaImageViewController.h"
 #import "UIImage+Resize.h"
-
+#import <MobileCoreServices/UTCoreTypes.h>
 
 
 @interface MaPostController() 
@@ -223,7 +223,9 @@
         cameraUI.sourceType = UIImagePickerControllerSourceTypeCamera;
         cameraUI.delegate = self;
         cameraUI.mediaTypes = [UIImagePickerController availableMediaTypesForSourceType: UIImagePickerControllerSourceTypeCamera];
+        cameraUI.mediaTypes = [[NSArray alloc] initWithObjects: (NSString *) kUTTypeImage, nil];
         cameraUI.allowsEditing = NO;
+        
         [self presentModalViewController: cameraUI animated: YES];
         
     } 
@@ -252,7 +254,7 @@
                     break;
                 }
                 case RDActionSheetResultResultCancelled:{
-                    //                    [_textView becomeFirstResponder];
+                    [_textView becomeFirstResponder];
                     
                 }
 //                    NSLog(@"Sheet cancelled");

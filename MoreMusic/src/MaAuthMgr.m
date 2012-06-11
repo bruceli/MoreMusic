@@ -17,16 +17,7 @@
 - (id)init {
 
 	if (self = [super init]) {
-    }
-
-    currentEngine = [[WBEngine alloc] initWithAppKey:kOAuthConsumerKey appSecret:kOAuthConsumerSecret];
-    MoreMusicAppDelegate* app = (MoreMusicAppDelegate *)[[UIApplication sharedApplication] delegate];
-    currentEngine.delegate = self;
-    [currentEngine setRootViewController:app.weiboStreamViewController];
-    [currentEngine setDelegate:self];
-    [currentEngine setRedirectURI:@"http://"];
-    [currentEngine setIsUserExclusive:NO];
-    
+    }    
     return self;
 }
 
@@ -43,6 +34,15 @@
 
 -(void)addAccount
 {
+    currentEngine = [[WBEngine alloc] initWithAppKey:kOAuthConsumerKey appSecret:kOAuthConsumerSecret];
+
+    
+    MoreMusicAppDelegate* app = (MoreMusicAppDelegate *)[[UIApplication sharedApplication] delegate];
+    [currentEngine setRootViewController:app.weiboStreamViewController];
+    [currentEngine setDelegate:self];
+    [currentEngine setRedirectURI:@"http://"];
+    [currentEngine setIsUserExclusive:NO];
+
     [currentEngine logIn];
 }
 
@@ -54,9 +54,22 @@
 -(void)logoutAccount
 {
     [currentEngine logOut];
-
 }
 
+
+-(void)clearCookie
+{
+    NSHTTPCookieStorage *cookieStorage = [NSHTTPCookieStorage sharedHTTPCookieStorage];
+    for (NSHTTPCookie *each in cookieStorage.cookies)
+    {   
+        NSString* domain = [each domain];
+        if([domain rangeOfString:@"sina"].location == NSNotFound &&
+           [domain rangeOfString:@"weibo"].location == NSNotFound)
+            continue;
+        [cookieStorage deleteCookie:each];
+        NSLog(@"Deleting cookie %@", each);
+    }
+}
 
 #pragma mark - WBEngineDelegate Methods
 
@@ -73,7 +86,9 @@
 {
     //Login successful. 
     MoreMusicAppDelegate *app = (MoreMusicAppDelegate *)[[UIApplication sharedApplication] delegate];
-//    [engineArray addObject:engine];
+    WBSuccessNoticeView *notice = [WBSuccessNoticeView successNoticeInView:app.window title:NSLocalizedString(@"WeiboLoginSuccess",nil)];
+    [notice show];
+
     [app.weiboStreamViewController updateLoginButtonStatus];
     
 }
@@ -94,6 +109,8 @@
 
     WBSuccessNoticeView *notice = [WBSuccessNoticeView successNoticeInView:app.window title:NSLocalizedString(@"WeiboLogoutSuccess",nil)];
     [notice show];
+    currentEngine = nil;
+    [self clearCookie];
     //Login successful. 
     //    [engineArray addObject:engine];
     [app.weiboStreamViewController updateLoginButtonStatus];

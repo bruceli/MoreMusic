@@ -60,7 +60,7 @@
         NSString *msgImageURL = [value objectForKey:@"weibo_image"];
         // User tweets create time
         NSString *strTime = [value objectForKey:@"time"];
-        NSLog(@"%@" ,strTime);
+//        NSLog(@"%@" ,strTime);
 //        NSTimeInterval crtTime = [self getTimeValue:strTime defaultValue:0];
 //        NSDate *createdAt =  [NSDate dateWithTimeIntervalSince1970: crtTime];
        

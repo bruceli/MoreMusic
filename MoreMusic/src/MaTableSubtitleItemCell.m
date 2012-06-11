@@ -181,7 +181,7 @@
         
     }
     
-    NSLog(@"MaCell created");
+//    NSLog(@"MaCell created");
     return self;
 }
 

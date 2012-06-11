@@ -19,6 +19,7 @@
 -(void)commentMessageWithWeiboID:(NSNumber*)idNumber;
 -(void)favoMessageWithWeiboID:idNumber withStatus:(NSNumber*)favStatus;
 -(void)login;
+-(void)removeSwipeCell;
 
 @end
 
@@ -45,7 +46,6 @@
 - (void)viewDidLoad 
 {
     [super viewDidLoad];
-    [self setupSwipeCell];
 
     self.navigationItem.title = NSLocalizedString(@"Weibo",nil);
     
@@ -72,11 +72,12 @@
     if (![app.authMgr isEngineReady]) {
         self.navigationItem.leftBarButtonItem =  [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"Login",nil) style:UIBarButtonItemStylePlain target:self action:@selector(login)];
         self.navigationItem.rightBarButtonItem = nil;
+        [self removeSwipeCell];
     }
     else {
         self.navigationItem.leftBarButtonItem =  [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"Logout",nil) style:UIBarButtonItemStylePlain target:self action:@selector(logout)];
         self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCompose target:self action:@selector(newMessage:)];
-
+        [self setupSwipeCell];
     }
 
 }
@@ -92,7 +93,6 @@
 {
     MoreMusicAppDelegate* app = (MoreMusicAppDelegate *)[[UIApplication sharedApplication] delegate];
     [app.authMgr logoutAccount];
-    self.model = nil;
 }
 
 
@@ -110,14 +110,19 @@
 {
     // Setup the title and image for each button within the side swipe view
     buttonData = [NSArray arrayWithObjects:
-                  [NSDictionary dictionaryWithObjectsAndKeys:@"Repost", @"title", @"retweet-outline-button-item.png", @"image", nil],
-                  [NSDictionary dictionaryWithObjectsAndKeys:@"Comment", @"title", @"Comment", @"image", nil],
+                  [NSDictionary dictionaryWithObjectsAndKeys:@"Repost", @"title", @"repost.png", @"image", nil],
+                  [NSDictionary dictionaryWithObjectsAndKeys:@"Comment", @"title", @"comment.png", @"image", nil],
                   nil];
     buttons = [[NSMutableArray alloc] initWithCapacity:buttonData.count];
     
     self.sideSwipeView = [[UIView alloc] initWithFrame:CGRectMake(_tableView.frame.origin.x, _tableView.frame.origin.y, _tableView.frame.size.width, _tableView.rowHeight)];
     [super setupSideSwipeView];
-    
+}
+
+-(void)removeSwipeCell
+{
+    self.sideSwipeView = nil;
+    [super setupSideSwipeView];
 }
 
 - (void) touchUpInsideAction:(UIButton*)button
