@@ -57,6 +57,9 @@
 		591C8128158339C200DC63D4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 591C812A158339C200DC63D4 /* Localizable.strings */; };
 		592C1B8B157C8B8300CB0C14 /* MaSchDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 592C1B8A157C8B8300CB0C14 /* MaSchDetailViewController.m */; };
 		59398181158282E400250E9D /* POAPinyin.m in Sources */ = {isa = PBXBuildFile; fileRef = 59398180158282E400250E9D /* POAPinyin.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		59466DED158597F6006277B8 /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 59466DEB158597F6006277B8 /* camera.png */; };
+		59466DEE158597F6006277B8 /* camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59466DEC158597F6006277B8 /* camera@2x.png */; };
+		59466E771585C7D6006277B8 /* MaAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59466E761585C7D5006277B8 /* MaAboutViewController.m */; };
 		594DD178157502CF00037861 /* MHTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 594DD177157502CF00037861 /* MHTabBarController.m */; };
 		594DD17C157502DE00037861 /* MHTabBarActiveTab.png in Resources */ = {isa = PBXBuildFile; fileRef = 594DD179157502DE00037861 /* MHTabBarActiveTab.png */; };
 		594DD17D157502DE00037861 /* MHTabBarInactiveTab.png in Resources */ = {isa = PBXBuildFile; fileRef = 594DD17A157502DE00037861 /* MHTabBarInactiveTab.png */; };
@@ -71,6 +74,15 @@
 		596798CD157F7C0A0036871D /* MaTicketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 596798CC157F7C0A0036871D /* MaTicketViewController.m */; };
 		596798CF157F7DBB0036871D /* ticket.txt in Resources */ = {isa = PBXBuildFile; fileRef = 596798CE157F7DBB0036871D /* ticket.txt */; };
 		59679956157F9F630036871D /* MaStudentTicketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59679955157F9F630036871D /* MaStudentTicketViewController.m */; };
+		5978B5A91585EF4D009EBDFB /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5978B5A81585EF4D009EBDFB /* MobileCoreServices.framework */; };
+		5978B5AE1585F23C009EBDFB /* about.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5978B5AA1585F23C009EBDFB /* about.jpeg */; };
+		5978B5AF1585F23C009EBDFB /* about@2x.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5978B5AB1585F23C009EBDFB /* about@2x.jpeg */; };
+		5978B5B01585F23C009EBDFB /* wallpaper.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5978B5AC1585F23C009EBDFB /* wallpaper.jpeg */; };
+		5978B5B11585F23C009EBDFB /* wallpaper@2x.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5978B5AD1585F23C009EBDFB /* wallpaper@2x.jpeg */; };
+		5978B5B41585F29D009EBDFB /* comment.png in Resources */ = {isa = PBXBuildFile; fileRef = 5978B5B21585F29D009EBDFB /* comment.png */; };
+		5978B5B51585F29D009EBDFB /* comment@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5978B5B31585F29D009EBDFB /* comment@2x.png */; };
+		5978B5B81585F2C3009EBDFB /* repost.png in Resources */ = {isa = PBXBuildFile; fileRef = 5978B5B61585F2C3009EBDFB /* repost.png */; };
+		5978B5B91585F2C3009EBDFB /* repost@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5978B5B71585F2C3009EBDFB /* repost@2x.png */; };
 		597FF8A7157E168F00E8C7C6 /* MaMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 597FF8A6157E168F00E8C7C6 /* MaMapViewController.m */; };
 		597FF8A9157E16C300E8C7C6 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 597FF8A8157E16C300E8C7C6 /* MapKit.framework */; };
 		597FF8AB157E179800E8C7C6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 597FF8AA157E179800E8C7C6 /* CoreLocation.framework */; };
@@ -302,7 +314,6 @@
 		59EBF4601573C1160073325A /* MaBandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59EBF45F1573C1160073325A /* MaBandViewController.m */; };
 		59EBF4661573C1660073325A /* MoreMusicAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 59EBF4651573C1650073325A /* MoreMusicAppDelegate.m */; };
 		59EBF4691573C1740073325A /* MaReviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59EBF4681573C1740073325A /* MaReviewViewController.m */; };
-		59EBF46C1573C2480073325A /* MaWeiboStreamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59EBF46B1573C2480073325A /* MaWeiboStreamViewController.m */; };
 		59EBF53A1573FE2E0073325A /* MaMoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59EBF5391573FE2E0073325A /* MaMoreViewController.m */; };
 		59F2EB491578B6190062AEE3 /* NSDate-Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F2EB461578B6190062AEE3 /* NSDate-Utilities.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		59F2EB4A1578B6190062AEE3 /* TimeFormatters.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F2EB481578B6190062AEE3 /* TimeFormatters.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -316,8 +327,6 @@
 		59FA562A15835B5B0060688F /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FA562515835B5B0060688F /* UIImage+Alpha.m */; };
 		59FA562B15835B5B0060688F /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FA562715835B5B0060688F /* UIImage+Resize.m */; };
 		59FA562C15835B5B0060688F /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FA562915835B5B0060688F /* UIImage+RoundedCorner.m */; };
-		59FA566D15835FF40060688F /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FA565C15835FEE0060688F /* HomeViewController.m */; };
-		59FA566E15835FF40060688F /* MaAuthMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FA565E15835FEF0060688F /* MaAuthMgr.m */; };
 		59FA566F15835FF40060688F /* MaImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FA566015835FEF0060688F /* MaImageViewController.m */; };
 		59FA567015835FF40060688F /* MaMessageListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FA566215835FF00060688F /* MaMessageListController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		59FA567115835FF40060688F /* MaPostController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FA566415835FF00060688F /* MaPostController.m */; };
@@ -325,21 +334,11 @@
 		59FA567315835FF40060688F /* MaTableSubtitleItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FA566815835FF20060688F /* MaTableSubtitleItemCell.m */; };
 		59FA567415835FF40060688F /* MaUniDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FA566A15835FF40060688F /* MaUniDataModel.m */; };
 		59FA567515835FF40060688F /* MaUniDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FA566C15835FF40060688F /* MaUniDataSource.m */; };
-		59FA56851583603D0060688F /* action.png in Resources */ = {isa = PBXBuildFile; fileRef = 59FA56761583603D0060688F /* action.png */; };
-		59FA56861583603D0060688F /* action@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59FA56771583603D0060688F /* action@2x.png */; };
 		59FA56871583603D0060688F /* dotted-pattern.png in Resources */ = {isa = PBXBuildFile; fileRef = 59FA56781583603D0060688F /* dotted-pattern.png */; };
 		59FA56881583603D0060688F /* dotted-pattern@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59FA56791583603D0060688F /* dotted-pattern@2x.png */; };
 		59FA56891583603D0060688F /* inner-shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 59FA567A1583603D0060688F /* inner-shadow.png */; };
-		59FA568A1583603D0060688F /* paperclip.png in Resources */ = {isa = PBXBuildFile; fileRef = 59FA567B1583603D0060688F /* paperclip.png */; };
-		59FA568B1583603D0060688F /* paperclip@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59FA567C1583603D0060688F /* paperclip@2x.png */; };
 		59FA568C1583603D0060688F /* person.png in Resources */ = {isa = PBXBuildFile; fileRef = 59FA567D1583603D0060688F /* person.png */; };
 		59FA568D1583603D0060688F /* person@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59FA567E1583603D0060688F /* person@2x.png */; };
-		59FA568E1583603D0060688F /* reply.png in Resources */ = {isa = PBXBuildFile; fileRef = 59FA567F1583603D0060688F /* reply.png */; };
-		59FA568F1583603D0060688F /* reply@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59FA56801583603D0060688F /* reply@2x.png */; };
-		59FA56901583603D0060688F /* retweet-outline-button-item.png in Resources */ = {isa = PBXBuildFile; fileRef = 59FA56811583603D0060688F /* retweet-outline-button-item.png */; };
-		59FA56911583603D0060688F /* retweet-outline-button-item@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59FA56821583603D0060688F /* retweet-outline-button-item@2x.png */; };
-		59FA56921583603D0060688F /* star-hollow.png in Resources */ = {isa = PBXBuildFile; fileRef = 59FA56831583603D0060688F /* star-hollow.png */; };
-		59FA56931583603D0060688F /* star-hollow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59FA56841583603D0060688F /* star-hollow@2x.png */; };
 		59FA56A6158360780060688F /* RDActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FA5695158360780060688F /* RDActionSheet.m */; };
 		59FA56A7158360780060688F /* SheetBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 59FA5696158360780060688F /* SheetBackground.png */; };
 		59FA56A8158360780060688F /* SheetBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59FA5697158360780060688F /* SheetBackground@2x.png */; };
@@ -357,6 +356,9 @@
 		59FA56B4158360780060688F /* SheetButtonPrimary@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59FA56A3158360780060688F /* SheetButtonPrimary@2x.png */; };
 		59FA56B5158360780060688F /* SheetButtonPrimaryTouch.png in Resources */ = {isa = PBXBuildFile; fileRef = 59FA56A4158360780060688F /* SheetButtonPrimaryTouch.png */; };
 		59FA56B6158360780060688F /* SheetButtonPrimaryTouch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59FA56A5158360780060688F /* SheetButtonPrimaryTouch@2x.png */; };
+		59FFD85B1584EC5E00E6E1FF /* MaWeiboStreamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FFD85A1584EC5E00E6E1FF /* MaWeiboStreamViewController.m */; };
+		59FFD8691584F61A00E6E1FF /* cellBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 59FFD8681584F61A00E6E1FF /* cellBackground.png */; };
+		59FFD86C158510EA00E6E1FF /* MaAuthMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FFD86B158510E900E6E1FF /* MaAuthMgr.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -608,6 +610,10 @@
 		592C1B8A157C8B8300CB0C14 /* MaSchDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MaSchDetailViewController.m; path = src/MaSchDetailViewController.m; sourceTree = "<group>"; };
 		5939817F158282E400250E9D /* POAPinyin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = POAPinyin.h; path = src/3rd/POAPinyin.h; sourceTree = "<group>"; };
 		59398180158282E400250E9D /* POAPinyin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = POAPinyin.m; path = src/3rd/POAPinyin.m; sourceTree = "<group>"; };
+		59466DEB158597F6006277B8 /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = camera.png; path = MoreMusic/Resources/camera.png; sourceTree = "<group>"; };
+		59466DEC158597F6006277B8 /* camera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "camera@2x.png"; path = "MoreMusic/Resources/camera@2x.png"; sourceTree = "<group>"; };
+		59466E751585C7D4006277B8 /* MaAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MaAboutViewController.h; path = src/MaAboutViewController.h; sourceTree = "<group>"; };
+		59466E761585C7D5006277B8 /* MaAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MaAboutViewController.m; path = src/MaAboutViewController.m; sourceTree = "<group>"; };
 		594DD176157502CF00037861 /* MHTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MHTabBarController.h; path = src/3rd/MHTabBarController/MHTabBarController.h; sourceTree = "<group>"; };
 		594DD177157502CF00037861 /* MHTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MHTabBarController.m; path = src/3rd/MHTabBarController/MHTabBarController.m; sourceTree = "<group>"; };
 		594DD179157502DE00037861 /* MHTabBarActiveTab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MHTabBarActiveTab.png; path = src/3rd/MHTabBarController/Images/MHTabBarActiveTab.png; sourceTree = "<group>"; };
@@ -626,6 +632,15 @@
 		596798CE157F7DBB0036871D /* ticket.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = ticket.txt; path = MoreMusic/Resources/ticket.txt; sourceTree = "<group>"; };
 		59679954157F9F630036871D /* MaStudentTicketViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MaStudentTicketViewController.h; path = src/MaStudentTicketViewController.h; sourceTree = "<group>"; };
 		59679955157F9F630036871D /* MaStudentTicketViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MaStudentTicketViewController.m; path = src/MaStudentTicketViewController.m; sourceTree = "<group>"; };
+		5978B5A81585EF4D009EBDFB /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		5978B5AA1585F23C009EBDFB /* about.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = about.jpeg; path = MoreMusic/Resources/about.jpeg; sourceTree = "<group>"; };
+		5978B5AB1585F23C009EBDFB /* about@2x.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "about@2x.jpeg"; path = "MoreMusic/Resources/about@2x.jpeg"; sourceTree = "<group>"; };
+		5978B5AC1585F23C009EBDFB /* wallpaper.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = wallpaper.jpeg; path = MoreMusic/Resources/wallpaper.jpeg; sourceTree = "<group>"; };
+		5978B5AD1585F23C009EBDFB /* wallpaper@2x.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "wallpaper@2x.jpeg"; path = "MoreMusic/Resources/wallpaper@2x.jpeg"; sourceTree = "<group>"; };
+		5978B5B21585F29D009EBDFB /* comment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = comment.png; path = MoreMusic/Resources/ListController/comment.png; sourceTree = "<group>"; };
+		5978B5B31585F29D009EBDFB /* comment@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "comment@2x.png"; path = "MoreMusic/Resources/ListController/comment@2x.png"; sourceTree = "<group>"; };
+		5978B5B61585F2C3009EBDFB /* repost.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = repost.png; path = MoreMusic/Resources/ListController/repost.png; sourceTree = "<group>"; };
+		5978B5B71585F2C3009EBDFB /* repost@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "repost@2x.png"; path = "MoreMusic/Resources/ListController/repost@2x.png"; sourceTree = "<group>"; };
 		597FF8A5157E168F00E8C7C6 /* MaMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MaMapViewController.h; path = src/MaMapViewController.h; sourceTree = "<group>"; };
 		597FF8A6157E168F00E8C7C6 /* MaMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MaMapViewController.m; path = src/MaMapViewController.m; sourceTree = "<group>"; };
 		597FF8A8157E16C300E8C7C6 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -887,8 +902,6 @@
 		59EBF4651573C1650073325A /* MoreMusicAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MoreMusicAppDelegate.m; path = src/MoreMusicAppDelegate.m; sourceTree = "<group>"; };
 		59EBF4671573C1740073325A /* MaReviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MaReviewViewController.h; path = src/MaReviewViewController.h; sourceTree = "<group>"; };
 		59EBF4681573C1740073325A /* MaReviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MaReviewViewController.m; path = src/MaReviewViewController.m; sourceTree = "<group>"; };
-		59EBF46A1573C2480073325A /* MaWeiboStreamViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaWeiboStreamViewController.h; sourceTree = "<group>"; };
-		59EBF46B1573C2480073325A /* MaWeiboStreamViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaWeiboStreamViewController.m; sourceTree = "<group>"; };
 		59EBF5381573FE2E0073325A /* MaMoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MaMoreViewController.h; path = src/MaMoreViewController.h; sourceTree = "<group>"; };
 		59EBF5391573FE2E0073325A /* MaMoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MaMoreViewController.m; path = src/MaMoreViewController.m; sourceTree = "<group>"; };
 		59F2EB451578B6190062AEE3 /* NSDate-Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDate-Utilities.h"; path = "src/3rd/NSDate-Utilities.h"; sourceTree = "<group>"; };
@@ -910,10 +923,6 @@
 		59FA562715835B5B0060688F /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Resize.m"; path = "src/3rd/ResizeImage/UIImage+Resize.m"; sourceTree = "<group>"; };
 		59FA562815835B5B0060688F /* UIImage+RoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+RoundedCorner.h"; path = "src/3rd/ResizeImage/UIImage+RoundedCorner.h"; sourceTree = "<group>"; };
 		59FA562915835B5B0060688F /* UIImage+RoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+RoundedCorner.m"; path = "src/3rd/ResizeImage/UIImage+RoundedCorner.m"; sourceTree = "<group>"; };
-		59FA565B15835FEE0060688F /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewController.h; path = src/HomeViewController.h; sourceTree = "<group>"; };
-		59FA565C15835FEE0060688F /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewController.m; path = src/HomeViewController.m; sourceTree = "<group>"; };
-		59FA565D15835FEE0060688F /* MaAuthMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MaAuthMgr.h; path = src/MaAuthMgr.h; sourceTree = "<group>"; };
-		59FA565E15835FEF0060688F /* MaAuthMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MaAuthMgr.m; path = src/MaAuthMgr.m; sourceTree = "<group>"; };
 		59FA565F15835FEF0060688F /* MaImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MaImageViewController.h; path = src/MaImageViewController.h; sourceTree = "<group>"; };
 		59FA566015835FEF0060688F /* MaImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MaImageViewController.m; path = src/MaImageViewController.m; sourceTree = "<group>"; };
 		59FA566115835FF00060688F /* MaMessageListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MaMessageListController.h; path = src/MaMessageListController.h; sourceTree = "<group>"; };
@@ -928,21 +937,11 @@
 		59FA566A15835FF40060688F /* MaUniDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MaUniDataModel.m; path = src/MaUniDataModel.m; sourceTree = "<group>"; };
 		59FA566B15835FF40060688F /* MaUniDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MaUniDataSource.h; path = src/MaUniDataSource.h; sourceTree = "<group>"; };
 		59FA566C15835FF40060688F /* MaUniDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MaUniDataSource.m; path = src/MaUniDataSource.m; sourceTree = "<group>"; };
-		59FA56761583603D0060688F /* action.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = action.png; path = MoreMusic/Resources/ListController/action.png; sourceTree = "<group>"; };
-		59FA56771583603D0060688F /* action@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "action@2x.png"; path = "MoreMusic/Resources/ListController/action@2x.png"; sourceTree = "<group>"; };
 		59FA56781583603D0060688F /* dotted-pattern.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dotted-pattern.png"; path = "MoreMusic/Resources/ListController/dotted-pattern.png"; sourceTree = "<group>"; };
 		59FA56791583603D0060688F /* dotted-pattern@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dotted-pattern@2x.png"; path = "MoreMusic/Resources/ListController/dotted-pattern@2x.png"; sourceTree = "<group>"; };
 		59FA567A1583603D0060688F /* inner-shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "inner-shadow.png"; path = "MoreMusic/Resources/ListController/inner-shadow.png"; sourceTree = "<group>"; };
-		59FA567B1583603D0060688F /* paperclip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = paperclip.png; path = MoreMusic/Resources/ListController/paperclip.png; sourceTree = "<group>"; };
-		59FA567C1583603D0060688F /* paperclip@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "paperclip@2x.png"; path = "MoreMusic/Resources/ListController/paperclip@2x.png"; sourceTree = "<group>"; };
 		59FA567D1583603D0060688F /* person.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = person.png; path = MoreMusic/Resources/ListController/person.png; sourceTree = "<group>"; };
 		59FA567E1583603D0060688F /* person@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "person@2x.png"; path = "MoreMusic/Resources/ListController/person@2x.png"; sourceTree = "<group>"; };
-		59FA567F1583603D0060688F /* reply.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = reply.png; path = MoreMusic/Resources/ListController/reply.png; sourceTree = "<group>"; };
-		59FA56801583603D0060688F /* reply@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "reply@2x.png"; path = "MoreMusic/Resources/ListController/reply@2x.png"; sourceTree = "<group>"; };
-		59FA56811583603D0060688F /* retweet-outline-button-item.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "retweet-outline-button-item.png"; path = "MoreMusic/Resources/ListController/retweet-outline-button-item.png"; sourceTree = "<group>"; };
-		59FA56821583603D0060688F /* retweet-outline-button-item@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "retweet-outline-button-item@2x.png"; path = "MoreMusic/Resources/ListController/retweet-outline-button-item@2x.png"; sourceTree = "<group>"; };
-		59FA56831583603D0060688F /* star-hollow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "star-hollow.png"; path = "MoreMusic/Resources/ListController/star-hollow.png"; sourceTree = "<group>"; };
-		59FA56841583603D0060688F /* star-hollow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "star-hollow@2x.png"; path = "MoreMusic/Resources/ListController/star-hollow@2x.png"; sourceTree = "<group>"; };
 		59FA5694158360780060688F /* RDActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RDActionSheet.h; path = src/3rd/RDActionSheet/RDActionSheet.h; sourceTree = "<group>"; };
 		59FA5695158360780060688F /* RDActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RDActionSheet.m; path = src/3rd/RDActionSheet/RDActionSheet.m; sourceTree = "<group>"; };
 		59FA5696158360780060688F /* SheetBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SheetBackground.png; path = src/3rd/RDActionSheet/SheetBackground.png; sourceTree = "<group>"; };
@@ -961,6 +960,11 @@
 		59FA56A3158360780060688F /* SheetButtonPrimary@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SheetButtonPrimary@2x.png"; path = "src/3rd/RDActionSheet/SheetButtonPrimary@2x.png"; sourceTree = "<group>"; };
 		59FA56A4158360780060688F /* SheetButtonPrimaryTouch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SheetButtonPrimaryTouch.png; path = src/3rd/RDActionSheet/SheetButtonPrimaryTouch.png; sourceTree = "<group>"; };
 		59FA56A5158360780060688F /* SheetButtonPrimaryTouch@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SheetButtonPrimaryTouch@2x.png"; path = "src/3rd/RDActionSheet/SheetButtonPrimaryTouch@2x.png"; sourceTree = "<group>"; };
+		59FFD8591584EC5E00E6E1FF /* MaWeiboStreamViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MaWeiboStreamViewController.h; path = src/MaWeiboStreamViewController.h; sourceTree = "<group>"; };
+		59FFD85A1584EC5E00E6E1FF /* MaWeiboStreamViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MaWeiboStreamViewController.m; path = src/MaWeiboStreamViewController.m; sourceTree = "<group>"; };
+		59FFD8681584F61A00E6E1FF /* cellBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cellBackground.png; path = MoreMusic/Resources/cellBackground.png; sourceTree = "<group>"; };
+		59FFD86A158510E800E6E1FF /* MaAuthMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MaAuthMgr.h; path = src/MaAuthMgr.h; sourceTree = "<group>"; };
+		59FFD86B158510E900E6E1FF /* MaAuthMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MaAuthMgr.m; path = src/MaAuthMgr.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -983,6 +987,7 @@
 				59AAE80C157722AC008B3B37 /* Security.framework in Frameworks */,
 				597FF8A9157E16C300E8C7C6 /* MapKit.framework in Frameworks */,
 				597FF8AB157E179800E8C7C6 /* CoreLocation.framework in Frameworks */,
+				5978B5A91585EF4D009EBDFB /* MobileCoreServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -992,6 +997,10 @@
 		590E94AE1578E94C00BDE1C8 /* img */ = {
 			isa = PBXGroup;
 			children = (
+				5978B5AA1585F23C009EBDFB /* about.jpeg */,
+				5978B5AB1585F23C009EBDFB /* about@2x.jpeg */,
+				5978B5AC1585F23C009EBDFB /* wallpaper.jpeg */,
+				5978B5AD1585F23C009EBDFB /* wallpaper@2x.jpeg */,
 				59F90E4D158313EC0066C86A /* ticket.jpeg */,
 				59F90E4E158313EC0066C86A /* ticket.txt */,
 				59F90E49158313E20066C86A /* map.jpeg */,
@@ -1325,6 +1334,7 @@
 				59C9232D157720CD0082DC4E /* Three20UICommon.xcodeproj */,
 				59C92324157720CB0082DC4E /* Three20Style.xcodeproj */,
 				59C92318157720C90082DC4E /* extThree20JSON.xcodeproj */,
+				5978B5A81585EF4D009EBDFB /* MobileCoreServices.framework */,
 				597FF8AA157E179800E8C7C6 /* CoreLocation.framework */,
 				597FF8A8157E16C300E8C7C6 /* MapKit.framework */,
 				320AF8492C47A4D819F7C450 /* QuartzCore.framework */,
@@ -1522,10 +1532,10 @@
 		59EBF4581573C01F0073325A /* WeiboLiveStream */ = {
 			isa = PBXGroup;
 			children = (
-				59FA565B15835FEE0060688F /* HomeViewController.h */,
-				59FA565C15835FEE0060688F /* HomeViewController.m */,
-				59FA565D15835FEE0060688F /* MaAuthMgr.h */,
-				59FA565E15835FEF0060688F /* MaAuthMgr.m */,
+				59FFD86A158510E800E6E1FF /* MaAuthMgr.h */,
+				59FFD86B158510E900E6E1FF /* MaAuthMgr.m */,
+				59FFD8591584EC5E00E6E1FF /* MaWeiboStreamViewController.h */,
+				59FFD85A1584EC5E00E6E1FF /* MaWeiboStreamViewController.m */,
 				59FA565F15835FEF0060688F /* MaImageViewController.h */,
 				59FA566015835FEF0060688F /* MaImageViewController.m */,
 				59FA566115835FF00060688F /* MaMessageListController.h */,
@@ -1540,8 +1550,6 @@
 				59FA566A15835FF40060688F /* MaUniDataModel.m */,
 				59FA566B15835FF40060688F /* MaUniDataSource.h */,
 				59FA566C15835FF40060688F /* MaUniDataSource.m */,
-				59EBF46A1573C2480073325A /* MaWeiboStreamViewController.h */,
-				59EBF46B1573C2480073325A /* MaWeiboStreamViewController.m */,
 			);
 			name = WeiboLiveStream;
 			sourceTree = "<group>";
@@ -1613,6 +1621,7 @@
 		59EBF4DA1573EFCF0073325A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				59FFD8681584F61A00E6E1FF /* cellBackground.png */,
 				59FA563915835E590060688F /* ListController */,
 				591C812A158339C200DC63D4 /* Localizable.strings */,
 				59F90E57158317830066C86A /* icon@2x.png */,
@@ -1630,6 +1639,8 @@
 		59EBF5371573FE080073325A /* More */ = {
 			isa = PBXGroup;
 			children = (
+				59466E751585C7D4006277B8 /* MaAboutViewController.h */,
+				59466E761585C7D5006277B8 /* MaAboutViewController.m */,
 				596798CA157F7BDE0036871D /* Ticket */,
 				59EBF45A1573C0350073325A /* Wallpaper */,
 				59EBF4591573C02A0073325A /* Map */,
@@ -1680,21 +1691,17 @@
 		59FA563915835E590060688F /* ListController */ = {
 			isa = PBXGroup;
 			children = (
-				59FA56761583603D0060688F /* action.png */,
-				59FA56771583603D0060688F /* action@2x.png */,
+				5978B5B61585F2C3009EBDFB /* repost.png */,
+				5978B5B71585F2C3009EBDFB /* repost@2x.png */,
+				5978B5B21585F29D009EBDFB /* comment.png */,
+				5978B5B31585F29D009EBDFB /* comment@2x.png */,
+				59466DEB158597F6006277B8 /* camera.png */,
+				59466DEC158597F6006277B8 /* camera@2x.png */,
 				59FA56781583603D0060688F /* dotted-pattern.png */,
 				59FA56791583603D0060688F /* dotted-pattern@2x.png */,
 				59FA567A1583603D0060688F /* inner-shadow.png */,
-				59FA567B1583603D0060688F /* paperclip.png */,
-				59FA567C1583603D0060688F /* paperclip@2x.png */,
 				59FA567D1583603D0060688F /* person.png */,
 				59FA567E1583603D0060688F /* person@2x.png */,
-				59FA567F1583603D0060688F /* reply.png */,
-				59FA56801583603D0060688F /* reply@2x.png */,
-				59FA56811583603D0060688F /* retweet-outline-button-item.png */,
-				59FA56821583603D0060688F /* retweet-outline-button-item@2x.png */,
-				59FA56831583603D0060688F /* star-hollow.png */,
-				59FA56841583603D0060688F /* star-hollow@2x.png */,
 			);
 			name = ListController;
 			sourceTree = "<group>";
@@ -2154,21 +2161,11 @@
 				59F90E56158317800066C86A /* icon.png in Resources */,
 				59F90E58158317830066C86A /* icon@2x.png in Resources */,
 				591C8128158339C200DC63D4 /* Localizable.strings in Resources */,
-				59FA56851583603D0060688F /* action.png in Resources */,
-				59FA56861583603D0060688F /* action@2x.png in Resources */,
 				59FA56871583603D0060688F /* dotted-pattern.png in Resources */,
 				59FA56881583603D0060688F /* dotted-pattern@2x.png in Resources */,
 				59FA56891583603D0060688F /* inner-shadow.png in Resources */,
-				59FA568A1583603D0060688F /* paperclip.png in Resources */,
-				59FA568B1583603D0060688F /* paperclip@2x.png in Resources */,
 				59FA568C1583603D0060688F /* person.png in Resources */,
 				59FA568D1583603D0060688F /* person@2x.png in Resources */,
-				59FA568E1583603D0060688F /* reply.png in Resources */,
-				59FA568F1583603D0060688F /* reply@2x.png in Resources */,
-				59FA56901583603D0060688F /* retweet-outline-button-item.png in Resources */,
-				59FA56911583603D0060688F /* retweet-outline-button-item@2x.png in Resources */,
-				59FA56921583603D0060688F /* star-hollow.png in Resources */,
-				59FA56931583603D0060688F /* star-hollow@2x.png in Resources */,
 				59FA56A7158360780060688F /* SheetBackground.png in Resources */,
 				59FA56A8158360780060688F /* SheetBackground@2x.png in Resources */,
 				59FA56A9158360780060688F /* SheetButtonDestroy@2x.png in Resources */,
@@ -2185,6 +2182,17 @@
 				59FA56B4158360780060688F /* SheetButtonPrimary@2x.png in Resources */,
 				59FA56B5158360780060688F /* SheetButtonPrimaryTouch.png in Resources */,
 				59FA56B6158360780060688F /* SheetButtonPrimaryTouch@2x.png in Resources */,
+				59FFD8691584F61A00E6E1FF /* cellBackground.png in Resources */,
+				59466DED158597F6006277B8 /* camera.png in Resources */,
+				59466DEE158597F6006277B8 /* camera@2x.png in Resources */,
+				5978B5AE1585F23C009EBDFB /* about.jpeg in Resources */,
+				5978B5AF1585F23C009EBDFB /* about@2x.jpeg in Resources */,
+				5978B5B01585F23C009EBDFB /* wallpaper.jpeg in Resources */,
+				5978B5B11585F23C009EBDFB /* wallpaper@2x.jpeg in Resources */,
+				5978B5B41585F29D009EBDFB /* comment.png in Resources */,
+				5978B5B51585F29D009EBDFB /* comment@2x.png in Resources */,
+				5978B5B81585F2C3009EBDFB /* repost.png in Resources */,
+				5978B5B91585F2C3009EBDFB /* repost@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2201,7 +2209,6 @@
 				59EBF4601573C1160073325A /* MaBandViewController.m in Sources */,
 				59EBF4661573C1660073325A /* MoreMusicAppDelegate.m in Sources */,
 				59EBF4691573C1740073325A /* MaReviewViewController.m in Sources */,
-				59EBF46C1573C2480073325A /* MaWeiboStreamViewController.m in Sources */,
 				59EBF53A1573FE2E0073325A /* MaMoreViewController.m in Sources */,
 				594DD178157502CF00037861 /* MHTabBarController.m in Sources */,
 				59C923D4157721B60082DC4E /* SFHFKeychainUtils.m in Sources */,
@@ -2250,8 +2257,6 @@
 				59FA562A15835B5B0060688F /* UIImage+Alpha.m in Sources */,
 				59FA562B15835B5B0060688F /* UIImage+Resize.m in Sources */,
 				59FA562C15835B5B0060688F /* UIImage+RoundedCorner.m in Sources */,
-				59FA566D15835FF40060688F /* HomeViewController.m in Sources */,
-				59FA566E15835FF40060688F /* MaAuthMgr.m in Sources */,
 				59FA566F15835FF40060688F /* MaImageViewController.m in Sources */,
 				59FA567015835FF40060688F /* MaMessageListController.m in Sources */,
 				59FA567115835FF40060688F /* MaPostController.m in Sources */,
@@ -2260,6 +2265,9 @@
 				59FA567415835FF40060688F /* MaUniDataModel.m in Sources */,
 				59FA567515835FF40060688F /* MaUniDataSource.m in Sources */,
 				59FA56A6158360780060688F /* RDActionSheet.m in Sources */,
+				59FFD85B1584EC5E00E6E1FF /* MaWeiboStreamViewController.m in Sources */,
+				59FFD86C158510EA00E6E1FF /* MaAuthMgr.m in Sources */,
+				59466E771585C7D6006277B8 /* MaAboutViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

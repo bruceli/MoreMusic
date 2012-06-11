@@ -134,6 +134,7 @@
 
 - (void)repostWithWeiboID:(NSNumber*)weiboID message:(NSString *)message;
 - (void)favoritMessageWithWeiboID:(NSNumber*)weiboID withStatus:(BOOL)favoStatus;
+- (void)commentWithWeiboID:(NSNumber*)weiboID message:(NSString *)message;
 - (void)getCommentMessageListWithWeiBoID:(NSNumber*)weiboID delegate:(id<WBRequestDelegate>)inDelegate;
 - (void)getRepostMessageListWithWeiBoID:(NSNumber*)weiboID delegate:(id<WBRequestDelegate>)inDelegate;
 

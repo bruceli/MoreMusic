@@ -50,10 +50,11 @@
 }
 
 
--(void)initWithCreateTime:(NSString*)inTime
+-(void)initWithCreateTime:(double)inTime
 {
-    // User tweets create time
-    createTime = [self getTimeValue:inTime defaultValue:0];
+    createTime = inTime;
+//    NSLog(@"%f", createTime);
+
 }
 
 -(void)refreshLabel
@@ -113,7 +114,7 @@
         //_messageImageView.autoresizesToImage = YES;
 
         // Create Time view init
-        CGRect rect = CGRectMake(TEXT_OFFSET_X + LABEL_WIDTH, BORDER_WIDTH, LABEL_WIDTH, LABEL_HEIGHT);
+        CGRect rect = CGRectMake(230, BORDER_WIDTH, 80, LABEL_HEIGHT);
         _createTimeLabel = [[MaTimeLabel alloc] init];
         _createTimeLabel.frame = rect;
         _createTimeLabel.font = TTSTYLEVAR(font);
@@ -180,7 +181,7 @@
         
     }
     
-    NSLog(@"MaCell created");
+//    NSLog(@"MaCell created");
     return self;
 }
 
@@ -190,34 +191,45 @@
 
 
 - (void)setObject:(id)object {
+
 	if (_item != object) {
 		[super setObject:object];
 		MaTableSubtitleItem *item = object;
         BOOL hasComment = NO;
-        
+        NSDictionary* dict =  [item.detailInfo objectForKey:@"value"];
+
         // Time Label View
-		[_createTimeLabel initWithCreateTime:item.creatTime];
+        NSString* value = [dict objectForKey:@"time"];
+        NSString* timeString = [value substringWithRange:NSMakeRange(0, 10)];
+		[_createTimeLabel initWithCreateTime: [timeString doubleValue]];
+
         [self.contentView addSubview:_createTimeLabel];
         
         // Source Label view
-        NSString* srcString = [item.detailInfo objectForKey:@"source"];
-        NSString* sourceAppString = [self getSourceStringform:srcString];
-        [_sourceLabel setText:sourceAppString];
+        [_sourceLabel setText: [dict objectForKey:@"source"]];
         
         // Comment Count view
-        NSString* commCount = [item.detailInfo objectForKey:@"comments_count"];
-        NSString* rpCount = [item.detailInfo objectForKey:@"reposts_count"];
-        NSString* countStatus = [self getCommentAndRepostStringBy:commCount rePostCount:rpCount];
-        if ([countStatus length] != 0) {
-            [_commentCountLabel setText:countStatus];
-            [self.contentView addSubview:_commentCountLabel];
+        NSString* commentString = [dict objectForKey:@"comment"];
+        NSMutableString* commCount = [[NSMutableString alloc]init];
+        if ([commentString length]) {
+            commCount = [NSMutableString stringWithString:[dict objectForKey:@"comment"]];
         }
-        else{
-            [_commentCountLabel setText:@""];
-            [_commentCountLabel removeFromSuperview];
-
+        NSString* rpCount = [dict objectForKey:@"forward"];
+        if ([rpCount length]) {
+            [commCount appendString:@" "];
+            [commCount appendString:rpCount];
         }
         
+        NSString* fav = [dict objectForKey:@"favorite"];
+        if ([fav length]) {
+            [commCount appendString:@" "];
+            [commCount appendString:fav];
+        }
+
+        [_commentCountLabel setText:commCount];
+        [self.contentView addSubview:_commentCountLabel];
+        
+
         // Image View
         if ([item.messageImageURL length] != 0) {
             [_messageImageView setUrlPath:item.messageImageURL];
@@ -260,13 +272,10 @@
         }
         
         //Set deleget
-        MoreMusicAppDelegate* app = (MoreMusicAppDelegate *)[[UIApplication sharedApplication] delegate]; 
+//        MoreMusicAppDelegate* app = (MoreMusicAppDelegate *)[[UIApplication sharedApplication] delegate]; 
  //       MaTableSubtitleItem* item = [self getCellDataSource];
-        NSString* jsonString = item.jsonType;
+//        NSString* jsonString = item.jsonType;
         
-        if ([jsonString isEqualToString:JSON_STAT_HOME_TIMELINE ]) 
-            [self setTarget:app.homeViewController andAction:@selector(popupProfileViewAction:)];
-                
     }
 }
 
@@ -485,7 +494,7 @@
     return result;
 }
 
-
+/*
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     
     UITouch *touch = [touches anyObject];
@@ -499,13 +508,13 @@
         [super touchesBegan:touches withEvent:event];
     }
 }
-
+*/
 -(void)setTarget:(id)target andAction:(SEL)action {
     delegate = target;
     touchAction = action;
 }
 
-
+/*
 -(void)pushProfileViewController {
     MaTableSubtitleItem*  item = [self getCellDataSource];
     NSDictionary* profileDict = [item.detailInfo objectForKey:@"user"]; 
@@ -515,7 +524,7 @@
     }
 }
 
-
+*/
 - (void)setParentTableView:(id)tableView;
 {
     parentTableView = tableView;

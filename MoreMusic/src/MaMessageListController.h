@@ -51,7 +51,6 @@
 - (void) setupSideSwipeView;
 - (void) removeSideSwipeView:(BOOL)animated;
 - (BOOL) gestureRecognizersSupported;
-- (void) reloadTimeLine;
 
 
 @end

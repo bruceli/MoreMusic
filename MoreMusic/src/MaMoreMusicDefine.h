@@ -37,7 +37,7 @@ typedef enum{
 #define TEXT_OFFSET_X (BORDER_WIDTH * 2 + IMAGE_SIDE)
 #define LABEL_HEIGHT 20
 #define NEW_LABEL_HEIGHT 15
-#define LABEL_WIDTH 120
+#define LABEL_WIDTH 160
 #define TEXT_WIDTH (320 - TEXT_OFFSET_X - BORDER_WIDTH)
 #define TEXT_OFFSET_Y (BORDER_WIDTH * 2 + LABEL_HEIGHT)
 #define TEXT_HEIGHT (ROW_HEIGHT - TEXT_OFFSET_Y - BORDER_WIDTH)
@@ -58,6 +58,8 @@ typedef enum{
 #define OUTPUT_PORTRAIT_IMAGE_WIDE_MAX 768
 
 #define JSON_STAT_HOME_TIMELINE @"statuses/home_timeline.json"
+#define JSON_SEARCH_TOPICS @"search/topics.json"
+
 #define JSON_STAT_MENTIONS @"statuses/mentions.json"
 #define JSON_COMMENT_TOME @"comments/to_me.json"
 #define JSON_REPOST_TIMELINE @"statuses/repost_timeline"

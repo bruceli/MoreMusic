@@ -344,6 +344,20 @@
 }
 
 
+- (void)commentWithWeiboID:(NSNumber*)weiboID message:(NSString *)message
+{
+    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithCapacity:2];
+    NSString* idString = [weiboID stringValue];
+    [params setObject:(idString ? idString : @"") forKey:@"id"];
+    [params setObject:(message ? message : @"") forKey:@"status"];
+    
+    [self loadRequestWithMethodName:@"comments/create.json"
+                         httpMethod:@"POST"
+                             params:params
+                       postDataType:kWBRequestPostDataTypeNormal
+                   httpHeaderFields:nil];
+}
+
 -(void)favoritMessageWithWeiboID:(NSNumber*)weiboID withStatus:(BOOL)favoStatus
 {
     NSMutableDictionary *params = [NSMutableDictionary dictionaryWithCapacity:1];

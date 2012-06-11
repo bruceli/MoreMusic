@@ -102,22 +102,6 @@
 		</dict>
 		<dict>
 			<key>title</key>
-			<string>谢天笑</string>
-			<key>date</key>
-			<date>2012-06-22T12:00:00Z</date>
-			<key>endDate</key>
-			<date>2012-06-22T13:00:00Z</date>
-			<key>site</key>
-			<string>乐来乐快乐舞台</string>
-			<key>band</key>
-			<string></string>
-			<key>image</key>
-			<string>谢天笑</string>
-			<key>detail</key>
-			<string>“中国摇滚新教父”谢天笑，被媒体和乐迷公认为中国摇滚乐“现场之王”，他的歌和现场表演更是被无数人翻唱和模仿。在他的音乐作品中，距离现今已有2000多年历史的中国古老乐器“筝”与西方摇滚的完美融合，使其顺理成章的创造出了全新的中国摇滚之声。与其他同时代中国摇滚乐队不同的是，谢天笑饱满内敛，充满中国意像的词作使他们的音乐更富于厚度和感染力。</string>
-		</dict>
-		<dict>
-			<key>title</key>
 			<string>OOC控制之外</string>
 			<key>date</key>
 			<date>2012-06-23T06:00:00Z</date>
@@ -187,6 +171,26 @@
 		</dict>
 		<dict>
 			<key>title</key>
+			<string>战斧</string>
+			<key>date</key>
+			<date>2012-06-23T10:00:00Z</date>
+			<key>endDate</key>
+			<date>2012-06-23T10:40:00Z</date>
+			<key>site</key>
+			<string>乐来乐快乐舞台</string>
+			<key>band</key>
+			<string>主唱：张燕青（牛子） 吉他：郭智勇（郭智） 贝司：张新伟 鼓：陈军宏</string>
+			<key>image</key>
+			<string>战斧</string>
+			<key>detail</key>
+			<string>战斧乐队组建于1989年初，是国内最早的死亡重金属风格乐队。
+乐队组成主唱——张燕青（牛子）：自幼学习古典音乐，在演唱及节奏吉他上有较强的表现力。
+主音吉他手——郭智勇（郭智）：北京现代音乐学院、迷笛音乐学院，在音乐的编排和配器上有独到的见解。
+贝司手——张新伟：现场表现力极强。
+鼓手：陈军宏：技术型创作鼓手，震撼人心。</string>
+		</dict>
+		<dict>
+			<key>title</key>
 			<string>杭盖</string>
 			<key>date</key>
 			<date>2012-06-23T11:00:00Z</date>
@@ -205,9 +209,9 @@
 			<key>title</key>
 			<string>张楚</string>
 			<key>date</key>
-			<date>2012-06-23T12:00:00Z</date>
+			<date>2012-06-22T12:00:00Z</date>
 			<key>endDate</key>
-			<date>2012-06-23T13:00:00Z</date>
+			<date>2012-06-22T13:00:00Z</date>
 			<key>site</key>
 			<string>乐来乐快乐舞台</string>
 			<key>band</key>
@@ -217,6 +221,22 @@
 			<key>detail</key>
 			<string>张楚，中国最具人文气质的歌手。他的歌词有着浓厚的现代诗歌味道，含蓄而深邃，他用歌词这一边缘文学形式表达着自己的思索与体验。他的歌特别感伤，歌声浑厚苍茫，他的音乐和词语是作为一体而产生的，是一同从心里流出来任其自然地流下去。他的一首《姐姐》唱遍大江南北，94年和窦唯、何勇、唐朝乐队赴香港，“中国摇滚乐势力”演唱会引起极大轰动，开辟了中国摇滚的鼎盛时代。
 </string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>谢天笑</string>
+			<key>date</key>
+			<date>2012-06-23T12:00:00Z</date>
+			<key>endDate</key>
+			<date>2012-06-23T13:00:00Z</date>
+			<key>site</key>
+			<string>乐来乐快乐舞台</string>
+			<key>band</key>
+			<string></string>
+			<key>image</key>
+			<string>谢天笑</string>
+			<key>detail</key>
+			<string>“中国摇滚新教父”谢天笑，被媒体和乐迷公认为中国摇滚乐“现场之王”，他的歌和现场表演更是被无数人翻唱和模仿。在他的音乐作品中，距离现今已有2000多年历史的中国古老乐器“筝”与西方摇滚的完美融合，使其顺理成章的创造出了全新的中国摇滚之声。与其他同时代中国摇滚乐队不同的是，谢天笑饱满内敛，充满中国意像的词作使他们的音乐更富于厚度和感染力。</string>
 		</dict>
 		<dict>
 			<key>title</key>
@@ -383,23 +403,6 @@
 		</dict>
 		<dict>
 			<key>title</key>
-			<string>王建房</string>
-			<key>date</key>
-			<date>2012-06-23T11:30:00Z</date>
-			<key>endDate</key>
-			<date>2012-06-23T12:10:00Z</date>
-			<key>site</key>
-			<string>张冠李戴舞台</string>
-			<key>band</key>
-			<string>主唱: 王建房  吉它:吴俊永   吉它:贾伟豪  贝司：马紫更  鼓： 程喆   键盘：张树婷</string>
-			<key>image</key>
-			<string>王建房</string>
-			<key>detail</key>
-			<string>王建房是一个在古老城墙下徜徉思索的西北汉子，骨子里是锲而不舍、永不言败。长安特有的淳朴的民风，激发起他无限的创作激情与灵感歌词独具陕西人的朴讷温厚而又爽直豪放的地域情怀，曲风创作上既有秦腔的高亢激越，信天游的悠远单纯，又将眉胡、碗碗腔、合阳线胡等特色运用其中。让你在酣畅淋漓中感受着他们，让你在坚定柔情中感受着他们，那——就是西北人岁月沧桑下执着的呐喊。
-</string>
-		</dict>
-		<dict>
-			<key>title</key>
 			<string>马飞</string>
 			<key>date</key>
 			<date>2012-06-23T10:30:00Z</date>
@@ -413,6 +416,23 @@
 			<string>马飞</string>
 			<key>detail</key>
 			<string>陕西方言乐队，歌曲主要描写普通人的普通生活，代表作《长安县》，岐山面、谝闲传，马飞的歌在西安可以说无人不知，无人不晓。
+</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>王建房</string>
+			<key>date</key>
+			<date>2012-06-23T11:30:00Z</date>
+			<key>endDate</key>
+			<date>2012-06-23T12:10:00Z</date>
+			<key>site</key>
+			<string>张冠李戴舞台</string>
+			<key>band</key>
+			<string>主唱: 王建房  吉它:吴俊永   吉它:贾伟豪  贝司：马紫更  鼓： 程喆   键盘：张树婷</string>
+			<key>image</key>
+			<string>王建房</string>
+			<key>detail</key>
+			<string>王建房是一个在古老城墙下徜徉思索的西北汉子，骨子里是锲而不舍、永不言败。长安特有的淳朴的民风，激发起他无限的创作激情与灵感歌词独具陕西人的朴讷温厚而又爽直豪放的地域情怀，曲风创作上既有秦腔的高亢激越，信天游的悠远单纯，又将眉胡、碗碗腔、合阳线胡等特色运用其中。让你在酣畅淋漓中感受着他们，让你在坚定柔情中感受着他们，那——就是西北人岁月沧桑下执着的呐喊。
 </string>
 		</dict>
 		<dict>

@@ -1,24 +1,24 @@
 //
-//  MaWeiboStreamViewController.m
+//  MaAboutViewController.m
 //  MoreMusic
 //
-//  Created by Accthun He on 5/28/12.
+//  Created by Accthun He on 6/11/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "MaWeiboStreamViewController.h"
+#import "MaAboutViewController.h"
 
-@interface MaWeiboStreamViewController ()
+@interface MaAboutViewController ()
 
 @end
 
-@implementation MaWeiboStreamViewController
+@implementation MaAboutViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.tabBarItem = [[UITabBarItem alloc] initWithTitle:NSLocalizedString(@"Weibo",nil) image:[UIImage imageNamed:@"weibo"] tag:0];
+        // Custom initialization
     }
     return self;
 }
@@ -27,8 +27,6 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    self.tableView.backgroundColor = [UIColor lightGrayColor];
-    self.navigationItem.title = NSLocalizedString(@"Weibo",nil);
 }
 
 - (void)viewDidUnload
