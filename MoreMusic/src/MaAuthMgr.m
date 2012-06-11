@@ -8,8 +8,8 @@
 
 #import "MaAuthMgr.h"
 #import "MoreMusicAppDelegate.h"
-
-
+#import "WBErrorNoticeView.h"
+#import "WBSuccessNoticeView.h"
 @implementation MaAuthMgr
 
 @synthesize currentEngine;
@@ -17,24 +17,12 @@
 - (id)init {
 
 	if (self = [super init]) {
-        if (engineArray == nil) {
-            engineArray = [[NSMutableArray alloc] init];
-        }
-        
-        if (tokenArray == nil) {
-            tokenArray = [[NSMutableArray alloc] init];
-        }
-        
-        // for XAuth
-        if (userPSDArray == nil) {
-            userPSDArray = [[NSMutableArray alloc] init];
-        }
     }
 
     currentEngine = [[WBEngine alloc] initWithAppKey:kOAuthConsumerKey appSecret:kOAuthConsumerSecret];
     MoreMusicAppDelegate* app = (MoreMusicAppDelegate *)[[UIApplication sharedApplication] delegate];
-    
-    [currentEngine setRootViewController:app.homeViewController];
+    currentEngine.delegate = self;
+    [currentEngine setRootViewController:app.weiboStreamViewController];
     [currentEngine setDelegate:self];
     [currentEngine setRedirectURI:@"http://"];
     [currentEngine setIsUserExclusive:NO];
@@ -65,6 +53,7 @@
 
 -(void)logoutAccount
 {
+    [currentEngine logOut];
 
 }
 
@@ -73,56 +62,42 @@
 
 #pragma mark Authorize
 
--(void)removeCurrentEngine
-{
-    [engineArray removeObject:currentEngine];
-}
-
 
 
 - (void)engineAlreadyLoggedIn:(WBEngine *)engine
 {
-    if ([engine isUserExclusive])
-    {
-        UIAlertView* alertView = [[UIAlertView alloc]initWithTitle:nil 
-                                                           message:@"请先登出！" 
-                                                          delegate:nil
-                                                 cancelButtonTitle:@"确定" 
-                                                 otherButtonTitles:nil];
-        [alertView show];
-    }
+
 }
 
 - (void)engineDidLogIn:(WBEngine *)engine
 {
     //Login successful. 
     MoreMusicAppDelegate *app = (MoreMusicAppDelegate *)[[UIApplication sharedApplication] delegate];
-    [engineArray addObject:engine];
-    [app.homeViewController reloadTimeLine];
+//    [engineArray addObject:engine];
+    [app.weiboStreamViewController updateLoginButtonStatus];
+    
 }
 
 - (void)engine:(WBEngine *)engine didFailToLogInWithError:(NSError *)error
 {
     NSLog(@"didFailToLogInWithError: %@", error);
-    UIAlertView* alertView = [[UIAlertView alloc]initWithTitle:nil 
-													   message:@"登录失败！" 
-													  delegate:nil
-											 cancelButtonTitle:@"确定" 
-											 otherButtonTitles:nil];
-	[alertView show];
+
+    MoreMusicAppDelegate *app = (MoreMusicAppDelegate *)[[UIApplication sharedApplication] delegate];
+    WBErrorNoticeView *notice = [WBErrorNoticeView errorNoticeInView:app.window title:NSLocalizedString(@"ERROR",nil) message:NSLocalizedString(@"WeiboLoginFailed",nil)];
+    [notice show];
+
 }
 
 - (void)engineDidLogOut:(WBEngine *)engine
-{
-    UIAlertView* alertView = [[UIAlertView alloc]initWithTitle:nil 
-													   message:@"登出成功！" 
-													  delegate:self
-											 cancelButtonTitle:@"确定" 
-											 otherButtonTitles:nil];
-//    [alertView setTag:kWBAlertViewLogOutTag];
-	[alertView show];
-    
-    [engineArray removeObject:engine];
+{    
+    MoreMusicAppDelegate *app = (MoreMusicAppDelegate *)[[UIApplication sharedApplication] delegate];
+
+    WBSuccessNoticeView *notice = [WBSuccessNoticeView successNoticeInView:app.window title:NSLocalizedString(@"WeiboLogoutSuccess",nil)];
+    [notice show];
+    //Login successful. 
+    //    [engineArray addObject:engine];
+    [app.weiboStreamViewController updateLoginButtonStatus];
+
 }
 
 - (void)engineNotAuthorized:(WBEngine *)engine
@@ -132,72 +107,40 @@
 
 - (void)engineAuthorizeExpired:(WBEngine *)engine
 {
-    UIAlertView* alertView = [[UIAlertView alloc]initWithTitle:nil 
-													   message:@"请重新登录！" 
-													  delegate:nil
-											 cancelButtonTitle:@"确定" 
-											 otherButtonTitles:nil];
-	[alertView show];
-//    MoreMusicAppDelegate *app = (MoreMusicAppDelegate *)[[UIApplication sharedApplication] delegate];
+    [currentEngine logOut];
+    MoreMusicAppDelegate *app = (MoreMusicAppDelegate *)[[UIApplication sharedApplication] delegate];
+
+    WBErrorNoticeView *notice = [WBErrorNoticeView errorNoticeInView:app.window title:NSLocalizedString(@"ERROR",nil) message:NSLocalizedString(@"WeiboNeedLogin",nil)];
     
-    //[self removeCurrentEngine];
-    [self addAccount];
-//    [app.homeViewController reloadTimeLine];
-    
-}
-/*
-#pragma mark - WBAuthorizeDelegate Methods
-
-- (void)authorize:(WBAuthorize *)authorize didSucceedWithAccessToken:(NSString *)theAccessToken userID:(NSString *)theUserID expiresIn:(NSInteger)seconds
-{
+    [notice show];
 }
 
-- (void)authorize:(WBAuthorize *)authorize didFailWithError:(NSError *)error
-{
-}
-
-#pragma mark - WBRequestDelegate Methods
- 
- */
 - (void)engine:(WBEngine *)engine requestDidSucceedWithResult:(id)result
 {
-//    [JHNotificationManager notificationWithMessage: @"Sent" status:YES];
+    MoreMusicAppDelegate *app = (MoreMusicAppDelegate *)[[UIApplication sharedApplication] delegate];
+    WBSuccessNoticeView *notice = [WBSuccessNoticeView successNoticeInView:app.window title:NSLocalizedString(@"WeiboSendSuccessed",nil)];
+    
+    [notice show];
 }
 
 - (void)engine:(WBEngine *)engine requestDidFailWithError:(NSError *)error
 {   
+    
     NSDictionary* dict = error.userInfo;
     id errorCode = [dict valueForKey:@"error_code"];
-    NSString* errorString =[NSString stringWithFormat:@"Error Code  %d", [errorCode intValue]];
+    
+    MoreMusicAppDelegate *app = (MoreMusicAppDelegate *)[[UIApplication sharedApplication] delegate];
+    NSString* errorString =[NSString stringWithFormat:@"%d", [errorCode intValue]];
+
+    NSMutableString* errorMessage = [[NSMutableString alloc] initWithString:NSLocalizedString(@"WeiboSendFailed",nil)];
+    
+    [errorMessage appendString:errorString];
+    
+    WBErrorNoticeView *notice = [WBErrorNoticeView errorNoticeInView:app.window title:NSLocalizedString(@"ERROR",nil) message:errorMessage];
+
+    [notice show];
 
 //    [JHNotificationManager notificationWithMessage: errorString status:NO];
 }
-
-+(void)newMessageNotification:(NSInteger)messageCount messageType:(NSInteger)type
-{
-    NSString* notiString ;
-    
-    switch (type) {
-        case MaMessageType_TimeLine:
-            notiString = @"%d New Message";
-            break;
-            
-        case MaMessageType_Mention:
-            notiString = @"%d New Mention";
-            break;
-            
-        case MaMessageType_Comment:
-            notiString = @"%d New Comment";
-            break;
-            
-        default:
-            notiString = @"%d New Message";
-            break;
-    }
-    
-    NSString* message =[NSString stringWithFormat:notiString, messageCount];
-//    [JHNotificationManager notificationWithMessage: message status:YES];
-}
-
 
 @end

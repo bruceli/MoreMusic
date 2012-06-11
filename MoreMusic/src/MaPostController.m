@@ -43,12 +43,11 @@
         
         _postToolbar = [[UIToolbar alloc] initWithFrame: CGRectMake(0, 0, screenBounds.size.width, 44)];
         // Init Navbar
-        UIBarButtonItem* sndButton = [[UIBarButtonItem alloc] initWithTitle:@"Send" style:UIBarButtonItemStyleDone target:self action:@selector(post)];
+        UIBarButtonItem* sndButton = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"WeiboSend",nil) style:UIBarButtonItemStyleDone target:self action:@selector(post)];
         self.navigationItem.rightBarButtonItem = sndButton;
         self.navigationItem.rightBarButtonItem.enabled = NO;
         
         UIBarButtonItem* cancelButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(cancel)];
-        cancelButton.title = @"Cancel";
         self.navigationItem.leftBarButtonItem.enabled = YES;
         self.navigationItem.leftBarButtonItem = cancelButton;
         
@@ -62,6 +61,8 @@
         _textView.showsHorizontalScrollIndicator = NO;
         _textView.showsVerticalScrollIndicator = YES;
 
+        _textView.text = NSLocalizedString(@"WeiboTag",nil);
+        
         _textView.delegate = self;
                 
         // other init actions.
@@ -79,34 +80,18 @@
         
         UIBarButtonItem *flexibleSpace = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
         
-        // Location button
-        UIImage* locIcon = [UIImage imageNamed:@"Location.png"];
-        UIButton *baseButton = [UIButton buttonWithType:UIButtonTypeInfoLight];
-        baseButton.frame = CGRectMake(0, 0, 30, 30); 
-        [baseButton setImage:locIcon forState:UIControlStateNormal];
-        [baseButton addTarget:self action:@selector(addLocation) forControlEvents:UIControlEventTouchUpInside];
-        UIBarButtonItem* locButton = [[UIBarButtonItem alloc] initWithCustomView:baseButton];
-        
-        // Mentions button
-        UIImage* mentionIcon = [UIImage imageNamed:@"Mentions.png"];
-        UIButton *mentionBaseButton = [UIButton buttonWithType:UIButtonTypeInfoLight];
-        mentionBaseButton.frame = CGRectMake(0, 0, 30, 30); // position in the parent view and set the size of the button
-        [mentionBaseButton setImage:mentionIcon forState:UIControlStateNormal];
-        [mentionBaseButton addTarget:self action:@selector(mention) forControlEvents:UIControlEventTouchUpInside];
-        UIBarButtonItem* menButton = [[UIBarButtonItem alloc] initWithCustomView:mentionBaseButton];
-        
-        
         // Counting lable
         _theLable = [[UILabel alloc] initWithFrame:CGRectMake(0.0 , 11.0f, 120, 21.0f)];
         [_theLable setFont:[UIFont fontWithName:@"Helvetica-Bold" size:16]];
         [_theLable setBackgroundColor:[UIColor clearColor]];
         [_theLable setTextColor:[UIColor colorWithRed:157.0/255.0 green:157.0/255.0 blue:157.0/255.0 alpha:1.0]];
-        [_theLable setText:@"140"];
+//        [_theLable setText:@"140"];
+        [self updateTextCounter];
         [_theLable setTextAlignment:UITextAlignmentRight];
         UIBarButtonItem* lableItem = [[UIBarButtonItem alloc] initWithCustomView:_theLable];
         
         
-        NSArray *items = [[NSArray alloc] initWithObjects: locButton, menButton, cameraButton, flexibleSpace, lableItem, nil];
+        NSArray *items = [[NSArray alloc] initWithObjects:cameraButton, flexibleSpace, lableItem, nil];
         [_postToolbar setItems:items];
         _postToolbar.barStyle = UIBarStyleBlackTranslucent;
         [self.view addSubview:_postToolbar];
@@ -139,8 +124,6 @@
 {
     // Set Navbar title
     [self setupPostCtrlStatus];
-    
-
     [super viewWillAppear:animated];
 }
 
@@ -149,16 +132,16 @@
 {
     switch (msgType) {
         case MaSendMessageType_Post:
-            self.navigationItem.title = @"Post Message";
+            self.navigationItem.title = NSLocalizedString(@"WeiboPostMessage",nil);
             break;
             
         case MaSendMessageType_RePost:
-            self.navigationItem.title = @"RePost Message";
+            self.navigationItem.title = NSLocalizedString(@"WeiboRePostMessage",nil);
             [self removeCameraButton];
             break;
             
         case MaSendMessageType_Comment:
-            self.navigationItem.title = @"Comment Message";
+            self.navigationItem.title = NSLocalizedString(@"WeiboCommentMessage",nil);
             [self removeCameraButton];
             break;
             
@@ -209,7 +192,7 @@
     // Change CamaraButton
     
     if ([self isMaxLength:_textView.text]) 
-        _theLable.text = @"Long Message";  
+        _theLable.text = NSLocalizedString(@"WeiboLongMessageTextCount",nil);
     else
         _theLable.text = [NSString stringWithFormat:@"%d", MAX_TEXT_LENGTH - textCount];
     
@@ -250,7 +233,7 @@
 {
     [_textView resignFirstResponder];
     if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]){
-        RDActionSheet *actionSheet = [[RDActionSheet alloc] initWithCancelButtonTitle:@"Cancel" primaryButtonTitle:nil destroyButtonTitle:nil otherButtonTitles: @"Choose from Library", @"Take a Photo", nil];
+        RDActionSheet *actionSheet = [[RDActionSheet alloc] initWithCancelButtonTitle:NSLocalizedString(@"WeiboCancel",nil) primaryButtonTitle:nil destroyButtonTitle:nil otherButtonTitles: NSLocalizedString(@"WeiboChooseFromLib",nil), NSLocalizedString(@"WeiboTakeFromCam",nil), nil];
         actionSheet.callbackBlock = ^(RDActionSheetResult result, NSInteger buttonIndex) 
         {
             
@@ -265,14 +248,14 @@
                         [self showImagePicker:UIImagePickerControllerSourceTypeCamera];
                     }
                     
-                    NSLog(@"Pressed %i", buttonIndex);
+//                    NSLog(@"Pressed %i", buttonIndex);
                     break;
                 }
                 case RDActionSheetResultResultCancelled:{
                     //                    [_textView becomeFirstResponder];
                     
                 }
-                    NSLog(@"Sheet cancelled");
+//                    NSLog(@"Sheet cancelled");
             }
         };
         
@@ -286,7 +269,7 @@
 -(void)imageButtonAction
 {
     [_textView resignFirstResponder];
-    RDActionSheet *actionSheet = [[RDActionSheet alloc] initWithCancelButtonTitle:@"Cancel" primaryButtonTitle:nil destroyButtonTitle:@"Delete Image" otherButtonTitles: @"View Image", nil];
+    RDActionSheet *actionSheet = [[RDActionSheet alloc] initWithCancelButtonTitle:NSLocalizedString(@"WeiboCancel",nil) primaryButtonTitle:nil destroyButtonTitle:NSLocalizedString(@"WeiboRemovePict",nil) otherButtonTitles: NSLocalizedString(@"WeiboViewPict",nil), nil];
     
     actionSheet.callbackBlock = ^(RDActionSheetResult result, NSInteger buttonIndex) 
     {
@@ -302,7 +285,7 @@
                     [self viewCapturedImage];
                 }
                 
-                NSLog(@"Pressed %i", buttonIndex);
+//                NSLog(@"Pressed %i", buttonIndex);
                 break;
             }
                 
@@ -329,9 +312,9 @@
 - (void) sendMessage:(NSString*) text withImage:(UIImage*)image
 {
     UIImage* outputImage = image;
-    
-    if (text.length == 0 && image) {
-        text = @"Share image.";
+    NSMutableString* messageText = [[NSMutableString alloc] initWithString:text];
+    if (messageText.length == 0 && image) {
+        [messageText appendString:NSLocalizedString(@"WeiboShareImage",nil)];
     }
     
     //resize Image
@@ -339,14 +322,14 @@
         if (capturedImage.size.width > OUTPUT_IMAGE_WIDE_MAX)
         {
             outputImage = [self resizeImage:image];
-            [engine sendWeiBoWithText:text image:outputImage];
+            [engine sendWeiBoWithText:messageText image:outputImage];
         }
         else {
-            [engine sendWeiBoWithText:text image:image];
+            [engine sendWeiBoWithText:messageText image:image];
         }
     }
     else {
-        [engine sendWeiBoWithText:text image:nil];
+        [engine sendWeiBoWithText:messageText image:nil];
     }
 
 }
@@ -356,11 +339,16 @@
     [engine repostWithWeiboID:weiboID message:message];
 }
 
+-(void) commentPostMessage:(NSString*) message
+{
+    [engine commentWithWeiboID:weiboID message:message];
+}
+
 - (void)post {
     
     if ([self isMaxLength:_textView.text ]) {   // Out of MAX_TEXT_LENGTH
         UIImage* img =  [self textToImage:_textView.text];
-        [self sendMessage:@"Looog Message" withImage:img];
+        [self sendMessage:NSLocalizedString(@"WeiboLongMessage",nil) withImage:img];
     }
     else {
         switch (msgType) {
@@ -373,6 +361,8 @@
                 break;
                 
             case MaSendMessageType_Comment:
+                [self commentPostMessage:_textView.text];
+
                 break;
                 
             default:
@@ -388,43 +378,7 @@
 }
 
 - (void)cancel {
-    if (TTIsStringWithAnyText(_textView.text)
-        && !_textView.text.isWhitespaceAndNewlines)
-    {
-        [_textView resignFirstResponder];
-        RDActionSheet *actionSheet = [[RDActionSheet alloc] initWithCancelButtonTitle:@"Cancel" primaryButtonTitle:@"Save as Draft" destroyButtonTitle:@"Delete" otherButtonTitles: nil];
-        actionSheet.callbackBlock = ^(RDActionSheetResult result, NSInteger buttonIndex) 
-        {
-            
-            switch (result) {
-                case RDActionSheetButtonResultSelected:
-                    
-                    if(buttonIndex == 0){   //Delete this weibo
-                        [self destoryPostView];    
-                        isSendCancelled = NO;
-                    }
-                    
-                    if (buttonIndex == 1 ) {    // Save this weibo
-                        [self destoryPostView];    
-                        isSendCancelled = NO;
-                    }
-                    
-                    NSLog(@"Pressed %i", buttonIndex);
-                    break;
-                case RDActionSheetResultResultCancelled:
-                    if (isSendCancelled) {
-                        [_textView becomeFirstResponder];
-                    }
-                    NSLog(@"Sheet cancelled");
-            }
-        };
-        
-        [actionSheet showFrom: self.view];
-    }
-    else {
         [self destoryPostView];    
-
-    }
 }
 
 
@@ -592,7 +546,7 @@
     else 
         textCount = l+(int)ceilf((float)(a+b)/2.0);
 
-    NSLog(@"Count Methord C, %d",textCount);
+//    NSLog(@"Count Methord C, %d",textCount);
          
     if (textCount > MAX_TEXT_LENGTH)
         return YES;

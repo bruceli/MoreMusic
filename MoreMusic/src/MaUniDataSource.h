@@ -20,5 +20,4 @@
 @property (nonatomic, retain)     NSString* requestJSON;
 
 -(void) initDataModelWithRequestJSON:(NSString*)inJSON;
-
 @end

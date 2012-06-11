@@ -52,27 +52,30 @@
         // Message Info
         //------------------ 
         // User tweets text
-        NSString *msgText = [detail objectForKey:@"text"];
+        NSDictionary* value = [detail objectForKey:@"value"];
+
+        
+        NSString *msgText = [value objectForKey:@"weibo"];
         // User tweets image
-        NSString *msgImageURL = [detail objectForKey:@"thumbnail_pic"];
+        NSString *msgImageURL = [value objectForKey:@"weibo_image"];
         // User tweets create time
-        NSString *strTime = [detail objectForKey:@"created_at"];
+        NSString *strTime = [value objectForKey:@"time"];
+        NSLog(@"%@" ,strTime);
 //        NSTimeInterval crtTime = [self getTimeValue:strTime defaultValue:0];
 //        NSDate *createdAt =  [NSDate dateWithTimeIntervalSince1970: crtTime];
        
         //------------------ 
         // User Info
         //------------------ 
-        NSDictionary* user = [detail objectForKey:@"user"];
-        NSString *profileImageUrl = [user objectForKey:@"profile_image_url"];
-        NSString *screenName = [user objectForKey:@"screen_name"];
+        NSString *profileImageUrl = [value objectForKey:@"user_image"];
+        NSString *screenName = [value objectForKey:@"user_title"];
         
         //------------------ 
         // Retweets Info
         //------------------ 
-        NSDictionary* retweets = [detail objectForKey:@"retweeted_status"];; 
-        NSString* retweetImgURL = [retweets objectForKey:@"thumbnail_pic"];
-        NSString* retweetMsgText = [retweets objectForKey:@"text"];
+        NSDictionary* retweets = [value objectForKey:@"forward_weibo"];; 
+        NSString* retweetImgURL = [retweets objectForKey:@"img"];
+        NSString* retweetMsgText = [retweets objectForKey:@"weibo"];
         
         MaTableSubtitleItem * cellItem;
         if (retweets) {
@@ -86,36 +89,31 @@
 
     }
     
-    TTTableMoreButton *button = [TTTableMoreButton itemWithText:@"Load More..."];
+    TTTableMoreButton *button = [TTTableMoreButton itemWithText:NSLocalizedString(@"LoadMore",nil)];
     [items addObject:button];
                                  
-    // new item notification
-    NSInteger count = items.count - self.items.count;
-    if (count > 0) 
-        [self newItemNotification:count];
-        
     self.items = items;
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (NSString*)titleForLoading:(BOOL)reloading {
     if (reloading) {
-        return NSLocalizedString(@"Updating Twitter feed...", @"Twitter feed updating text");
+        return NSLocalizedString(@"WeiboUpdating", @"Twitter feed updating text");
     } else {
-        return NSLocalizedString(@"Loading Twitter feed...", @"Twitter feed loading text");
+        return NSLocalizedString(@"WeiboLoading", @"Twitter feed loading text");
     }
 }
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (NSString*)titleForEmpty {
-    return NSLocalizedString(@"No tweets found.", @"Twitter feed no results");
+    return NSLocalizedString(@"WeiboNotFound", @"Twitter feed no results");
 }
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (NSString*)subtitleForError:(NSError*)error {
-    return NSLocalizedString(@"Sorry, there was an error loading the Twitter stream.", @"");
+    return NSLocalizedString(@"WeiboError", @"");
 }
 
 
@@ -150,12 +148,13 @@
 
 -(void)newItemNotification:(NSInteger)count
 {
-    if ([requestJSON isEqualToString:@"statuses/mentions.json"]) 
+/*    if ([requestJSON isEqualToString:@"statuses/mentions.json"]) 
         [MaAuthMgr newMessageNotification:count messageType:MaMessageType_Mention];
     else if ([requestJSON isEqualToString:@"statuses/home_timeline.json"]) 
         [MaAuthMgr newMessageNotification:count messageType:MaMessageType_TimeLine];
-        
+  */      
 }
+
 
 
 @end

@@ -262,7 +262,7 @@
     CGFloat messageLineHeight = 30.0;
     
     // Make and add the title label
-    float titleYOrigin = 10.0;
+    float titleYOrigin = 25;
     
     self.titleLabel = [[UILabel alloc]initWithFrame:CGRectMake(55.0, titleYOrigin, viewWidth - 70.0, 16.0)];
     self.titleLabel.textColor = [UIColor whiteColor];
@@ -309,7 +309,7 @@
     [view addSubview:self.noticeView];
     
     // Make and add the icon view
-    UIImageView *iconView = [[UIImageView alloc]initWithFrame:CGRectMake(10.0, 10.0, 20.0, 30.0)];
+    UIImageView *iconView = [[UIImageView alloc]initWithFrame:CGRectMake(10.0, 20.0, 20.0, 30.0)];
     iconView.image = [UIImage imageWithContentsOfFile:noticeIconImageName];
     iconView.contentMode = UIViewContentModeScaleAspectFit;
     iconView.alpha = 0.8;
@@ -356,7 +356,7 @@
     CGFloat messageLineHeight = 30.0;
     
     // Make and add the title label
-    float titleYOrigin = 18.0;
+    float titleYOrigin = 25;
     self.titleLabel = [[UILabel alloc]initWithFrame:CGRectMake(55.0, titleYOrigin, viewWidth - 70.0, 16.0)];
     self.titleLabel.textColor = [UIColor whiteColor];
     self.titleLabel.shadowOffset = CGSizeMake(0.0, -1.0);
@@ -380,7 +380,7 @@
     [view addSubview:self.noticeView];
     
     // Make and add the icon view
-    UIImageView *iconView = [[UIImageView alloc]initWithFrame:CGRectMake(10.0, 10.0, 20.0, 30.0)];
+    UIImageView *iconView = [[UIImageView alloc]initWithFrame:CGRectMake(10.0, 20, 20.0, 30.0)];
     iconView.image = [UIImage imageWithContentsOfFile:noticeIconImageName];
     iconView.contentMode = UIViewContentModeScaleAspectFit;
     iconView.alpha = 0.8;

@@ -8,7 +8,7 @@
 
 #import "MoreMusicAppDelegate.h"
 #import "MaRootViewController.h"
-
+#import "MaAuthMgr.h"
 @implementation MoreMusicAppDelegate
 
 @synthesize window = _window;
@@ -17,8 +17,8 @@
 @synthesize reviewViewController = _reviewViewController;
 @synthesize weiboStreamViewController = _weiboStreamViewController;
 @synthesize moreViewController = _moreViewController;
-@synthesize homeViewController = _homeViewController;
 @synthesize authMgr = _authMgr;
+@synthesize tabBarController = _tabBarController;
 
 //@synthesize tabBarController = _tabBarController;
 
@@ -35,11 +35,11 @@
     MoreMusicAppDelegate* app = (MoreMusicAppDelegate *)[[UIApplication sharedApplication] delegate];
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleBlackOpaque animated:YES];
     
-    tabBarController = [[UITabBarController alloc] init]; 
-    UITabBar *tabBar = [tabBarController tabBar]; 
+    _tabBarController = [[UITabBarController alloc] init]; 
+    UITabBar *tabBar = [_tabBarController tabBar]; 
     [tabBar setBackgroundImage:[UIImage imageNamed:@"tabBarBackground"]];
     
-    self.window.rootViewController = tabBarController;
+    self.window.rootViewController = _tabBarController;
     
     app.scheduleViewController = [[MaScheduleViewController alloc] init]; 
 	UINavigationController* schViewController = [[UINavigationController alloc] initWithRootViewController:app.scheduleViewController];
@@ -69,10 +69,16 @@
     navBar = morViewController.navigationBar;
     [navBar setBackgroundImage:[UIImage imageNamed: @"navBackground"] forBarMetrics:UIBarMetricsDefault];
 
-    tabBarController.viewControllers = [NSArray arrayWithObjects:schViewController, banViewController, revViewController, weiViewController, morViewController, nil];
+    _tabBarController.viewControllers = [NSArray arrayWithObjects:schViewController, banViewController, revViewController, weiViewController, morViewController, nil];
     
-    [self.window addSubview:tabBarController.view];
+    [self.window addSubview:_tabBarController.view];
     [self.window makeKeyAndVisible];
+    
+    
+    _authMgr = [[MaAuthMgr alloc] init];
+
+    
+    
     return YES;
 }
 

@@ -14,16 +14,13 @@
 @interface MaAuthMgr : NSObject <WBEngineDelegate>
 {
     WBEngine* currentEngine;
-    NSMutableArray* engineArray;
-    NSMutableArray* tokenArray;
-    NSMutableArray* userPSDArray;
-    
 }
 @property (nonatomic, readonly) WBEngine* currentEngine;
 
 -(void)addAccount;
+-(void)logoutAccount;
 -(BOOL)isEngineReady;
 -(void)engineAuthorizeExpired:(WBEngine *)engine;
-+(void)newMessageNotification:(NSInteger)messageCount messageType:(NSInteger)type;
+//+(void)newMessageNotification:(NSInteger)messageCount messageType:(NSInteger)type;
 
 @end

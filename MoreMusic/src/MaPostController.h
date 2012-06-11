@@ -10,7 +10,7 @@
 #import "WBEngine.h"
 #import "MaMoreMusicDefine.h"
 
-#define IMAGE_ICON_INDEX 2
+#define IMAGE_ICON_INDEX 0
 
 @interface MaPostController : UIViewController<UIActionSheetDelegate,UITextViewDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate>
 {

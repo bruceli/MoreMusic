@@ -9,7 +9,7 @@
 #import "MaMessageListController.h"
 #import "MaPostController.h"
 
-@interface HomeViewController : MaMessageListController
+@interface MaWeiboStreamViewController : MaMessageListController
 {
 
     WBEngine* engine;
@@ -17,4 +17,6 @@
 }
 //- (void)loadMessagesAtPage:(int)numPage count:(int)count;
 - (void)reloadTimeLine;
+-(void)updateLoginButtonStatus;
+
 @end

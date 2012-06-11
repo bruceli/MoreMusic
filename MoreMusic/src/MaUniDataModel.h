@@ -21,7 +21,6 @@
     
 }
 - (id)initRequestWithString:(NSString*) reqString;
-
 @property (nonatomic, readonly) NSMutableArray* messages;
 @property (nonatomic, assign)   NSUInteger      resultsPerPage;
 @property (nonatomic, readonly) BOOL            finished;
