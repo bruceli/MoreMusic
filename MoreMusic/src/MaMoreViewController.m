@@ -12,6 +12,7 @@
 #import "MaMapSelectorController.h"
 #import "MaTicketViewController.h"
 #import "MaWallpaperViewController.h"
+#import "MaAboutViewController.h"
 
 @implementation MaMoreViewController
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -96,7 +97,7 @@
         }
 
         case 3:{
-            UIViewController* detViewController = [[UIViewController alloc]init];
+            MaAboutViewController* detViewController = [[MaAboutViewController alloc]init];
             [self.navigationController pushViewController: detViewController animated:YES];
             break;
         }

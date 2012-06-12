@@ -131,9 +131,10 @@
     MaTableSubtitleItemCell *cell = (MaTableSubtitleItemCell*)[_tableView cellForRowAtIndexPath:indexPath];
     MaTableSubtitleItem* cellItem = (MaTableSubtitleItem*)[cell getCellDataSource];
     
-    NSNumber* idNumber =  [cellItem.detailInfo objectForKey:@"id"];
     
-    
+    NSDictionary* dict = [cellItem.detailInfo objectForKey:@"value"];
+    NSNumber* idNumber =  [dict objectForKey:@"weibo_id"];
+
 //    NSNumber* stat = [cellItem.detailInfo objectForKey:@"favorited"];
     
     //NSString* cl = [stat  className];
