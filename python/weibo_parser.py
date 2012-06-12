@@ -22,7 +22,7 @@ def main(paging = 0):
         # delete old weibo first
         for id in db:
 	    db.delete(db[id])
-        # fetch 5 pages weibo
+        # fetch 10 pages weibo
         for i in range(10):
             fetch_weibo(i)
         print 'now is: %s' % str(datetime.now())
@@ -41,10 +41,12 @@ def parse_weibo(raw_data):
     print dls.size()
 
     for dl in dls:
+	weibo_id = dl.xpath('@mid')[0]
 	user_node = dl.xpath('./dt/a')[0]
         title = user_node.xpath('./@title')[0]
 	link = user_node.xpath('./@href')[0]
 	img = user_node.xpath('./img/@src')[0]
+	print 'weibo id: %s' % weibo_id
 	print 'user title: %s' % title
 	print 'user link: %s' % link
 	print 'user image: %s' % img
@@ -112,7 +114,7 @@ def parse_weibo(raw_data):
 	print '======================='
 
         # write to db
-        doc = {'user_title': title, 'user_link': link, 'user_image': img, 
+        doc = {'weibo_id': weibo_id, 'user_title': title, 'user_link': link, 'user_image': img, 
                'weibo': weibo_msg, 'weibo_image': wb_img,
                'forward_weibo': {'title': f_title, 'link': f_link, 'weibo': f_weibo,
                            'img': f_img, 'forward': ff, 'comment': fc,
@@ -131,8 +133,11 @@ def parse_forward_weibo_message(node):
     return title, link, weibo
 
 def parse_weibo_image(image_node):
-    img = image_node.xpath('.//img')[0].attrib['src']
-    print 'image src is: %s' % img
+    img = ''
+    nodes = image_node.xpath('.//img')
+    if nodes and len(nodes) > 0:
+        img = image_node.xpath('.//img')[0].attrib['src']
+        print 'image src is: %s' % img
     return img
 
 if __name__ == "__main__":
