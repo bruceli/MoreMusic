@@ -51,6 +51,7 @@
     
 	self.variableHeightRows = YES;  
     
+    [self.tableView setSeparatorColor:[UIColor lightGrayColor]];
 }
 
 -(void)viewWillAppear:(BOOL)animated
