@@ -1,5 +1,5 @@
-#define kOAuthConsumerKey				@"1311591556"
-#define kOAuthConsumerSecret			@"3678355a4d9a353102ecf755a9265a61"
+#define kOAuthConsumerKey				@"3872365553"
+#define kOAuthConsumerSecret			@"4f9eb7ad785fc55340ef5207867fb048"
 
 typedef enum {
     MaSendMessageType_Post = 1,
