@@ -21,7 +21,8 @@ def main(paging = 0):
     while 1:
         # delete old weibo first
         for id in db:
-	    db.delete(db[id])
+	    if id != '_design/weibo':
+	        db.delete(db[id])
         # fetch 10 pages weibo
         for i in range(10):
             fetch_weibo(i)
@@ -56,6 +57,8 @@ def parse_weibo(raw_data):
 	weibo_node = dl.xpath('.//p[@node-type="feed_list_content"]')[0]
 	#parse_weibo_node(weibo_node)
 	weibo_msg = weibo_node.text_content().strip()
+        if weibo_msg.startswith(title):
+            weibo_msg = weibo_msg[len(title)+1:]
 	print 'weibo message: %s' % weibo_msg
 	# find image
 	wb_img = ''
