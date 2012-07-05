@@ -97,7 +97,7 @@
     
     NSArray* entries = [feed objectForKey:@"statuses"];
     
-    NSLog(@"%@",entries);
+ //   NSLog(@"%@",entries);
     
     NSDateFormatter* dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setTimeStyle:NSDateFormatterFullStyle];
