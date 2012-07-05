@@ -13,6 +13,7 @@
 #import "MaTableSubtitleItemCell.h"
 #import "MaTableSubtitleItem.h"
 #import "MaAuthMgr.h"
+#import "FXLabel.h"
 
 @interface MaWeiboStreamViewController()
 -(void)repostMessageWithWeiboID:(NSNumber*)idNumber;
@@ -52,6 +53,20 @@
 	self.variableHeightRows = YES;  
     
     [self.tableView setSeparatorColor:[UIColor lightGrayColor]];
+    
+    _coverView = [[UIView alloc] initWithFrame:self.view.bounds];
+    _coverView.backgroundColor = [UIColor colorWithWhite:0.8 alpha:1];
+    
+    FXLabel* label = [[FXLabel alloc] initWithFrame:CGRectMake(130, 100, 70,35)];
+    label.shadowColor = [UIColor lightGrayColor];
+    label.backgroundColor = [UIColor clearColor];
+    label.font = [UIFont fontWithName:@"MicrosoftYaHei" size:20];
+    label.textColor = [UIColor darkGrayColor];
+    label.shadowOffset = CGSizeMake(1.0f, 1.0f);
+    label.shadowBlur = 1.0f;
+    label.text = NSLocalizedString(@"WeiboNotFound",nil);
+    [_coverView addSubview:label];
+
 }
 
 -(void)viewWillAppear:(BOOL)animated
@@ -62,10 +77,48 @@
 
     
    //     [app.welcomeViewController showBar];
-
-    
-
 }
+
+-(void)showCoverView:(BOOL)status
+{
+      //Init status
+    CGRect initFrame,finalFrame;
+    if (status) {   // push in
+        [self.view addSubview:_coverView];
+
+        initFrame = self.view.bounds;
+        initFrame.origin.y = -initFrame.size.height;
+        _coverView.frame = initFrame;
+        
+        finalFrame = self.view.bounds;
+    }
+    else {          // pull out
+        initFrame = self.view.bounds;
+
+        finalFrame = self.view.bounds;
+        finalFrame.origin.y = -initFrame.size.height;
+        _coverView.frame = initFrame;
+    }
+
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:0.3];
+    
+    //Finial status
+    _coverView.frame = finalFrame;
+    
+    [UIView setAnimationCurve:UIViewAnimationCurveLinear];
+    [UIView setAnimationDelegate:self];
+    [UIView setAnimationDidStopSelector:@selector(coverViewAnimationDidStop)];
+    [UIView commitAnimations];
+}
+
+-(void)coverViewAnimationDidStop
+{
+    MoreMusicAppDelegate* app = (MoreMusicAppDelegate *)[[UIApplication sharedApplication] delegate];
+    if ([app.authMgr isEngineReady]) 
+        [_coverView removeFromSuperview];
+}
+
 
 -(void)updateLoginButtonStatus
 {
@@ -74,20 +127,23 @@
         self.navigationItem.leftBarButtonItem =  [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"Login",nil) style:UIBarButtonItemStylePlain target:self action:@selector(login)];
         self.navigationItem.rightBarButtonItem = nil;
         [self removeSwipeCell];
+        [self showCoverView:YES];
     }
     else {
         self.navigationItem.leftBarButtonItem =  [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"Logout",nil) style:UIBarButtonItemStylePlain target:self action:@selector(logout)];
         self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCompose target:self action:@selector(newMessage:)];
         [self setupSwipeCell];
+        [self showCoverView:NO];
     }
 
 }
+
 -(void)login
 {
     MoreMusicAppDelegate* app = (MoreMusicAppDelegate *)[[UIApplication sharedApplication] delegate];
     [app.authMgr addAccount];
     
-    [self updateLoginButtonStatus];
+//    [self updateLoginButtonStatus];
 }
 
 -(void)logout
@@ -133,8 +189,7 @@
     MaTableSubtitleItem* cellItem = (MaTableSubtitleItem*)[cell getCellDataSource];
     
     
-    NSDictionary* dict = [cellItem.detailInfo objectForKey:@"value"];
-    NSNumber* idNumber =  [dict objectForKey:@"weibo_id"];
+    NSNumber* idNumber =  [cellItem.detailInfo objectForKey:@"id"];
 
 //    NSNumber* stat = [cellItem.detailInfo objectForKey:@"favorited"];
     
@@ -175,7 +230,7 @@
 //    self.dataSource = [[MaWeiboDataSource alloc] init];
     
     MaUniDataSource* dataSource = [[MaUniDataSource alloc] init];
-    [dataSource initDataModelWithRequestJSON:JSON_STAT_HOME_TIMELINE];  
+    [dataSource initDataModelWithRequestJSON:JSON_SEARCH_TOPICS];  
 
     
     self.dataSource = dataSource;

@@ -51,6 +51,9 @@
         self.navigationItem.leftBarButtonItem.enabled = YES;
         self.navigationItem.leftBarButtonItem = cancelButton;
         
+        UINavigationBar* navBar = self.navigationController.navigationBar;
+        [navBar setBackgroundImage:[UIImage imageNamed: @"navBackground"] forBarMetrics:UIBarMetricsDefault];
+
         // init textView
         _textView = [[UITextView alloc] initWithFrame:CGRectMake(0, 0, screenBounds.size.width, 0)];
         [_textView setFont:[UIFont fontWithName:@"Helvetica" size:16]];
@@ -109,7 +112,6 @@
 
 -(void)viewDidLoad{
     [super viewDidLoad];
-    
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardWillShowNotification object:nil];
 }
 

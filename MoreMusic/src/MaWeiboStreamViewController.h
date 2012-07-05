@@ -13,10 +13,10 @@
 {
 
     WBEngine* engine;
-
+    UIView* _coverView;
 }
 //- (void)loadMessagesAtPage:(int)numPage count:(int)count;
-- (void)reloadTimeLine;
+-(void)reloadTimeLine;
 -(void)updateLoginButtonStatus;
 
 @end

@@ -50,11 +50,10 @@
 }
 
 
--(void)initWithCreateTime:(double)inTime
+-(void)initWithCreateTime:(NSString*)inTime
 {
-    createTime = inTime;
-//    NSLog(@"%f", createTime);
-
+    // User tweets create time
+    createTime = [self getTimeValue:inTime defaultValue:0];
 }
 
 -(void)refreshLabel
@@ -63,7 +62,7 @@
     NSString* dateString = [createdAt formatRelativeTime];
     self.text = dateString;
     
-//    NSLog(@"Updating: CreateAt %@ ",dateString);
+    //    NSLog(@"Updating: CreateAt %@ ",dateString);
 }
 
 -(void)updateRelativeTime
@@ -73,7 +72,6 @@
         [self performSelectorOnMainThread:@selector(refreshLabel) withObject:nil waitUntilDone:YES]; 
     }
 }
-
 @end
 
 
@@ -196,40 +194,31 @@
 		[super setObject:object];
 		MaTableSubtitleItem *item = object;
         BOOL hasComment = NO;
-        NSDictionary* dict =  [item.detailInfo objectForKey:@"value"];
-
         // Time Label View
-        NSString* value = [dict objectForKey:@"time"];
-        NSString* timeString = [value substringWithRange:NSMakeRange(0, 10)];
-		[_createTimeLabel initWithCreateTime: [timeString doubleValue]];
-
+        
+		[_createTimeLabel initWithCreateTime:item.creatTime];
+        [_createTimeLabel refreshLabel];
         [self.contentView addSubview:_createTimeLabel];
         
         // Source Label view
-        [_sourceLabel setText: [dict objectForKey:@"source"]];
+        NSString* srcString = [item.detailInfo objectForKey:@"source"];
+        NSString* sourceAppString = [self getSourceStringform:srcString];
+        [_sourceLabel setText:sourceAppString];
         
         // Comment Count view
-        NSString* commentString = [dict objectForKey:@"comment"];
-        NSMutableString* commCount = [[NSMutableString alloc]init];
-        if ([commentString length]) {
-            commCount = [NSMutableString stringWithString:[dict objectForKey:@"comment"]];
+        NSString* commCount = [item.detailInfo objectForKey:@"comments_count"];
+        NSString* rpCount = [item.detailInfo objectForKey:@"reposts_count"];
+        NSString* countStatus = [self getCommentAndRepostStringBy:commCount rePostCount:rpCount];
+        if ([countStatus length] != 0) {
+            [_commentCountLabel setText:countStatus];
+            [self.contentView addSubview:_commentCountLabel];
         }
-        NSString* rpCount = [dict objectForKey:@"forward"];
-        if ([rpCount length]) {
-            [commCount appendString:@" "];
-            [commCount appendString:rpCount];
+        else{
+            [_commentCountLabel setText:@""];
+            [_commentCountLabel removeFromSuperview];
+            
         }
         
-        NSString* fav = [dict objectForKey:@"favorite"];
-        if ([fav length]) {
-            [commCount appendString:@" "];
-            [commCount appendString:fav];
-        }
-
-        [_commentCountLabel setText:commCount];
-        [self.contentView addSubview:_commentCountLabel];
-        
-
         // Image View
         if ([item.messageImageURL length] != 0) {
             [_messageImageView setUrlPath:item.messageImageURL];
@@ -254,7 +243,7 @@
             [_commentLabel setText:@""];
             [_commentLabel removeFromSuperview];
         }
-
+        
         if ([item.retweetMessageImageURL length] != 0) {
             [_commentImage setUrlPath:item.retweetMessageImageURL];
             [_commentView addSubview:_commentImage];
@@ -270,11 +259,6 @@
         if (!hasComment) {
             [_commentView removeFromSuperview];
         }
-        
-        //Set deleget
-//        MoreMusicAppDelegate* app = (MoreMusicAppDelegate *)[[UIApplication sharedApplication] delegate]; 
- //       MaTableSubtitleItem* item = [self getCellDataSource];
-//        NSString* jsonString = item.jsonType;
         
     }
 }
@@ -393,12 +377,15 @@
         
         NSDictionary* retweets = [customItem.detailInfo objectForKey:@"retweeted_status"]; 
         NSDictionary* user = [retweets objectForKey:@"user"];
-        NSString* displayName = [user objectForKey:@"screen_name"] ;
         NSMutableString* rtMsg =  [[NSMutableString alloc]init];
-        if(displayName)
-        {
-            [rtMsg appendString:displayName];
-            [rtMsg appendString:@": "];
+
+        if (user != (id)[NSNull null]) {
+            NSString* displayName = [user objectForKey:@"screen_name"] ;
+            if(displayName)
+            {
+                [rtMsg appendString:displayName];
+                [rtMsg appendString:@": "];
+            }
         }
             
         [rtMsg appendString:customItem.retweetMessage];
@@ -480,13 +467,16 @@
 {
     //------------------- Need change codes in tableView getHeight!!!!!!!!!!--------------
     NSDictionary* retweets = [detail objectForKey:@"retweeted_status"]; 
-    NSDictionary* user = [retweets objectForKey:@"user"];
-    NSString* displayName = [user objectForKey:@"screen_name"] ;
+    NSDictionary* user = [retweets objectForKey:@"user"];  
     NSMutableString* result =  [[NSMutableString alloc]init];
-    if(displayName)
-    {
-        [result appendString:displayName];
-        [result appendString:@": "];
+
+    if (user != (id)[NSNull null]) {
+        NSString* displayName = [user objectForKey:@"screen_name"] ;
+        if(displayName)
+        {
+            [result appendString:displayName];
+            [result appendString:@": "];
+        }
     }
     
     [result appendString:commMsg];

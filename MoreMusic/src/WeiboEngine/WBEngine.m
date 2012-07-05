@@ -332,8 +332,8 @@
 - (void)repostWithWeiboID:(NSNumber*)weiboID message:(NSString *)message
 {
     NSMutableDictionary *params = [NSMutableDictionary dictionaryWithCapacity:2];
-//    NSString* idString = [weiboID stringValue];
-    [params setObject:(weiboID ? weiboID : @"") forKey:@"id"];
+    NSString* idString = [weiboID stringValue];
+    [params setObject:(idString ? idString : @"") forKey:@"id"];
     [params setObject:(message ? message : @"") forKey:@"status"];
 
     [self loadRequestWithMethodName:@"statuses/repost.json"
@@ -347,8 +347,8 @@
 - (void)commentWithWeiboID:(NSNumber*)weiboID message:(NSString *)message
 {
     NSMutableDictionary *params = [NSMutableDictionary dictionaryWithCapacity:2];
-//    NSString* idString = [weiboID stringValue];
-    [params setObject:(weiboID ? weiboID : @"") forKey:@"id"];
+    NSString* idString = [weiboID stringValue];
+    [params setObject:(idString ? idString : @"") forKey:@"id"];
     [params setObject:(message ? message : @"") forKey:@"comment"];
     
     [self loadRequestWithMethodName:@"comments/create.json"

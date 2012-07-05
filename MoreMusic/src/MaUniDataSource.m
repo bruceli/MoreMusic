@@ -46,36 +46,33 @@
 - (void)tableViewDidLoadModel:(UITableView*)tableView {
 
     NSMutableArray* items = [[NSMutableArray alloc] init];
-
+    
     for (NSDictionary *detail in uniModel.messages) {
         //------------------ 
         // Message Info
         //------------------ 
         // User tweets text
-        NSDictionary* value = [detail objectForKey:@"value"];
-
-        
-        NSString *msgText = [value objectForKey:@"weibo"];
+        NSString *msgText = [detail objectForKey:@"text"];
         // User tweets image
-        NSString *msgImageURL = [value objectForKey:@"weibo_image"];
+        NSString *msgImageURL = [detail objectForKey:@"thumbnail_pic"];
         // User tweets create time
-        NSString *strTime = [value objectForKey:@"time"];
-//        NSLog(@"%@" ,strTime);
-//        NSTimeInterval crtTime = [self getTimeValue:strTime defaultValue:0];
-//        NSDate *createdAt =  [NSDate dateWithTimeIntervalSince1970: crtTime];
-       
+        NSString *strTime = [detail objectForKey:@"created_at"];
+        //        NSTimeInterval crtTime = [self getTimeValue:strTime defaultValue:0];
+        //        NSDate *createdAt =  [NSDate dateWithTimeIntervalSince1970: crtTime];
+        
         //------------------ 
         // User Info
         //------------------ 
-        NSString *profileImageUrl = [value objectForKey:@"user_image"];
-        NSString *screenName = [value objectForKey:@"user_title"];
+        NSDictionary* user = [detail objectForKey:@"user"];
+        NSString *profileImageUrl = [user objectForKey:@"profile_image_url"];
+        NSString *screenName = [user objectForKey:@"screen_name"];
         
         //------------------ 
         // Retweets Info
         //------------------ 
-        NSDictionary* retweets = [value objectForKey:@"forward_weibo"];; 
-        NSString* retweetImgURL = [retweets objectForKey:@"img"];
-        NSString* retweetMsgText = [retweets objectForKey:@"weibo"];
+        NSDictionary* retweets = [detail objectForKey:@"retweeted_status"];; 
+        NSString* retweetImgURL = [retweets objectForKey:@"thumbnail_pic"];
+        NSString* retweetMsgText = [retweets objectForKey:@"text"];
         
         MaTableSubtitleItem * cellItem;
         if (retweets) {

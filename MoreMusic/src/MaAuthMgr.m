@@ -18,6 +18,13 @@
 
 	if (self = [super init]) {
     }    
+    currentEngine = [[WBEngine alloc] initWithAppKey:kOAuthConsumerKey appSecret:kOAuthConsumerSecret];
+    
+    MoreMusicAppDelegate* app = (MoreMusicAppDelegate *)[[UIApplication sharedApplication] delegate];
+    [currentEngine setRootViewController:app.weiboStreamViewController];
+    [currentEngine setDelegate:self];
+    [currentEngine setRedirectURI:@"http://"];
+    [currentEngine setIsUserExclusive:NO];
     return self;
 }
 
@@ -34,15 +41,6 @@
 
 -(void)addAccount
 {
-    currentEngine = [[WBEngine alloc] initWithAppKey:kOAuthConsumerKey appSecret:kOAuthConsumerSecret];
-
-    
-    MoreMusicAppDelegate* app = (MoreMusicAppDelegate *)[[UIApplication sharedApplication] delegate];
-    [currentEngine setRootViewController:app.weiboStreamViewController];
-    [currentEngine setDelegate:self];
-    [currentEngine setRedirectURI:@"http://"];
-    [currentEngine setIsUserExclusive:NO];
-
     [currentEngine logIn];
 }
 
@@ -90,7 +88,8 @@
     [notice show];
 
     [app.weiboStreamViewController updateLoginButtonStatus];
-    
+    [app.weiboStreamViewController reloadTimeLine];
+
 }
 
 - (void)engine:(WBEngine *)engine didFailToLogInWithError:(NSError *)error
@@ -109,7 +108,7 @@
 
     WBSuccessNoticeView *notice = [WBSuccessNoticeView successNoticeInView:app.window title:NSLocalizedString(@"WeiboLogoutSuccess",nil)];
     [notice show];
-    currentEngine = nil;
+//    currentEngine = nil;
     [self clearCookie];
     //Login successful. 
     //    [engineArray addObject:engine];

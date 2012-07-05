@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		320AF8492C47A4D819F7C451 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 320AF8492C47A4D819F7C450 /* QuartzCore.framework */; };
-		320B6C86F11D9990244A9731 /* Three20.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 320B6C86F11D9990244A9730 /* Three20.bundle */; };
 		5913A46F1580874B00219F36 /* MaWallpaperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5913A46E1580874B00219F36 /* MaWallpaperViewController.m */; };
 		5913A47615808BEC00219F36 /* SFContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5913A47515808BEC00219F36 /* SFContainerViewController.m */; };
 		5913A47C15808CDE00219F36 /* MaWallpaperSubView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5913A47B15808CDE00219F36 /* MaWallpaperSubView.m */; };
@@ -55,6 +54,7 @@
 		591A1501157C6245000832AD /* lableSectionBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 591A14FF157C6245000832AD /* lableSectionBackground.png */; };
 		591A1574157C893C000832AD /* msyh.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 591A1573157C893B000832AD /* msyh.ttf */; };
 		591C8128158339C200DC63D4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 591C812A158339C200DC63D4 /* Localizable.strings */; };
+		5925FC8015A5518C0013E8C6 /* Three20.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5925FC7F15A5518C0013E8C6 /* Three20.bundle */; };
 		592C1B8B157C8B8300CB0C14 /* MaSchDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 592C1B8A157C8B8300CB0C14 /* MaSchDetailViewController.m */; };
 		59398181158282E400250E9D /* POAPinyin.m in Sources */ = {isa = PBXBuildFile; fileRef = 59398180158282E400250E9D /* POAPinyin.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		59466DED158597F6006277B8 /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 59466DEB158597F6006277B8 /* camera.png */; };
@@ -541,7 +541,6 @@
 
 /* Begin PBXFileReference section */
 		320AF8492C47A4D819F7C450 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.frameworks; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		320B6C86F11D9990244A9730 /* Three20.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Three20.bundle; path = ../three20/src/Three20.bundle; sourceTree = SOURCE_ROOT; };
 		5913A46D1580874B00219F36 /* MaWallpaperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MaWallpaperViewController.h; path = src/MaWallpaperViewController.h; sourceTree = "<group>"; };
 		5913A46E1580874B00219F36 /* MaWallpaperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MaWallpaperViewController.m; path = src/MaWallpaperViewController.m; sourceTree = "<group>"; };
 		5913A47415808BEC00219F36 /* SFContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SFContainerViewController.h; path = src/3rd/SFContainerViewController.h; sourceTree = "<group>"; };
@@ -606,6 +605,7 @@
 		591A14FF157C6245000832AD /* lableSectionBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lableSectionBackground.png; path = MoreMusic/Resources/lableSectionBackground.png; sourceTree = "<group>"; };
 		591A1573157C893B000832AD /* msyh.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = msyh.ttf; path = MoreMusic/Resources/msyh.ttf; sourceTree = "<group>"; };
 		591C812B158339C800DC63D4 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		5925FC7F15A5518C0013E8C6 /* Three20.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Three20.bundle; path = MoreMusic/Resources/Three20.bundle; sourceTree = "<group>"; };
 		592C1B89157C8B8300CB0C14 /* MaSchDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MaSchDetailViewController.h; path = src/MaSchDetailViewController.h; sourceTree = "<group>"; };
 		592C1B8A157C8B8300CB0C14 /* MaSchDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MaSchDetailViewController.m; path = src/MaSchDetailViewController.m; sourceTree = "<group>"; };
 		5939817F158282E400250E9D /* POAPinyin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = POAPinyin.h; path = src/3rd/POAPinyin.h; sourceTree = "<group>"; };
@@ -1626,7 +1626,7 @@
 				591C812A158339C200DC63D4 /* Localizable.strings */,
 				59F90E57158317830066C86A /* icon@2x.png */,
 				59F90E55158317800066C86A /* icon.png */,
-				320B6C86F11D9990244A9730 /* Three20.bundle */,
+				5925FC7F15A5518C0013E8C6 /* Three20.bundle */,
 				590E94AE1578E94C00BDE1C8 /* img */,
 				596798CE157F7DBB0036871D /* ticket.txt */,
 				591A1573157C893B000832AD /* msyh.ttf */,
@@ -1922,7 +1922,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				320B6C86F11D9990244A9731 /* Three20.bundle in Resources */,
 				594DD17C157502DE00037861 /* MHTabBarActiveTab.png in Resources */,
 				594DD17D157502DE00037861 /* MHTabBarInactiveTab.png in Resources */,
 				594DD17E157502DE00037861 /* MHTabBarIndicator.png in Resources */,
@@ -2193,6 +2192,7 @@
 				5978B5B51585F29D009EBDFB /* comment@2x.png in Resources */,
 				5978B5B81585F2C3009EBDFB /* repost.png in Resources */,
 				5978B5B91585F2C3009EBDFB /* repost@2x.png in Resources */,
+				5925FC8015A5518C0013E8C6 /* Three20.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2351,8 +2351,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				OTHER_LDFLAGS = "-ObjC";
-				PROVISIONING_PROFILE = "BA581AD3-6613-4ACE-BBA2-B34690E893E5";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "BA581AD3-6613-4ACE-BBA2-B34690E893E5";
+				PROVISIONING_PROFILE = "57935305-35E9-49C9-8A2D-63479B07BA19";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "57935305-35E9-49C9-8A2D-63479B07BA19";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -2431,8 +2431,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				OTHER_LDFLAGS = "-ObjC";
-				PROVISIONING_PROFILE = "BA581AD3-6613-4ACE-BBA2-B34690E893E5";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "BA581AD3-6613-4ACE-BBA2-B34690E893E5";
+				PROVISIONING_PROFILE = "57935305-35E9-49C9-8A2D-63479B07BA19";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "57935305-35E9-49C9-8A2D-63479B07BA19";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
