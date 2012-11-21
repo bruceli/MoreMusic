@@ -7,6 +7,8 @@
 //
 
 #import "MaReviewViewController.h"
+#import "MaDetailViewController.h"
+#import "FXLabel.h"
 
 @interface MaReviewViewController ()
 
@@ -18,7 +20,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Review" image:[UIImage imageNamed:@"globe"] tag:0];
+        self.tabBarItem = [[UITabBarItem alloc] initWithTitle:NSLocalizedString(@"Review",nil) image:[UIImage imageNamed:@"review"] tag:0];
     }
     return self;
 }
@@ -28,7 +30,11 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     self.tableView.backgroundColor = [UIColor darkGrayColor];
-    self.navigationItem.title = @"MaReviewViewController";
+    self.navigationItem.title = NSLocalizedString(@"Review",nil);
+    NSString* path = [[NSBundle mainBundle] pathForResource:@"history" ofType:@"plist"];
+    NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
+    histroyArray = [dict objectForKey:@"historyArray"];
+ 
 }
 
 - (void)viewDidUnload
@@ -41,5 +47,71 @@
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView 
+{
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section 
+{
+    return [histroyArray count];
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 100;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *CellIdentifier = @"Cell";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
+    }
+    
+    // get section array from dataSource
+    NSDictionary* dict = [histroyArray objectAtIndex:indexPath.row];
+    //cell.textLabel.text = [dict objectForKey:@"title"];
+    
+    FXLabel *nameLabel = [[FXLabel alloc] initWithFrame:CGRectMake(5, 5,310 , 50)];
+    nameLabel.text = [dict objectForKey:@"title"];
+    [cell addSubview:nameLabel];
+    nameLabel.shadowColor = [UIColor blackColor];
+    nameLabel.backgroundColor = [UIColor clearColor];
+    
+    if ([nameLabel.text length]> 14) 
+        nameLabel.font = [UIFont fontWithName:@"MicrosoftYaHei" size:20];
+    else
+        nameLabel.font = [UIFont fontWithName:@"MicrosoftYaHei" size:27];
+
+    nameLabel.textColor = [UIColor whiteColor];
+    nameLabel.shadowOffset = CGSizeMake(1.0f, 1.0f);
+    nameLabel.shadowBlur = 8.0f;
+
+    cell.backgroundView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:[dict objectForKey:@"backgroundImage"]]];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSDictionary* dict = [histroyArray objectAtIndex:indexPath.row];
+
+    MaDetailViewController* detViewController = [[MaDetailViewController alloc]init];
+    detViewController.imageName = [dict objectForKey:@"detailImage"];
+    detViewController.text = [dict objectForKey:@"text"];
+    
+    NSString* titleString = [[dict objectForKey:@"title"] substringWithRange:NSMakeRange(0, 9)];
+    detViewController.navigationItem.title = titleString;
+
+    [detViewController initImageView];
+    
+    [self.navigationController pushViewController: detViewController animated:YES];
+}
+
+
+
 
 @end

@@ -32,6 +32,7 @@ static const NSInteger TAG_OFFSET = 1000;
 	UIView *tabButtonsContainerView;
 	UIView *contentContainerView;
 	UIImageView *indicatorImageView;
+    UIImageView *backgroundImageView;
 }
 
 @synthesize viewControllers = _viewControllers;
@@ -51,7 +52,7 @@ static const NSInteger TAG_OFFSET = 1000;
 {
 	[button setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
 
-	UIImage *image = [[UIImage imageNamed:@"MHTabBarActiveTab"] stretchableImageWithLeftCapWidth:0 topCapHeight:0];
+	UIImage *image = [[UIImage imageNamed:@"subTitleActiveBackground"] stretchableImageWithLeftCapWidth:0 topCapHeight:0];
 	[button setBackgroundImage:image forState:UIControlStateNormal];
 	[button setBackgroundImage:image forState:UIControlStateHighlighted];
 	
@@ -63,12 +64,12 @@ static const NSInteger TAG_OFFSET = 1000;
 {
 	[button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
 
-	UIImage *image = [[UIImage imageNamed:@"MHTabBarInactiveTab"] stretchableImageWithLeftCapWidth:1 topCapHeight:0];
+	UIImage *image = [[UIImage imageNamed:@"subTitleInactiveBackground"] stretchableImageWithLeftCapWidth:1 topCapHeight:0];
 	[button setBackgroundImage:image forState:UIControlStateNormal];
 	[button setBackgroundImage:image forState:UIControlStateHighlighted];
 
-	[button setTitleColor:[UIColor colorWithRed:175/255.0f green:85/255.0f blue:58/255.0f alpha:1.0f] forState:UIControlStateNormal];
-	[button setTitleShadowColor:[UIColor whiteColor] forState:UIControlStateNormal];
+	[button setTitleColor:[UIColor colorWithWhite:255 alpha:0.3f] forState:UIControlStateNormal];
+//    [button setTitleShadowColor:[UIColor colorWithWhite:0.0f alpha:0.5f] forState:UIControlStateNormal];
 }
 
 - (void)removeTabButtons
@@ -138,10 +139,19 @@ static const NSInteger TAG_OFFSET = 1000;
 
 	self.view.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
 
-	CGRect rect = CGRectMake(0, 0, self.view.bounds.size.width, TAB_BAR_HEIGHT);
+    //INIT RECT
+    CGRect rect = self.view.bounds;
+    [self.view setFrame:rect];
+    
+    rect = CGRectMake(0, 0, self.view.bounds.size.width, TAB_BAR_HEIGHT);
 	tabButtonsContainerView = [[UIView alloc] initWithFrame:rect];
 	tabButtonsContainerView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
-	[self.view addSubview:tabButtonsContainerView];
+    
+    backgroundImageView = [[UIImageView alloc] initWithFrame:rect];
+    backgroundImageView.image = [UIImage imageNamed:@"toptabBarBackground"];
+    [self.view addSubview:backgroundImageView];
+
+    [self.view addSubview:tabButtonsContainerView];
 
 	rect.origin.y = TAB_BAR_HEIGHT;
 	rect.size.height = self.view.bounds.size.height - TAB_BAR_HEIGHT;

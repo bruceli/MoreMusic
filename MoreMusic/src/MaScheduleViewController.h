@@ -10,6 +10,19 @@
 #import "MaRootViewController.h"
 #import "MHTabBarController.h"
 
-@interface MaScheduleViewController : MaRootViewController <MHTabBarControllerDelegate>
+//UITableViewController
+@interface MaScheduleViewController : MaRootViewController <UITableViewDelegate, UITableViewDataSource, MHTabBarControllerDelegate>
+{
+    NSMutableArray* allActivityArray;  
+    NSMutableArray* currentActivityArray;
+    NSMutableDictionary* dataSource;
+//    NSMutableArray* ;
+//    NSMutableDictionary *secondDayActivityArray;        
+
+    NSInteger currentActivity;
+}
+@property (nonatomic, copy, readonly) NSMutableArray* allActivityArray;
+
+
 
 @end

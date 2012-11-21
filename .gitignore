@@ -18,12 +18,10 @@ src/.DS_Store
 
 .DS_Store
 
+python/.weibo.py.swp
+python/weibo.pyc
 python/.weibo_parser.py.swp
-
 python/couchdb.stderr
-
 python/couchdb.stdout
-
 python/erl_crash.dump
-
 python/weibo.pyc

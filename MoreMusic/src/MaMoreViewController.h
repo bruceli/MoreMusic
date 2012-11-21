@@ -6,8 +6,8 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "MaTableViewController.h"
-
-@interface MaMoreViewController : MaTableViewController
-
+@interface MaMoreViewController : UITableViewController
+{
+    NSMutableArray* dataSource;
+}
 @end

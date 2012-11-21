@@ -6,8 +6,9 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "MaTableViewController.h"
+@interface MaReviewViewController : UITableViewController
+{
+    NSMutableArray* histroyArray;
 
-@interface MaReviewViewController : MaTableViewController
-
+}
 @end

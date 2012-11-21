@@ -7,6 +7,12 @@
 //
 
 #import "MaMoreViewController.h"
+#import "FXLabel.h"
+#import "MaSchViewCell.h"
+#import "MaMapSelectorController.h"
+#import "MaTicketViewController.h"
+#import "MaWallpaperViewController.h"
+#import "MaAboutViewController.h"
 
 @implementation MaMoreViewController
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -14,15 +20,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         self.tabBarItem = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemMore tag:0];
-        
-        self.dataSource = [TTSectionedDataSource dataSourceWithObjects:
-                           @"Generic Items",
-                           [TTTableSettingsItem itemWithText:Three20Version caption:@"Three20 Version"
-                                                         URL:@"tt://tableItemTest"],
-                           [TTTableTextItem itemWithText:@"TTTableTextItem" URL:@"tt://tableItemTest"
-                                            accessoryURL:@"http://www.google.com"],
-                           nil];
-
+        dataSource = [NSMutableArray arrayWithObjects:@"Map", @"Ticket",@"Wallpaper", @"About", nil];
     }
     return self;
 }
@@ -32,7 +30,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     self.tableView.backgroundColor = [UIColor whiteColor];
-    self.navigationItem.title = @"MaMoreViewController";
+    self.navigationItem.title = NSLocalizedString(@"More",nil);
 }
 
 - (void)viewDidUnload
@@ -45,6 +43,71 @@
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
+
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView 
+{
+    return 1;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 60;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section 
+{
+    return [dataSource count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *CellIdentifier = @"Cell";
+    
+    MaSchViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil) {
+        cell = [[MaSchViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
+    }
+
+    cell.isSchCell = NO;
+    cell.nameString =  NSLocalizedString([dataSource objectAtIndex:indexPath.row],nil);
+    cell.bandImgName = [[dataSource objectAtIndex:indexPath.row] lowercaseString];
+    
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    switch (indexPath.row) {
+        case 0:{
+            MaMapSelectorController* viewController = [[MaMapSelectorController alloc]init];
+            [self.navigationController pushViewController: viewController animated:YES];
+            break;
+        }
+            
+        case 1:{
+            MaTicketViewController* viewController = [[MaTicketViewController alloc]init];
+            [self.navigationController pushViewController: viewController animated:YES];
+            break;
+        }
+            
+        case 2:{
+            MaWallpaperViewController* viewController = [[MaWallpaperViewController alloc]init];
+            [self.navigationController pushViewController: viewController animated:YES];
+            break;
+        }
+
+        case 3:{
+            MaAboutViewController* detViewController = [[MaAboutViewController alloc]init];
+            [self.navigationController pushViewController: detViewController animated:YES];
+            break;
+        }
+            
+
+        default:
+            break;
+    }    
+}
+
 
 
 @end
